@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!-- Mirrored from ssd.eff.org/en/module/how-use-otr-windows by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:00 GMT --> <!-- Added by HTTrack --><meta charset="UTF-8"><!-- /Added by HTTrack --><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<link href="https://ssd.eff.org/tr/module/nasıl-windows-için-otr-kullanımı" rel="alternate" hreflang="tr" />
+<link href="https://ssd.eff.org/ru/module/руководство-по-otr-для-windows" rel="alternate" hreflang="ru" />
+<link href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-otr-cho-windows" rel="alternate" hreflang="vi" />
+<link href="https://ssd.eff.org/th/module/วิธีการ-ใช้งานโอทีอาร์สำหรับ-windows" rel="alternate" hreflang="th" />
+<link rel="shortcut icon" href="https://ssd.eff.org/sites/all/themes/ssd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://ssd.eff.org/fr/module/guide-dutilisation-de-otr-pour-windows" rel="alternate" hreflang="fr" />
+<link href="https://ssd.eff.org/pt-br/module/como-utilizar-otr-para-windows" rel="alternate" hreflang="pt-br" />
+<link href="https://ssd.eff.org/ur/module/کس-طرح-کریں-ونڈوزکے-لیے-otr-استعمال" rel="alternate" hreflang="ur" />
+<link href="https://ssd.eff.org/es/module/como-usar-otr-en-windows" rel="alternate" hreflang="es" />
+<link href="how-use-otr-windows.html" rel="alternate" hreflang="en" />
+<link href="https://ssd.eff.org/am/module/ለዊንዶውስ-የotr-አጠቃቀም" rel="alternate" hreflang="am" />
+<link href="https://ssd.eff.org/ar/module/كيف-تستخدم-بروتوكول-معلومات-غير-رسمية-otr-لأنظمة-الويندوز-windows" rel="alternate" hreflang="ar" />
+<meta name="description" content="OTR (Off-the-record) is a protocol that allows users of instant messaging or chat tools to have conversations that are confidential. In this guide, you will learn how to use OTR using Pidgin, an open-source instant messaging client for Windows PC." />
+<meta name="generator" content="SSD 2.0" />
+<meta name="rights" content="https://www.eff.org/copyright" />
+<link rel="canonical" href="how-use-otr-windows.html" />
+<link rel="shortlink" href="../node/58.html" />
+<meta property="og:site_name" content="Surveillance Self-Defense" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="how-use-otr-windows.html" />
+<meta property="og:title" content="How to: Use OTR for Windows" />
+<meta property="og:description" content="OTR (Off-the-record) is a protocol that allows users of instant messaging or chat tools to have conversations that are confidential. In this guide, you will learn how to use OTR using Pidgin, an open-source instant messaging client for Windows PC." />
+<meta property="og:updated_time" content="2017-07-19T23:39:15+00:00" />
+<meta property="og:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:secure_url" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eff" />
+<meta name="twitter:site:id" content="4816" />
+<meta name="twitter:creator" content="@eff" />
+<meta name="twitter:creator:id" content="4816" />
+<meta name="twitter:title" content="How to: Use OTR for Windows" />
+<meta name="twitter:url" content="how-use-otr-windows.html" />
+<meta name="twitter:description" content="OTR (Off-the-record) is a protocol that allows users of instant messaging or chat tools to have conversations that are confidential. In this guide, you will learn how to use OTR using Pidgin, an open-source instant messaging client for Windows PC." />
+<meta property="og:email" content="webmaster@eff.org" />
+<meta name="twitter:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="600" />
+<meta property="article:published_time" content="2014-09-30T00:04:52+00:00" />
+<meta property="article:modified_time" content="2017-07-19T23:39:15+00:00" />
+<meta itemprop="name" content="How to: Use OTR for Windows" />
+<meta itemprop="description" content="OTR (Off-the-record) is a protocol that allows users of instant messaging or chat tools to have conversations that are confidential. In this guide, you will learn how to use OTR using Pidgin, an open-source instant messaging client for Windows PC." />
+<link rel="author" href="https://www.eff.org/" />
+<link rel="publisher" href="https://www.eff.org/" />
+  <title>如何：在 Windows 上使用 OTR | 監控自我防衛</title>
+  <link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_jBWwBPrUUSUTT1S7JPXLZtvwi6SWCCuAM2rNS_BbhAQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_qNy102qd5puFDZB4pXv-Y4olXgaVtPqDJpgtQ2crDJc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_MbbZcQ11eVzwOVt86Q1weRCAJRNOTv9KxM2ugt9-MMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_rnPwgN250ElmamVJvNixUdfc1f75hY132oo6udFiooA.css" media="print" /><!-- HTML5 element support for IE6-8 --> <!--[if lt IE 9]>
+    <script src="https://ssd.eff.org/sites/all/themes/ssd/js/html5.js"></script>
+  <![endif]--><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @licstart The following is the entire license notice for the JavaScript
+ * code in this page.
+ *
+ * Copyright (C) 2017  Electronic Frontier Foundation.
+ *
+ * The JavaScript code in this page is free software: you can redistribute
+ * it and/or modify it under the terms of the GNU General Public License
+ * (GNU GPL) as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.  The code is
+ * distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU GPL
+ * for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you may
+ * distribute non-source (e.g., minimized or compacted) forms of that code
+ * without the copy of the GNU GPL normally required by section 4, provided
+ * you include this license notice and a URL through which recipients can
+ * access the Corresponding Source.
+ *
+ * @licend The above is the entire license notice for the JavaScript code
+ * in this page.
+ */
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_xJQKh-93t6Ks8GJm9soszpNUAsAaYKkOnU5mMy_QhSQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_hE9uzPFNV1oCLa5WlMpNcyZ6UvNQIeXYHWsdebuffYk.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_0ARywAjY_V1MuwR9GXqUrBBCZ4svbEJdznLS-N_BpqQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_UN1p40dOoc7wyLYAesKTW9NmCzUbZ1d_RKtJHZ57poU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"ssd","theme_token":"jaOLEGejLaoB16KmSFCU5gLjI_uipV20aOlO448Lhvw","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/raven\/raven.js":1,"sites\/all\/modules\/contrib\/piwik_noscript\/piwik_noscript.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/raven-js\/dist\/raven.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/mytube\/mytube.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/patched\/feedback\/feedback.js":1,"sites\/all\/themes\/ssd\/js\/bootstrap.min.js":1,"sites\/all\/themes\/ssd\/js\/ssd.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mytube\/mytube.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/patched\/feedback\/feedback.css":1,"sites\/all\/themes\/ssd\/css\/style.css":1,"sites\/all\/themes\/ssd\/css\/mobile.css":1,"sites\/all\/themes\/ssd\/css\/print.css":1}},"piwikNoscript":{"image":"\u003Cimg style=\u0022position: absolute\u0022 src=\u0022https:\/\/anon-stats.eff.org\/js\/?idsite=7\u0026amp;rec=1\u0026amp;url=https%3A\/\/ssd.eff.org\/en\/module\/how-use-otr-windows\u0026amp;action_name=\u0026amp;urlref=\u0022 width=\u00220\u0022 height=\u00220\u0022 alt=\u0022\u0022 \/\u003E"},"raven":{"dsn":"https:\/\/0fc3515aa0c54c1ab9a0cbeada04924f@sentry.eff.org\/14","options":{},"user":{"id":0}},"urlIsAjaxTrusted":{"\/en\/searchapi":true,"\/en\/system\/ajax":true,"\/en\/module\/how-use-otr-windows":true},"ajax":{"feedback-submit":{"wrapper":"feedback-form","callback":"feedback_form_ajax_callback","progress":{"type":"throbber","message":""},"event":"mousedown","keypress":true,"prevent":"click","url":"\/en\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send feedback"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-58 node-type-article i18n-en" >
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">跳至主要內容</a></div>
+    <div class="page-wrapper">
+<header id="navbar" role="banner" class="navbar">
+  <div class="container"><!-- EFF Header --><div id="top-eff-header"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</div>
+
+    <div class="search-form-header">
+      <form class="search-form" action="https://ssd.eff.org/en/searchapi" method="GET" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">輸入您的關鍵字</label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="" value="Search" class="form-submit" /></div></div></form>    </div>
+    
+        <div id="language-switcher" class="">
+      <button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".language-switcher-collapse">語言</button> 
+        <div class="region region-language-switcher">
+    <div id="block-locale-language" class="block block-locale">
+    <div class="content language-switcher-collapse collapse" >
+    <ul class="language-switcher-locale-url"><li class="en first active"><a href="how-use-otr-windows.html" class="language-link active" xml:lang="en" hreflang="en">英語</a></li>
+<li class="am"><a href="https://ssd.eff.org/am/module/ለዊንዶውስ-የotr-አጠቃቀም" class="language-link" xml:lang="am" hreflang="am">阿姆哈拉語</a></li>
+<li class="ar"><a href="https://ssd.eff.org/ar/module/كيف-تستخدم-بروتوكول-معلومات-غير-رسمية-otr-لأنظمة-الويندوز-windows" class="language-link" xml:lang="ar" hreflang="ar">阿拉伯語</a></li>
+<li class="es"><a href="https://ssd.eff.org/es/module/como-usar-otr-en-windows" class="language-link" xml:lang="es" hreflang="es">西班牙語</a></li>
+<li class="fr"><a href="https://ssd.eff.org/fr/module/guide-dutilisation-de-otr-pour-windows" class="language-link" xml:lang="fr" hreflang="fr">法語</a></li>
+<li class="ru"><a href="https://ssd.eff.org/ru/module/руководство-по-otr-для-windows" class="language-link" xml:lang="ru" hreflang="ru">俄語</a></li>
+<li class="tr"><a href="https://ssd.eff.org/tr/module/nasıl-windows-için-otr-kullanımı" class="language-link" xml:lang="tr" hreflang="tr">土耳其語</a></li>
+<li class="vi"><a href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-otr-cho-windows" class="language-link" xml:lang="vi" hreflang="vi">越南語</a></li>
+<li class="pt-br"><a href="https://ssd.eff.org/pt-br/module/como-utilizar-otr-para-windows" class="language-link" xml:lang="pt-br" hreflang="pt-br">葡萄牙語</a></li>
+<li class="th"><a href="https://ssd.eff.org/th/module/วิธีการ-ใช้งานโอทีอาร์สำหรับ-windows" class="language-link" xml:lang="th" hreflang="th">泰語</a></li>
+<li class="ur last"><a href="https://ssd.eff.org/ur/module/کس-طرح-کریں-ونڈوزکے-لیے-otr-استعمال" class="language-link" xml:lang="ur" hreflang="ur">烏爾都語</a></li>
+</ul>  </div>
+</div>
+  </div>
+     </div><!-- .btn-navbar is used as the toggle for collapsed navbar content --><button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".navbar-collapse">功能表</button>
+  </div> 
+</header>
+<header id="nav-expanded">
+  <div class="container">
+    <div class="row">
+              <div class="navbar-collapse collapse">
+          <nav role="navigation">
+                          <ul class="menu nav navbar-nav nav-primary"><li class="first leaf"><a href="../index-2.html">索引</a></li>
+<li class="leaf"><a href="../blog.html">部落格</a></li>
+<li class="leaf"><a href="../about-surveillance-self-defense.html">關於</a></li>
+<li class="leaf"><a href="../contact.html" title="">聯絡我們</a></li>
+<li class="leaf"><a href="../glossary.html" title="">詞彙表</a></li>
+<li class="last leaf"><a href="../credits.html" title="">致謝</a></li>
+</ul>                                              </nav>
+        </div>
+          </div>
+   </div>
+</header>
+<header role="banner" id="page-header" class="container">
+
+      <div id ="top-logo">
+      <div id="top-logo-inner"><a class="logo" href="https://ssd.eff.org/en" title="Home"> <img src="https://ssd.eff.org/sites/all/themes/ssd/logo.png" alt="Home" class="img-responsive" /> </a></div>
+    </div>
+    
+  
+  
+        
+</header><!-- /#page-header --><div class="container-main clearfix">
+  
+  <div class=" ">
+
+    
+    <section class="container-full-width"><a id="main-content"></a><div class="header-graphic">
+            <div class="field field-name-field-module-graphic field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://ssd.eff.org/files/styles/module_icon_page_header/public/tutorials-b_0.png?itok=CVEi0W83" width="145" height="145" alt="" /></div></div></div>          </div>
+                          
+                  <div class="container">
+        
+        <h1 class="page-header">如何：在 Windows 上使用 OTR</h1>
+
+                  </div>
+        
+                                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-58" class="node node-article clearfix">
+
+  
+        
+    
+  
+  <div class="content">
+    <div class="container">
+              <div class="field-summary">
+          <p>OTR (<a href="../glossary/record.html" class="glossify-link" data-title="Off-the-record" title="即時通訊系統通常是未加密的。OTR 是一種為即時通訊加入加密機制的概念，讓您可以繼續使用慣用的社群網路 (例如 Facebook 聊天室、Google Chat 或 Hangouts) 但收發的訊息更能抵禦監控。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Instant messaging systems are often unencrypted. OTR is a way of adding encryption to them, so that you can keep using familiar networks like Facebook chat or Google Chat or Hangouts but with your messages more resistant to surveillance. ">不記錄<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>) 是一種<a href="../glossary/protocol.html" class="glossify-link" data-title="protocol" title="通訊協定是在程式或電腦之間發送資料的一種方式。使用相同協定的軟體程式可以相互交流：因此，網頁瀏覽器和網路伺服器使用相同的協議，稱為「http」。某些協定使用加密來保護其內容。Http 協定的加密版本稱為「https」。另一種用於許多程式的加密協定是 OTR (Off-the-Record)，用於加密即時通訊的協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A communications protocol is a way of sending data between programs or computers. Software programs that use the same protocol can talk to each other: so web browsers and web servers speak the same protocol, called &quot;http&quot;. Some protocols use encryption to protect their contents. The secure version of the http protocol is called &quot;https&quot;. Another example of an encrypted protocol used by many different programs is OTR (Off-the-Record), a protocol for secure instant messaging. ">協定<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，可讓即時通訊或交談工具的使用者進行機密對話。在本指引中，您將學習如何使用 Pidgin (用於 Windows PC 的開源即時通訊用戶端) 搭配 OTR。</p>
+        </div>
+      
+              <div class="field-metadata">
+          <div class="field field-name-field-metadata field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>下載位置：</strong></p>
+<ul><li><a href="https://pidgin.im/download/" rel="noreferrer">https://pidgin.im/download/</a>&nbsp;</li>
+<li><a href="https://otr.cypherpunks.ca/" rel="noreferrer">https://otr.cypherpunks.ca/</a></li>
+</ul><p><strong>電腦需求</strong>：網際網路連線，運行 Windows XP 或更高版本的電腦，以及 <a href="../glossary/xmpp.html" class="glossify-link" data-title="XMPP" title="一項即時通訊的開放標準，Google 在 Google Talk 使用 XMPP；Facebook 曾經支援它，但後來終止。非企業用的獨立即時通訊服務經常使用 XMPP。像 WhatsApp 這樣的服務有專屬、封閉的祕密協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A open standard for instant messages - Google uses XMPP for Google Talk; Facebook used to offer it, but stopped. Non-corporate independent instant messaging services will usually use XMPP. Services like WhatsApp have their own, closed and secret protocol. ">XMPP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> (Jabber) 帳戶。(如果您需要 XMPP 帳戶進行練習，請前往 <a href="https://xmpp.net/directory.php" rel="noreferrer">https://xmpp.net/directory.php</a>，獲取免費伺服器列表以及有關如何註冊的說明)</p>
+<p><strong>本指引中使用的版本</strong>：Windows 7 Ultimate；Pidgin 2.10.9；pidgin-otr 4.0.0-1</p>
+<p><strong>授權</strong>：自由軟體；各種自由軟體授權</p>
+<p><strong>其他閱讀資訊</strong>：<a href="https://pidgin.im/cgi-bin/mailman/listinfo/support" rel="noreferrer">https://pidgin.im/cgi-bin/mailman/listinfo/support</a></p>
+<p><strong>級別</strong>：初學者</p>
+<p><strong>所需時間</strong>：20 分鐘</p>
+</div></div></div>        </div>
+          </div>
+    <div class="wrap-module-sections">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><a name="0"></a><h2>什麼是 OTR？<a class="anchor-link-icon" href="#0">Anchor link</a></h2>
+<p>OTR (<a href="../glossary/record.html" class="glossify-link" data-title="Off-the-record" title="即時通訊系統通常是未加密的。OTR 是一種為即時通訊加入加密機制的概念，讓您可以繼續使用慣用的社群網路 (例如 Facebook 聊天室、Google Chat 或 Hangouts) 但收發的訊息更能抵禦監控。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Instant messaging systems are often unencrypted. OTR is a way of adding encryption to them, so that you can keep using familiar networks like Facebook chat or Google Chat or Hangouts but with your messages more resistant to surveillance. ">不記錄<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>) 是一種<a href="../glossary/protocol.html" class="glossify-link" data-title="protocol" title="通訊協定是在程式或電腦之間發送資料的一種方式。使用相同協定的軟體程式可以相互交流：因此，網頁瀏覽器和網路伺服器使用相同的協議，稱為「http」。某些協定使用加密來保護其內容。Http 協定的加密版本稱為「https」。另一種用於許多程式的加密協定是 OTR (Off-the-Record)，用於加密即時通訊的協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A communications protocol is a way of sending data between programs or computers. Software programs that use the same protocol can talk to each other: so web browsers and web servers speak the same protocol, called &quot;http&quot;. Some protocols use encryption to protect their contents. The secure version of the http protocol is called &quot;https&quot;. Another example of an encrypted protocol used by many different programs is OTR (Off-the-Record), a protocol for secure instant messaging. ">協定<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，讓人可以使用他們已經熟悉的通訊工具進行機密交談。OTR 藉由以下方式提供安全性：</p>
+<ul><li>加密您的交談</li>
+<li>提供方法來確保您的交談對象確為其人</li>
+<li>不允許伺服器記錄或以其他方式存取您的對話</li>
+</ul><p>這個協定跟 Google 的「Off the record」不同，後者只能停用聊天記錄，並沒有<a href="../glossary/encryption.html" class="glossify-link" data-title="encryption" title="一種流程，將訊息轉換成無法讀取的形式，只有知道如何「解密」的人才知道如何將訊息轉為可讀取的形式。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A process that takes a message and makes it unreadable except to a person who knows how to &quot;decrypt&quot; it back into a readable form. ">加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>或驗證能力。雖然在 Microsoft Windows 上有幾種使用 OTR 的方法，但是我們發現最為一致且易於使用的工具是使用 pidgin-otr 外掛程式的 Pidgin 交談用戶端。</p>
+<p class="warning">Windows PC 即時通訊用戶端 Pidgin 預設會自動記錄對話，但您可以禁用此功能。不過，即使您自己停用了記錄功能，您也無法控制交談對象 - 他可能正在記錄或擷取交談的擷圖。</p>
+</div><div class="field-item odd"><a name="1"></a><h2>為什麼要使用 Pidgin + OTR？<a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p>您在 Google 或 Facebook 網站上使用 Google Hangouts 或 Facebook 進行聊天對話時，使用 <a href="../glossary/https.html" class="glossify-link" data-title="HTTPS" title="如果您曾經看過像是「http://www.example.com/」的網址，那麼您就會認出其中的「http」。HTTP (超文本傳輸協定) 是您的設備上的網頁瀏覽器與遠端網路伺服器通訊的方式。不幸的是，標準的 http 以不安全的方式透過網際網路發送文本。HTTPS (S 代表「安全」) 使用加密技術，為您發送給網站以及網站發送給您的資料提供更佳的保護，不被有心人士窺探。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="If you've ever seen a web address spelled out as “http://www.example.com/”, you'll recognize the “http” bit of this term. HTTP (hypertext transfer protocol) is the way a web browser on your machine talks to a remote web server. Unfortunately, standard http sends text insecurely across the Internet. HTTPS (the S stands for “secure”) uses encryption to better protect the data you send to websites, and the information they return to you, from prying eyes. ">HTTPS<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 對該聊天進行加密，這表示您的交談內容在傳輸過程中不受駭客和其他第三方的侵害。然而，這<em>無法</em>防堵 Google 或 Facebook，他們有您談話的金鑰，可以交給當局或將其用於行銷。</p>
+<p>安裝 Pidgin 之後，您可以同時使用多個帳戶登錄。例如，您可以同時使用 Google Hangouts、Facebook 和 <a href="../glossary/xmpp.html" class="glossify-link" data-title="XMPP" title="一項即時通訊的開放標準，Google 在 Google Talk 使用 XMPP；Facebook 曾經支援它，但後來終止。非企業用的獨立即時通訊服務經常使用 XMPP。像 WhatsApp 這樣的服務有專屬、封閉的祕密協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A open standard for instant messages - Google uses XMPP for Google Talk; Facebook used to offer it, but stopped. Non-corporate independent instant messaging services will usually use XMPP. Services like WhatsApp have their own, closed and secret protocol. ">XMPP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。Pidgin 還可讓您在沒有 OTR 的情況下使用這些工具進行聊天。由於 OTR <em>只在兩個人都使用的情況下才起作用</em>，這表示即使對方沒有安裝 OTR，也可以使用 Pidgin 與他們聊天。</p>
+<p>Pidgin 還可讓您執行<a href="../glossary/out-band-verification.html" class="glossify-link" data-title="out-of-band verification" title="「頻外」是指在當前方法之外的任何通訊方式。以不安全的通訊系統驗證您通話對象的身分，通常需要以頻外的另一種方式進行通訊，這種方式較不容易遭受同一種攻擊。因此，例如您可能會親自與某人交談，以確認您是否使用某人的正確公開金鑰，然後再使用它來加密電子郵件。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="&quot;Out-of-band&quot; means any way of communicating outside of the current method. Verifying the identity of the person you're talking to over an insecure communication system often requires communicating out-of-band via another method that is less vulnerable to the same kind of attack. So, for instance, you might check that you are using someone's correct public key by talking to them in person, before using it to encrypt your email. ">頻外驗證<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，確保您正在與您所認為的人交談，而且沒有受到攔截式<a href="../glossary/attack.html" class="glossify-link" data-title="attack" title="在電腦安全的領域，攻擊是指一種可以用來或專門用來危害安全的方法。攻擊者則是指使用攻擊的人或組織。攻擊方法有時又稱為「利用漏洞」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In computer security, an attack is a method that can be used to compromise security, or its actual use. An attacker is the person or organization using an attack. An attack method is sometimes called an &quot;exploit.&quot; ">攻擊<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。對於每個對話，有一個選項可顯示您的<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>指紋給您和您的交談對象。「<a href="../glossary/key-fingerprint.html" class="glossify-link" data-title="key fingerprint" title="一組表示公開金鑰的字母或數字。有些隱私工具可讓您檢查某人的金鑰指紋在您的裝置上與他人的裝置上是否相符。這個檢查的目的是防止攔截式攻擊，也就是有人試圖欺騙您，讓您使用錯誤的金鑰。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A sequence of letters or numbers that represent a public key. Some privacy tools let you check the match between someone's key fingerprint as seen by your device and by their device. The purpose of this check is to prevent a man-in-the-middle attack, where someone tricks you into using the wrong key. ">金鑰指紋<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>」是一串像是「342e 2309 bd20 0912 ff10 6c63 2192 1928」這樣的一連串字元，可以用於驗證長度較長的公開金鑰。藉由另一個通訊管道 (如 Twitter 私人訊息 (DM) 或電子郵件) 交換您的指紋，以確保沒有人干擾您的交談。</p>
+</div><div class="field-item even"><a name="2"></a><h2>限制：我何時不該使用 Pidgin + OTR？<a class="anchor-link-icon" href="#2">Anchor link</a></h2>
+<p>技術專家有一個術語來描述一個程式或技術何時可能容易受到外部<a href="../glossary/attack.html" class="glossify-link" data-title="attack" title="在電腦安全的領域，攻擊是指一種可以用來或專門用來危害安全的方法。攻擊者則是指使用攻擊的人或組織。攻擊方法有時又稱為「利用漏洞」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In computer security, an attack is a method that can be used to compromise security, or its actual use. An attacker is the person or organization using an attack. An attack method is sometimes called an &quot;exploit.&quot; ">攻擊<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>：他們會說，它有一個很大的「攻擊面」(attack surface)。Pidgin 的攻擊面很大。這是一個複雜的程式，撰寫時沒有把安全視為首要條件。它幾乎肯定有漏洞，其中一些漏洞可能被政府甚至大公司用來入侵使用它的電腦。使用 Pidgin <a href="../glossary/encrypt.html" class="glossify-link" data-title="encrypt" title="將加密技術應用在任何類型的資訊或通訊上。這麼做會將資訊或通訊以數學方式轉換，讓它看起來不具任何意義，但只要有人或裝置持有正確的祕密金鑰，就能將它回覆到原本的形式。這樣就限制了存取訊息的權限，因為只要沒有正確的祕密金鑰，應該不可能將加密逆轉，回復原本的資訊。加密技術是構成密碼學領域的幾項技術之一。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="To apply encryption technology to any sort of information or communication. This transforms the information or communication mathematically so that it seems meaningless, but can still be restored to its original form by a person or device that possesses the right secret key. This limits who can access the information because without the right secret key, it should be impossible to reverse the encryption and recover the original information. Encryption is one of several technologies that make up the field called cryptography. ">加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>您的談話，對於用來監視每個人在網際網路對話的那種無特定目標灑網式監視來說，是一種很好的防禦措施，但是如果您認為自己將成為資源充沛的攻擊者 (例如一個民族國家) 的目標，應該考慮強度更高的防禦措施，例如 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 加密的電子郵件。</p>
+</div><div class="field-item odd"><a name="3"></a><h2>取得 Pidgin <a class="anchor-link-icon" href="#3">Anchor link</a></h2>
+<p>您可以從 <a href="https://pidgin.im/download/" target="_blank" rel="noreferrer">Pidgin 下載頁面</a>下載安裝程式，取得 Windows 版 Pidgin。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_04.png" /></p>
+<p>按一下紫色的下載 (DOWNLOAD) 分頁。<em>不要按「立即下載」(Download Now) 按鈕，因為您要選擇其他安裝程式檔案。</em>您會前往下載頁面。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_05.png" /></p>
+<p><em>不要按「立即下載」(Download Now) 按鈕，因為我們要選擇其他安裝程式檔案。</em>Pidgin 的預設安裝程式很小，因為它不包含所有資訊，並為您下載檔案。這有時會失敗，所以「離線安裝程式」(offline installer) 會帶來更好的體驗，其中包含所有必要的安裝資料。按一下「離線安裝程式」(offline installer) 連結。您將被帶到一個名為「Sourceforge」的新頁面，幾秒鐘後，會有一個小彈出視窗，詢問您是否要儲存一個檔案。</p>
+<p class="warning" wrap="">請注意，雖然 Pidgin 的下載頁面使用「<a href="../glossary/https.html" class="glossify-link" data-title="HTTPS" title="如果您曾經看過像是「http://www.example.com/」的網址，那麼您就會認出其中的「http」。HTTP (超文本傳輸協定) 是您的設備上的網頁瀏覽器與遠端網路伺服器通訊的方式。不幸的是，標準的 http 以不安全的方式透過網際網路發送文本。HTTPS (S 代表「安全」) 使用加密技術，為您發送給網站以及網站發送給您的資料提供更佳的保護，不被有心人士窺探。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="If you've ever seen a web address spelled out as “http://www.example.com/”, you'll recognize the “http” bit of this term. HTTP (hypertext transfer protocol) is the way a web browser on your machine talks to a remote web server. Unfortunately, standard http sends text insecurely across the Internet. HTTPS (the S stands for “secure”) uses encryption to better protect the data you send to websites, and the information they return to you, from prying eyes. ">HTTPS<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>」，相對地較不易遭到篡改，它帶您前往下載 Windows 版本 Pidgin 的網站目前是 Sourceforge，它使用未加密的「HTTP」，因此不提供任何保護。這表示您下載的軟體在下載之前可能會遭到篡改。</p>
+<p wrap="">這種風險大部分來自可以存取當地網際網路基礎設施、試圖針對您個人進行監控的人 (例如惡意的熱點提供商)，或者計畫向許多使用者散布受到破壞的軟體的國家或政府級人士。<a href="https://www.eff.org/https-everywhere" target="_blank">HTTPS Everywhere 擴充功能</a>可以將 Sourceforge 下載 URL 改為 HTTPS，因此建議您在下載任何軟體之前，先安裝 HTTPS Everywhere。此外，根據我們的經驗，Sourceforge 的下載頁面經常有許多令人混淆的全頁廣告，這可能會誘騙使用者安裝他們不想要的東西。您可以在安裝任何軟體之前先安裝廣告攔截程式，以防堵這些令人混淆的廣告。從不受保護的網站下載檔案前，請記得想想您的<a href="../glossary/threat-model.html" class="glossify-link" data-title="threat model" title="一種限制範圍的思考方式，僅考量想要用來保護資料的防護類型。要防範所有類型的詭計或攻擊者是不可能的，所以您應該專注思考哪些人可能想要您的資料，他們想要從中獲得什麼，以及可能使用的方式。研擬一系列可能遭受的攻擊並加以防範，就稱為威脅模型。一旦建立起威脅模型，就可以進行風險分析。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A way of narrowly thinking about the sorts of protection you want for your data. It's impossible to protect against every kind of trick or attacker, so you should concentrate on which people might want your data, what they might want from it, and how they might get it. Coming up with a set of possible attacks you plan to protect against is called threat modeling. Once you have a threat model, you can conduct a risk analysis. ">威脅模型<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。</p>
+<p>許多瀏覽器會要求您確認是否要下載此檔案。Internet Explorer 11 會在瀏覽器視窗底部顯示一個帶有橘色邊框的欄。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_06.png" /></p>
+<p>對於任何瀏覽器，最好在繼續之前先儲存檔案，所以按一下「儲存」(Save) 按鈕。預設情況下，大多數瀏覽器將下載的檔案存放在 Downloads 檔案夾。</p>
+</div><div class="field-item even"><a name="4"></a><h2>取得 OTR <a class="anchor-link-icon" href="#4">Anchor link</a></h2>
+<p>您可以從 <a href="https://otr.cypherpunks.ca/" target="_blank" rel="noreferrer">OTR 下載頁面</a>下載安裝程式，取得 Pidgin 的 OTR 外掛程式 pidgin-otr。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_00.png" /></p>
+<p>按一下「下載」(Downloads) 分頁，進入頁面的「下載」(Downloads) 部分。按一下「pidgin Win32 安裝程式」(Win32 installer for pidgin) 連結。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_01.png" /></p>
+<p>許多瀏覽器會要求您確認是否要下載此檔案。Internet Explorer 11 會在瀏覽器視窗底部顯示一個帶有橘色邊框的欄。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_02.png" /></p>
+<p>對於任何瀏覽器，最好在繼續之前先儲存檔案，所以按一下「儲存」(Save) 按鈕。預設情況下，大多數瀏覽器將下載的檔案存放在 Downloads 檔案夾。</p>
+<p>下載 Pidgin 和 pidgin-otr 之後，您應該在下載 (Downloads) 檔案夾中有兩個新檔案：</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_08.png" /></p>
+</div><div class="field-item odd"><a name="5"></a><h2>安裝 Pidgin <a class="anchor-link-icon" href="#5">Anchor link</a></h2>
+<p>開著 Windows 檔案總管視窗，並點兩下 pidgin-2.10.9-offline.exe。(在這個單元中使用的檔案名稱可能不一定與您在自己的電腦上看到的一致。)系統會詢問您是否要允許安裝這個程式。按一下「是」(Yes) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_09.png" /></p>
+<p>畫面上將打開一個小視窗，要求您選擇一種語言。按一下「確定」(OK) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_10.png" /></p>
+<p>畫面上將打開一個視窗，讓您快速瀏覽安裝流程。按一下「下一步」(Next) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_11.png" /></p>
+<p>現在您會看到授權概述。按一下「下一步」(Next) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_12.png" /></p>
+<p>現在您會看到安裝了哪些元件。不要更改設定。按一下「下一步」(Next) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_13.png" /></p>
+<p>現在您會看到 Pidgin 將安裝在哪裡。不要更改這些資訊。按一下「下一步」(Next) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_14.png" /></p>
+<p>現在，您將看到一個捲動文字的視窗，直到它顯示「安裝完成」(Installation Complete)。按一下「下一步」(Next) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_16.png" /></p>
+<p>最後，您會看到 Pidgin 安裝程式的最後一個視窗。按一下「完成」(Finish) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_17.png" /></p>
+</div><div class="field-item even"><a name="6"></a><h2>安裝 pidgin-otr <a class="anchor-link-icon" href="#6">Anchor link</a></h2>
+<p>回到 Windows 檔案總管視窗，打開並點兩下 pidgin-otr-4.0.0-1.exe。系統會詢問您是否要允許安裝這個程式。按一下「是」(Yes) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_18.png" /></p>
+<p>畫面上將打開一個視窗，讓您快速瀏覽安裝流程。按一下「下一步」(Next) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_19.png" /></p>
+<p>現在您會看到授權概述。按一下「我同意」(I Agree) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_20.png" /></p>
+<p>您會看到 pidgin-otr 將安裝在哪裡。不要更改這些資訊。按一下「安裝」(Install) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_21.png" /></p>
+<p>最後，您會看到 pidgin-otr 安裝程式的最後一個視窗。按一下「完成」(Finish) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_22.png" /></p>
+</div><div class="field-item odd"><a name="7"></a><h2>設定 Pidgin <a class="anchor-link-icon" href="#7">Anchor link</a></h2>
+<p>前往開始功能表，按一下 Windows 圖示，然後從功能表中選取 Pidgin。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_23.png" /></p>
+</div><div class="field-item even"><a name="8"></a><h2>新增帳戶 <a class="anchor-link-icon" href="#8">Anchor link</a></h2>
+<p>Pidgin 第一次啟動時，您會看到這個歡迎視窗，讓您可以加入一個帳戶。由於您還沒有設定帳戶，請按一下「新增」(Add) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_24.png" /></p>
+<p>現在您會看到「新增帳戶」(Add Account) 視窗。Pidgin 能夠與許多交談系統共同運作，但我們將著重介紹 <a href="../glossary/xmpp.html" class="glossify-link" data-title="XMPP" title="一項即時通訊的開放標準，Google 在 Google Talk 使用 XMPP；Facebook 曾經支援它，但後來終止。非企業用的獨立即時通訊服務經常使用 XMPP。像 WhatsApp 這樣的服務有專屬、封閉的祕密協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A open standard for instant messages - Google uses XMPP for Google Talk; Facebook used to offer it, but stopped. Non-corporate independent instant messaging services will usually use XMPP. Services like WhatsApp have their own, closed and secret protocol. ">XMPP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，以前稱為 Jabber。</p>
+<p>在<a href="../glossary/protocol.html" class="glossify-link" data-title="Protocol" title="通訊協定是在程式或電腦之間發送資料的一種方式。使用相同協定的軟體程式可以相互交流：因此，網頁瀏覽器和網路伺服器使用相同的協議，稱為「http」。某些協定使用加密來保護其內容。Http 協定的加密版本稱為「https」。另一種用於許多程式的加密協定是 OTR (Off-the-Record)，用於加密即時通訊的協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A communications protocol is a way of sending data between programs or computers. Software programs that use the same protocol can talk to each other: so web browsers and web servers speak the same protocol, called &quot;http&quot;. Some protocols use encryption to protect their contents. The secure version of the http protocol is called &quot;https&quot;. Another example of an encrypted protocol used by many different programs is OTR (Off-the-Record), a protocol for secure instant messaging. ">協定<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> (Protocol) 條目，選取「XMPP」選項。</p>
+<p>在使用者名稱 (Username) 輸入處，輸入您的 XMPP 使用者名稱。</p>
+<p>在網域 (Domain) 輸入處，輸入您的 XMPP 帳戶的網域。</p>
+<p>在<a href="../glossary/password.html" class="glossify-link" data-title="Password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> (Password) 輸入處，輸入您的 XMPP 密碼。</p>
+<p>將「記住密碼」(Remember password) 條目旁的核取方塊勾選起來，將讓您更容易存取帳戶。請注意，按一下「記住密碼」(Remember password) 會將您的密碼保存在電腦上，讓有機會使用您電腦的人存取。如果有這個問題，請不要勾選此方塊。每次啟動 Pidgin 時，您都需要輸入您的 XMPP 帳戶密碼。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_25.png" /></p>
+</div><div class="field-item odd"><a name="9"></a><h2>新增好友 <a class="anchor-link-icon" href="#9">Anchor link</a></h2>
+<p>現在您可能會想新增交談對象。按一下「好友」(Buddies) 功能表，然後選擇「新增好友」(Add Buddy)。「新增好友」(Add Buddy) 視窗將打開。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_26.png" /></p>
+<p>在「新增好友」(Add Buddy) 視窗中，您可以輸入想要交談對象的使用者名稱。這個使用者不一定要來自同一部伺服器，但必須使用相同的<a href="../glossary/protocol.html" class="glossify-link" data-title="protocol" title="通訊協定是在程式或電腦之間發送資料的一種方式。使用相同協定的軟體程式可以相互交流：因此，網頁瀏覽器和網路伺服器使用相同的協議，稱為「http」。某些協定使用加密來保護其內容。Http 協定的加密版本稱為「https」。另一種用於許多程式的加密協定是 OTR (Off-the-Record)，用於加密即時通訊的協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A communications protocol is a way of sending data between programs or computers. Software programs that use the same protocol can talk to each other: so web browsers and web servers speak the same protocol, called &quot;http&quot;. Some protocols use encryption to protect their contents. The secure version of the http protocol is called &quot;https&quot;. Another example of an encrypted protocol used by many different programs is OTR (Off-the-Record), a protocol for secure instant messaging. ">協定<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，如 <a href="../glossary/xmpp.html" class="glossify-link" data-title="XMPP" title="一項即時通訊的開放標準，Google 在 Google Talk 使用 XMPP；Facebook 曾經支援它，但後來終止。非企業用的獨立即時通訊服務經常使用 XMPP。像 WhatsApp 這樣的服務有專屬、封閉的祕密協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A open standard for instant messages - Google uses XMPP for Google Talk; Facebook used to offer it, but stopped. Non-corporate independent instant messaging services will usually use XMPP. Services like WhatsApp have their own, closed and secret protocol. ">XMPP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。</p>
+<p>在「好友的使用者名稱」(Buddy&apos;s username) 條目中，輸入您的好友具有<a href="../glossary/domain-name.html" class="glossify-link" data-title="domain name" title="網站或網際網路服務的位址，例如：ssd.eff.org" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="The address, in words, of a website or Internet service; for example: ssd.eff.org ">網域名稱<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>的使用者名稱。看起來會像一個電子郵件位址。</p>
+<p>在「(選用) 別名」((Optional) Alias) 條目中，可以輸入您為好友選擇的名稱。這完全是選擇性的，但是如果您的聊天對象的 XMPP 帳戶很難記住，這可能會有所幫助。</p>
+<p>按一下「新增」(Add) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_28.png" /></p>
+<p>一旦您按了「新增」(Add) 按鈕，Boris 會收到一則訊息，詢問他是否授權您新增他為好友。一旦 Boris 這麼做，他就會新增您的帳戶，而您也會收到同樣的要求。按一下「授權」(Authorize) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_29.png" /></p>
+</div><div class="field-item even"><a name="10"></a><h2>設定 OTR 外掛程式 <a class="anchor-link-icon" href="#10">Anchor link</a></h2>
+<p>現在您將設定 OTR 外掛程式，以便您可以安全地進行交談。按一下「工具」(Tools) 功能表並選取「外掛程式」(Plugins) 選項。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_30.png" /></p>
+<p>向下捲動到「<a href="../glossary/record.html" class="glossify-link" data-title="Off-the-Record" title="即時通訊系統通常是未加密的。OTR 是一種為即時通訊加入加密機制的概念，讓您可以繼續使用慣用的社群網路 (例如 Facebook 聊天室、Google Chat 或 Hangouts) 但收發的訊息更能抵禦監控。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Instant messaging systems are often unencrypted. OTR is a way of adding encryption to them, so that you can keep using familiar networks like Facebook chat or Google Chat or Hangouts but with your messages more resistant to surveillance. ">不記錄<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>通訊」(Off-the-Record Messaging) 選項，並選取該方塊。按一下「不記錄通訊」(Off-the-Record Messaging) 條目，並按一下「設定外掛程式」(Configure Plugin) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_31.png" /></p>
+<p>現在您將看到「不記錄通訊」(Off-the-Record Messaging) 設定視窗。注意上面寫著「找不到<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>」(No key present)。按一下「產生」(Generate) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_34.png" /></p>
+<p>現在畫面上會打開一個小視窗，並產生一個金鑰。完成後，按一下「確定」(OK) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_32.png" /></p>
+<p>您將看到新的資訊：40 個字元的文字字串，分成 5 組，每組 8 個字元。這就是您的 OTR <a href="../glossary/fingerprint.html" class="glossify-link" data-title="fingerprint" title="公開金鑰密碼學的金鑰是非常大的數字，有時長度可達 1000 位數以上。指紋則是一個小得多的數字或一組數字和字母，可以當作該金鑰的唯一名稱，而不必列出金鑰所有的位數。所以，例如您與一個朋友想要確保你們擁有的金鑰相同，您可以花很長的時間讀出金鑰上的所有位數，也可以分別計算你們的金鑰指紋，並加以比較。加密編譯軟體提供的指紋通常由大約 40 個字母和數字組成。如果經過您仔細檢查，指紋的值正確，那麼應該就不會使用到冒充的假金鑰。一些軟體工具可能提供更方便的替代方法來幫您驗證朋友的金鑰，但是仍然需要進行某些形式的驗證，以防止通訊服務提供商輕易偷聽您的通訊。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="The keys of public key cryptography are very large numbers, sometimes a thousand or more digits long. A fingerprint is a much smaller number or set of numbers and letters that can be used as a unique name for that key, without having to list all of the key's digits.  So, for instance, if you and a friend wished to make sure you both had the same key, you could either spend a long time reading off all the hundreds of digits in the key, or you could each calculate your key's fingerprint and compare those instead. The fingerprints presented by cryptographic software usually consist of around 40 letters and numbers. If you carefully check that a fingerprint has the right value, you should be safe against impersonation using a fake key. Some software tools may offer more convenient alternative ways to verify a friend's key, but some form of verification needs to happen to prevent communications providers from easily being able to listen in.   ">指紋<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。按一下「關閉」(Close) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_35.png" /></p>
+<p>現在按一下外掛程式視窗上的「關閉」(Close) 按鈕。</p>
+</div><div class="field-item odd"><a name="11"></a><h2>安全交談 <a class="anchor-link-icon" href="#11">Anchor link</a></h2>
+<p>您現在可以和 Boris 交談了。你們兩個可以來回發送訊息。但是，我們仍然沒有安全地交談。即使您連線到 <a href="../glossary/xmpp.html" class="glossify-link" data-title="XMPP" title="一項即時通訊的開放標準，Google 在 Google Talk 使用 XMPP；Facebook 曾經支援它，但後來終止。非企業用的獨立即時通訊服務經常使用 XMPP。像 WhatsApp 這樣的服務有專屬、封閉的祕密協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A open standard for instant messages - Google uses XMPP for Google Talk; Facebook used to offer it, but stopped. Non-corporate independent instant messaging services will usually use XMPP. Services like WhatsApp have their own, closed and secret protocol. ">XMPP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 伺服器，您與 Boris 之間的連線仍可能不安全。如果您查看交談視窗，請注意右下角顯示「非私人交談」(Not private) 的紅色字樣。按一下「非私人交談」(Not private) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_36.png" /></p>
+<p>功能表將打開；選取「驗證好友」(Authenticate buddy)。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_37.png" /></p>
+<p>畫面上會打開一個視窗。您會被詢問：「您想如何認證您的朋友？」(How would you like to authenticate your buddy?)</p>
+<p>下拉式功能表有三個選項：</p>
+</div><div class="field-item even"><a name="12"></a><h2>共用祕密 <a class="anchor-link-icon" href="#12">Anchor link</a></h2>
+<p>共用祕密是您與交談對象已經事前同意使用的一行文字。您應該親自共用這一行文字，絕不要藉由電子郵件或 Skype 等不安全管道交換這些資訊。</p>
+<p>您和您的好友需要一起輸入這行文字。按一下「身分驗證」(Authenticate) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_39.png" /></p>
+<p>如果您和您的朋友已經安日後交談，但尚未在您使用的電腦上建立 OTR 指紋，共用祕密驗證將非常有用。這只適用於你們兩個都使用 Pidgin 的情況。</p>
+</div><div class="field-item odd"><a name="13"></a><h2>手動<a href="../glossary/fingerprint.html" class="glossify-link" data-title="Fingerprint" title="公開金鑰密碼學的金鑰是非常大的數字，有時長度可達 1000 位數以上。指紋則是一個小得多的數字或一組數字和字母，可以當作該金鑰的唯一名稱，而不必列出金鑰所有的位數。所以，例如您與一個朋友想要確保你們擁有的金鑰相同，您可以花很長的時間讀出金鑰上的所有位數，也可以分別計算你們的金鑰指紋，並加以比較。加密編譯軟體提供的指紋通常由大約 40 個字母和數字組成。如果經過您仔細檢查，指紋的值正確，那麼應該就不會使用到冒充的假金鑰。一些軟體工具可能提供更方便的替代方法來幫您驗證朋友的金鑰，但是仍然需要進行某些形式的驗證，以防止通訊服務提供商輕易偷聽您的通訊。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="The keys of public key cryptography are very large numbers, sometimes a thousand or more digits long. A fingerprint is a much smaller number or set of numbers and letters that can be used as a unique name for that key, without having to list all of the key's digits.  So, for instance, if you and a friend wished to make sure you both had the same key, you could either spend a long time reading off all the hundreds of digits in the key, or you could each calculate your key's fingerprint and compare those instead. The fingerprints presented by cryptographic software usually consist of around 40 letters and numbers. If you carefully check that a fingerprint has the right value, you should be safe against impersonation using a fake key. Some software tools may offer more convenient alternative ways to verify a friend's key, but some form of verification needs to happen to prevent communications providers from easily being able to listen in.   ">指紋<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>驗證 <a class="anchor-link-icon" href="#13">Anchor link</a></h2>
+<p>如果您已經取得好友的指紋，現在使用 Pidgin 連線，手動指紋驗證會很管用。如果您的好友換了電腦，或者必須建立新的指紋，這將不會有用。</p>
+<p>如果您的指紋和畫面上的指紋相符，請選擇「我有」(I have)，然後按一下「身分驗證」(Authenticate) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_40.png" /></p>
+</div><div class="field-item even"><a name="14"></a><h2>問題和答案 <a class="anchor-link-icon" href="#14">Anchor link</a></h2>
+<p>如果您知道您的好友，，但沒有建立共用祕密，也沒有機會分享指紋，問題和答案驗證會很有用。這個方法對於以您所知道的事物為基礎來建立驗證是很有用的，比如共同經歷的事件或者記憶。這只適用於你們兩個都使用 Pidgin 的情況。</p>
+<p>輸入您想問的問題。不要太簡單，讓別人很容易猜到，但也不要讓它不可能答對。一個好問題會像是「我們在明尼亞波利斯的哪裡吃晚餐？」一個不好的問題會像是「東京買得到蘋果嗎？」</p>
+<p class="warning">答案必須完全相符；因此在選擇問題的答案時，請記住這一點。大小寫也有差別，所以您可以考慮在後面用括弧加註 (例如：使用大寫字母、小寫字母)。</p>
+<p>輸入問題和答案，然後按一下「身分驗證」(Authenticate) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2014/12/05/how_to_use_otr_-_41.png" width="413" height="424" /></p>
+<p>您好友的畫面將會打開一個視窗，顯示必須回答的問題。他們將必須回答並按一下「身分驗證」(Authenticate) 按鈕。然後，他們會收到一則訊息，通知他們身分驗證是否成功。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_42.png" /></p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_43.png" /></p>
+<p>一旦您的好友完成了認證程序，您將會看到一個視窗，讓您知道認證成功。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2014/10/17/authenticatin_buddy.png" /></p>
+<p>您的好友還應該驗證您的帳戶，以便雙方確認通訊是安全的。這就是 Akiko 和 Boris 畫面的樣子。注意聊天視窗右下角的綠色「私人」(Private) 圖示。</p>
+<p><img alt="" src="https://ssd.eff.org/files/field/image/how_to_use_otr_-_47.png" /></p>
+</div><div class="field-item odd"><a name="15"></a><h2>使用其他軟體 <a class="anchor-link-icon" href="#15">Anchor link</a></h2>
+<p>身分驗證機制應該能夠在 Jitsi、Pidgin、Adium 和 Kopete 等不同的交談軟體之間運作。您不需要使用相同的交談軟體，藉由 <a href="../glossary/xmpp.html" class="glossify-link" data-title="XMPP" title="一項即時通訊的開放標準，Google 在 Google Talk 使用 XMPP；Facebook 曾經支援它，但後來終止。非企業用的獨立即時通訊服務經常使用 XMPP。像 WhatsApp 這樣的服務有專屬、封閉的祕密協定。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A open standard for instant messages - Google uses XMPP for Google Talk; Facebook used to offer it, but stopped. Non-corporate independent instant messaging services will usually use XMPP. Services like WhatsApp have their own, closed and secret protocol. ">XMPP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 和 OTR 進行交談，但有時軟體會出錯。Adium 是 OS X 的一款交談軟體，在接收問題和答案驗證時會發生錯誤。如果您在使用問題和答案驗證時，發現驗證他人失敗，請檢查他們是否正在使用 Adium 並看是否可以使用其他驗證方法。</p>
+</div></div></div><div class="field field-name-field-updated field-type-datestamp field-label-inline clearfix container"><div class="field-label">上次查閱：&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single">2015 年 2 月 10 日</span></div></div></div>    </div>
+  </div>
+</div><!-- /.node --></div>
+</div>
+  </div>
+    </section>
+
+      </div>
+  </div><!-- /.container-main --></div>
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div id="eff-footer"><a href="https://www.eff.org/"> <img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</a></div>
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="../about-surveillance-self-defense.html" title="">關於</a></li>
+<li class="leaf"><a href="../credits.html" title="">致謝</a></li>
+<li class="leaf"><a href="https://www.eff.org/policy" title="">隱私權</a></li>
+<li class="last leaf"><a href="https://supporters.eff.org/donate/support-surveillance-self-defense" title="">捐款</a></li>
+</ul>  </div>
+</div>
+  </div><span id="feedback-button" class="feedback-link">提供意見</span> <a href="https://www.eff.org/copyright"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/cc-by-logo.png" alt="Creative Commons" width="60px" /></a></div>
+</footer>
+    <div class="region region-page-bottom">
+    <div id="block-feedback-form">
+  <div class="content"><form class="feedback-form" action="https://ssd.eff.org/en/module/how-use-otr-windows" method="post" id="feedback-form" accept-charset="UTF-8"><div><div class="feedback-help">如果您遇到錯誤，或希望在目前的頁面上看到更多資訊，歡迎留言給我們。</div><div class="form-item form-type-textarea form-item-message">
+  <label for="edit-message">訊息 <span class="form-required" title="必須填寫這一欄。">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="feedback-message form-textarea required" id="edit-message" name="message" cols="20" rows="5"></textarea></div>
+</div>
+<input type="hidden" name="form_build_id" value="form-9gfjH2_JToDBnTRzemy2nyMIRhirH6qq-5ZFX8vW_4k" />
+<input type="hidden" name="form_id" value="feedback_form" />
+<div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">這一欄空下來</label>
+ <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="clearfix form-actions form-wrapper" id="edit-actions"><input type="submit" id="feedback-submit" name="op" value="Send feedback" class="form-submit" /></div></div></form></div>
+</div><a href="../librejs/jslicense.html" rel="jslicense" style="display: none">JavaScript license information</a><div id="piwik-noscript"></div><noscript><img style="position: absolute" src="https://anon-stats.eff.org/js/?idsite=7&amp;rec=1&amp;url=https%3A//ssd.eff.org/en/module/how-use-otr-windows&amp;action_name=How%20to%3A%20Use%20OTR%20for%20Windows%20%7C%20Surveillance%20Self-Defense" width="0" height="0" alt="" /></noscript>
+  </div>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_JIQIryFrENZZCoahKeAoZfR-PUPwkUrxx23RdaZQIuc.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_lMrfy51aI91p2ZAdgpEs4r3pZi-E809QDyWJpbMpnTw.js"></script>
+</body><!-- Mirrored from ssd.eff.org/en/module/how-use-otr-windows by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:01 GMT --></html>

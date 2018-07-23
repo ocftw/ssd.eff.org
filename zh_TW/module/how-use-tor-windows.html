@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!-- Mirrored from ssd.eff.org/en/module/how-use-tor-windows by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:06 GMT --> <!-- Added by HTTrack --><meta charset="UTF-8"><!-- /Added by HTTrack --><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<link href="https://ssd.eff.org/tr/module/nasıl-windows-için-tor-kullanımı" rel="alternate" hreflang="tr" />
+<link href="https://ssd.eff.org/ru/module/руководство-по-использованию-tor-для-windows" rel="alternate" hreflang="ru" />
+<link href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-tor-cho-windows" rel="alternate" hreflang="vi" />
+<link href="https://ssd.eff.org/th/module/วิธีใช้-การใช้-tor-สำหรับ-windows" rel="alternate" hreflang="th" />
+<link rel="shortcut icon" href="https://ssd.eff.org/sites/all/themes/ssd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://ssd.eff.org/fr/module/guide-dutilisation-de-tor-pour-windows" rel="alternate" hreflang="fr" />
+<link href="https://ssd.eff.org/pt-br/module/como-utilizar-o-tor-para-windows" rel="alternate" hreflang="pt-br" />
+<link href="https://ssd.eff.org/ur/module/کیسے-کریں-windowsکیلئے-tor-کا-استعمال" rel="alternate" hreflang="ur" />
+<link href="https://ssd.eff.org/es/module/cómo-usar-tor-en-windows" rel="alternate" hreflang="es" />
+<link href="how-use-tor-windows.html" rel="alternate" hreflang="en" />
+<link href="https://ssd.eff.org/am/module/ለዊንዶውስ-የቶር-አጠቃቀም" rel="alternate" hreflang="am" />
+<link href="https://ssd.eff.org/ar/module/دليل-كيفية-استخدام-تور-tor-في-ويندوز" rel="alternate" hreflang="ar" />
+<meta name="description" content="This guide outlines how to use Tor Browser on Microsoft Windows." />
+<meta name="generator" content="SSD 2.0" />
+<meta name="rights" content="https://www.eff.org/copyright" />
+<link rel="canonical" href="how-use-tor-windows.html" />
+<link rel="shortlink" href="../node/57.html" />
+<meta property="og:site_name" content="Surveillance Self-Defense" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="how-use-tor-windows.html" />
+<meta property="og:title" content="How to: Use Tor for Windows" />
+<meta property="og:description" content="This guide outlines how to use Tor Browser on Microsoft Windows." />
+<meta property="og:updated_time" content="2017-11-13T18:38:16+00:00" />
+<meta property="og:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:secure_url" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eff" />
+<meta name="twitter:site:id" content="4816" />
+<meta name="twitter:creator" content="@eff" />
+<meta name="twitter:creator:id" content="4816" />
+<meta name="twitter:title" content="How to: Use Tor for Windows" />
+<meta name="twitter:url" content="how-use-tor-windows.html" />
+<meta name="twitter:description" content="This guide outlines how to use Tor Browser on Microsoft Windows." />
+<meta property="og:email" content="webmaster@eff.org" />
+<meta name="twitter:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="600" />
+<meta property="article:published_time" content="2014-09-30T00:03:53+00:00" />
+<meta property="article:modified_time" content="2017-11-13T18:38:16+00:00" />
+<meta itemprop="name" content="How to: Use Tor for Windows" />
+<meta itemprop="description" content="This guide outlines how to use Tor Browser on Microsoft Windows." />
+<link rel="author" href="https://www.eff.org/" />
+<link rel="publisher" href="https://www.eff.org/" />
+  <title>如何：在 Windows 上使用 Tor | 監控自我防衛</title>
+  <link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_jBWwBPrUUSUTT1S7JPXLZtvwi6SWCCuAM2rNS_BbhAQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_qNy102qd5puFDZB4pXv-Y4olXgaVtPqDJpgtQ2crDJc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_MbbZcQ11eVzwOVt86Q1weRCAJRNOTv9KxM2ugt9-MMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_rnPwgN250ElmamVJvNixUdfc1f75hY132oo6udFiooA.css" media="print" /><!-- HTML5 element support for IE6-8 --> <!--[if lt IE 9]>
+    <script src="https://ssd.eff.org/sites/all/themes/ssd/js/html5.js"></script>
+  <![endif]--><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @licstart The following is the entire license notice for the JavaScript
+ * code in this page.
+ *
+ * Copyright (C) 2017  Electronic Frontier Foundation.
+ *
+ * The JavaScript code in this page is free software: you can redistribute
+ * it and/or modify it under the terms of the GNU General Public License
+ * (GNU GPL) as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.  The code is
+ * distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU GPL
+ * for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you may
+ * distribute non-source (e.g., minimized or compacted) forms of that code
+ * without the copy of the GNU GPL normally required by section 4, provided
+ * you include this license notice and a URL through which recipients can
+ * access the Corresponding Source.
+ *
+ * @licend The above is the entire license notice for the JavaScript code
+ * in this page.
+ */
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_xJQKh-93t6Ks8GJm9soszpNUAsAaYKkOnU5mMy_QhSQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_hE9uzPFNV1oCLa5WlMpNcyZ6UvNQIeXYHWsdebuffYk.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_0ARywAjY_V1MuwR9GXqUrBBCZ4svbEJdznLS-N_BpqQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_UN1p40dOoc7wyLYAesKTW9NmCzUbZ1d_RKtJHZ57poU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"ssd","theme_token":"__l5CnG3nxqYmreJ4qjzz8cLq4dOARxt3IQPPD7Ag_8","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/raven\/raven.js":1,"sites\/all\/modules\/contrib\/piwik_noscript\/piwik_noscript.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/raven-js\/dist\/raven.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/mytube\/mytube.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/patched\/feedback\/feedback.js":1,"sites\/all\/themes\/ssd\/js\/bootstrap.min.js":1,"sites\/all\/themes\/ssd\/js\/ssd.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mytube\/mytube.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/patched\/feedback\/feedback.css":1,"sites\/all\/themes\/ssd\/css\/style.css":1,"sites\/all\/themes\/ssd\/css\/mobile.css":1,"sites\/all\/themes\/ssd\/css\/print.css":1}},"piwikNoscript":{"image":"\u003Cimg style=\u0022position: absolute\u0022 src=\u0022https:\/\/anon-stats.eff.org\/js\/?idsite=7\u0026amp;rec=1\u0026amp;url=https%3A\/\/ssd.eff.org\/en\/module\/how-use-tor-windows\u0026amp;action_name=\u0026amp;urlref=\u0022 width=\u00220\u0022 height=\u00220\u0022 alt=\u0022\u0022 \/\u003E"},"raven":{"dsn":"https:\/\/0fc3515aa0c54c1ab9a0cbeada04924f@sentry.eff.org\/14","options":{},"user":{"id":0}},"urlIsAjaxTrusted":{"\/en\/searchapi":true,"\/en\/system\/ajax":true,"\/en\/module\/how-use-tor-windows":true},"ajax":{"feedback-submit":{"wrapper":"feedback-form","callback":"feedback_form_ajax_callback","progress":{"type":"throbber","message":""},"event":"mousedown","keypress":true,"prevent":"click","url":"\/en\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send feedback"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-57 node-type-article i18n-en" >
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">跳至主要內容</a></div>
+    <div class="page-wrapper">
+<header id="navbar" role="banner" class="navbar">
+  <div class="container"><!-- EFF Header --><div id="top-eff-header"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</div>
+
+    <div class="search-form-header">
+      <form class="search-form" action="https://ssd.eff.org/en/searchapi" method="GET" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">輸入您的關鍵字</label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="" value="Search" class="form-submit" /></div></div></form>    </div>
+    
+        <div id="language-switcher" class="">
+      <button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".language-switcher-collapse">語言</button> 
+        <div class="region region-language-switcher">
+    <div id="block-locale-language" class="block block-locale">
+    <div class="content language-switcher-collapse collapse" >
+    <ul class="language-switcher-locale-url"><li class="en first active"><a href="how-use-tor-windows.html" class="language-link active" xml:lang="en" hreflang="en">英語</a></li>
+<li class="am"><a href="https://ssd.eff.org/am/module/ለዊንዶውስ-የቶር-አጠቃቀም" class="language-link" xml:lang="am" hreflang="am">阿姆哈拉語</a></li>
+<li class="ar"><a href="https://ssd.eff.org/ar/module/دليل-كيفية-استخدام-تور-tor-في-ويندوز" class="language-link" xml:lang="ar" hreflang="ar">阿拉伯語</a></li>
+<li class="es"><a href="https://ssd.eff.org/es/module/cómo-usar-tor-en-windows" class="language-link" xml:lang="es" hreflang="es">西班牙語</a></li>
+<li class="fr"><a href="https://ssd.eff.org/fr/module/guide-dutilisation-de-tor-pour-windows" class="language-link" xml:lang="fr" hreflang="fr">法語</a></li>
+<li class="ru"><a href="https://ssd.eff.org/ru/module/руководство-по-использованию-tor-для-windows" class="language-link" xml:lang="ru" hreflang="ru">俄語</a></li>
+<li class="tr"><a href="https://ssd.eff.org/tr/module/nasıl-windows-için-tor-kullanımı" class="language-link" xml:lang="tr" hreflang="tr">土耳其語</a></li>
+<li class="vi"><a href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-tor-cho-windows" class="language-link" xml:lang="vi" hreflang="vi">越南語</a></li>
+<li class="pt-br"><a href="https://ssd.eff.org/pt-br/module/como-utilizar-o-tor-para-windows" class="language-link" xml:lang="pt-br" hreflang="pt-br">葡萄牙語</a></li>
+<li class="th"><a href="https://ssd.eff.org/th/module/วิธีใช้-การใช้-tor-สำหรับ-windows" class="language-link" xml:lang="th" hreflang="th">泰語</a></li>
+<li class="ur last"><a href="https://ssd.eff.org/ur/module/کیسے-کریں-windowsکیلئے-tor-کا-استعمال" class="language-link" xml:lang="ur" hreflang="ur">烏爾都語</a></li>
+</ul>  </div>
+</div>
+  </div>
+     </div><!-- .btn-navbar is used as the toggle for collapsed navbar content --><button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".navbar-collapse">功能表</button>
+  </div> 
+</header>
+<header id="nav-expanded">
+  <div class="container">
+    <div class="row">
+              <div class="navbar-collapse collapse">
+          <nav role="navigation">
+                          <ul class="menu nav navbar-nav nav-primary"><li class="first leaf"><a href="../index-2.html">索引</a></li>
+<li class="leaf"><a href="../blog.html">部落格</a></li>
+<li class="leaf"><a href="../about-surveillance-self-defense.html">關於</a></li>
+<li class="leaf"><a href="../contact.html" title="">聯絡我們</a></li>
+<li class="leaf"><a href="../glossary.html" title="">詞彙表</a></li>
+<li class="last leaf"><a href="../credits.html" title="">致謝</a></li>
+</ul>                                              </nav>
+        </div>
+          </div>
+   </div>
+</header>
+<header role="banner" id="page-header" class="container">
+
+      <div id ="top-logo">
+      <div id="top-logo-inner"><a class="logo" href="https://ssd.eff.org/en" title="Home"> <img src="https://ssd.eff.org/sites/all/themes/ssd/logo.png" alt="Home" class="img-responsive" /> </a></div>
+    </div>
+    
+  
+  
+        
+</header><!-- /#page-header --><div class="container-main clearfix">
+  
+  <div class=" ">
+
+    
+    <section class="container-full-width"><a id="main-content"></a><div class="header-graphic">
+            <div class="field field-name-field-module-graphic field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://ssd.eff.org/files/styles/module_icon_page_header/public/tutorials-b_0.png?itok=CVEi0W83" width="145" height="145" alt="" /></div></div></div>          </div>
+                          
+                  <div class="container">
+        
+        <h1 class="page-header">如何：在 Windows 上使用 Tor</h1>
+
+                  </div>
+        
+                                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-57" class="node node-article clearfix">
+
+  
+        
+    
+  
+  <div class="content">
+    <div class="container">
+              <div class="field-summary">
+          <p>本指引簡略介紹如何在 Microsoft Windows 上使用 <a href="https://www.torproject.org/projects/torbrowser.html.en" rel="noreferrer">Tor 瀏覽器</a>。</p>
+        </div>
+      
+              <div class="field-metadata">
+          <div class="field field-name-field-metadata field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>電腦需求</strong>：網際網路連線，運行 Windows 7 或更新版本的電腦</p>
+<p><strong>本指引中使用的版本</strong>：</p>
+<ul><li>Windows 10 版本 1703</li>
+<li>Tor 瀏覽器：7.0.2</li>
+</ul><p><strong>授權</strong>：自由軟體；各種自由軟體授權</p>
+<p><strong>其他閱讀資訊</strong>：</p>
+<ul><li><a href="https://www.torproject.org/docs/documentation.html.en" rel="noreferrer">https://www.torproject.org/docs/documentation.html.en</a></li>
+<li><a href="https://www.eff.org/pages/tor-and-https">https://www.eff.org/pages/tor-and-https</a></li>
+<li><a href="https://tor.stackexchange.com/" rel="noreferrer">&nbsp;https://tor.stackexchange.com/</a></li>
+</ul><p><strong>級別</strong>：初級至中級</p>
+<p><strong>所需時間</strong>：15-30 分鐘</p>
+</div></div></div>        </div>
+          </div>
+    <div class="wrap-module-sections">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><a name="0"></a><h2>什麼是 Tor？<a class="anchor-link-icon" href="#0">Anchor link</a></h2>
+<p>Tor 是一項由志工運作的服務，藉由掩蓋您的身分和連線目的地，提供線上隱私和匿名服務。該服務還可以保護您不受 Tor 網路本身的侵害：您可以確保對其他 Tor 使用者保持匿名。</p>
+<p>對於在瀏覽網站時可能需要偶爾匿名和隱私的人，Tor 瀏覽器提供了一種使用 Tor 網路的快速、便捷方式。</p>
+<p>Tor 瀏覽器的運作方式就像<a href="../glossary/web-browser.html" class="glossify-link" title="您用來在網際網路上瀏覽網站的程式。Firefox、Safari、Internet Explorer 和 Chrome 都是網頁瀏覽器。智慧型手機也有同樣用途的內建網頁瀏覽器應用程式。">網頁瀏覽器<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>一樣。網頁瀏覽器是您用來瀏覽網站的程式，像是 Chrome、Firefox 和 Safari。與其他瀏覽器不同的是，Tor 瀏覽器使用 Tor 發送您的通訊，這讓監控您的人很難知道您在網路上做了些什麼，而監控您所使用網站的人更難以得知您是從哪裡連線的。</p>
+<p class="warning">請記得，只有在 Tor 瀏覽器內進行的活動才會匿名。在您的電腦上安裝 Tor 瀏覽器，並不會讓您在同一部電腦上使用其他軟體 (例如您的一般網頁瀏覽器) 時匿名。</p>
+</div><div class="field-item odd"><a name="1"></a><h2>取得 Tor 瀏覽器 <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p>打開 Firefox、Chrome、Internet Explorer 或 Microsoft Edge 等瀏覽器，然後在網址列輸入：</p>
+<p><a href="https://www.torproject.org/download/download-easy.html.en" rel="noreferrer">https://www.torproject.org/download/download-easy.html.en</a></p>
+<p>如果您是使用搜尋引擎來查找 Tor 瀏覽器，請確認 URL 正確。</p>
+<p class="warning">不要使用任何其他來源，並且如果系統提示您接受其他 <a href="../glossary/https.html" class="glossify-link" title="如果您曾經看過像是「http://www.example.com/」的網址，那麼您就會認出其中的「http」。HTTP (超文本傳輸協定) 是您的設備上的網頁瀏覽器與遠端網路伺服器通訊的方式。不幸的是，標準的 http 以不安全的方式透過網際網路發送文本。HTTPS (S 代表「安全」) 使用加密技術，為您發送給網站以及網站發送給您的資料提供更佳的保護，不被有心人士窺探。">HTTPS<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a> (SSL/TLS) 安全性憑證，請勿繼續。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows1.png" width="642" height="502" /></p>
+<p>該網站會檢測您的<a href="../glossary/operating-system.html" class="glossify-link" title="在電腦上運行所有其他應用程式的應用程式。Windows、Android 和 Apple 的 OS X 與 iOS 都是作業系統。">作業系統<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>，讓您取得適用於 Windows 的檔案。如果紫色按鈕失效，您可以點擊按鈕旁邊的連結，下載正確的版本。</p>
+<p>有些瀏覽器會要求您確認是否要下載此檔案。Microsoft Edge 在瀏覽器視窗底部顯示一個進度條。對於任何瀏覽器，最好在繼續之前先儲存檔案。點擊儲存 (Save) 按鈕。</p>
+<p>此範例畫面為 Tor 瀏覽器 7.0.2 版，是撰寫本指引時的最新版本。在您閱讀本文時，可能會有更新版本的 Tor 瀏覽器可供下載，請下載並使用 Tor 計畫提供的最新版本。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows2.png" width="663" height="518" /></p>
+</div><div class="field-item even"><a name="2"></a><h2>安裝 Tor 瀏覽器 <a class="anchor-link-icon" href="#2">Anchor link</a></h2>
+<p>下載完成後，您可以選擇打開下載檔案的檔案夾。預設位置是 Downloads 檔案夾。在「torbrowser-install-7.0.2_en-US」檔案上點兩下。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows3.png" width="660" height="348" /></p>
+<p>在 Tor 瀏覽器安裝程式上點兩下後，會打開一個視窗，警告軟體的來源。您應該一直認真看待這些警告，並確保您信任要安裝的軟體，並且以安全連線從官方網站獲得正確的檔案。既然您已經知道您想要什麼，也知道從哪裡獲得軟體，檔案是從 Tor 計畫的安全 <a href="../glossary/https.html" class="glossify-link" title="如果您曾經看過像是「http://www.example.com/」的網址，那麼您就會認出其中的「http」。HTTP (超文本傳輸協定) 是您的設備上的網頁瀏覽器與遠端網路伺服器通訊的方式。不幸的是，標準的 http 以不安全的方式透過網際網路發送文本。HTTPS (S 代表「安全」) 使用加密技術，為您發送給網站以及網站發送給您的資料提供更佳的保護，不被有心人士窺探。">HTTPS<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a> 網站下載的，點擊執行 (Run)。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows4.png" width="682" height="557" /></p>
+<p>一個小視窗會開啟，詢問您想使用於 Tor 瀏覽器的語言，有幾種語言可供選擇。選擇你想要的語言，然後點擊確定 (OK) 按鈕。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows5.png" width="433" height="231" /></p>
+<p>您會看到一個新的視窗，告訴您會在哪裡安裝 Tor 瀏覽器。預設位置是您的桌面。如果有需要，您可以將其更改為不同的位置，但現在使用預設值即可。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows6.png" width="663" height="516" /></p>
+<p>當您看到一個視窗，說明您已完成安裝過程時，安裝就完成了。如果您點擊完成 (Finish) 按鈕，Tor 瀏覽器會立即啟動，而「啟動 Tor 瀏覽器」(Start Tor Browser) 捷徑會加到開始功能表及桌面。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows7.png" width="658" height="512" /></p>
+</div><div class="field-item odd"><a name="3"></a><h2>使用 Tor 瀏覽器 <a class="anchor-link-icon" href="#3">Anchor link</a></h2>
+<p>Tor 瀏覽器首次啟動時，您會看到一個視窗，讓您視需要修改某些設定。您可能必須回來更改一些配置，但請先點擊「連線」(Connect) 按鈕嘗試連接 Tor 網路。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows8.png" width="660" height="565" /></p>
+<p>一個帶有綠色進度條的新視窗會開啟，顯示 Tor 瀏覽器正在連至 Tor 網路。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows9.png" width="685" height="430" /></p>
+<p>Tor 瀏覽器首次啟動時，可能需要一段時間；請耐心等待，在一、兩分鐘內，Tor 瀏覽器就會打開並恭喜您。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows10.png" width="660" height="517" /></p>
+<p>點擊 Tor 瀏覽器左上方的 Tor Onion 圖示，然後點擊隱私和安全設置 (Privacy and Security Settings)。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows11.png" width="672" height="526" /></p>
+<p>普通<a href="../glossary/web-browser.html" class="glossify-link" title="您用來在網際網路上瀏覽網站的程式。Firefox、Safari、Internet Explorer 和 Chrome 都是網頁瀏覽器。智慧型手機也有同樣用途的內建網頁瀏覽器應用程式。">網頁瀏覽器<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>的一些功能可能讓您容易受到攔截式攻擊。其他功能以前有漏洞，洩漏了使用者的身分。將安全滑桿設為高設置，會停用這些功能。這會讓您防備資金充沛的攻擊者時安全得多，這些攻擊者可能會干擾您的網際網路連線，或在這些功能中使用新的未知錯誤。然而關閉這些功能可能會讓一些網站無法使用。預設的低設置對於日常的隱私保護已經足夠，但是如果您擔心狡猾的攻擊者，或者如果您不介意某些網站顯示不正確，可以將其設置為高。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows12.png" width="658" height="535" /></p>
+<p>最後，使用 Tor 瀏覽器與一般瀏覽體驗有所不同。我們建議您先閱讀<a href="https://www.torproject.org/download/download-easy.html.en#warning" rel="noreferrer">這些提示</a>，以正確使用 Tor 瀏覽並保有匿名性。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2017/09/05/torforwindows13.png" width="663" height="518" /></p>
+<p>現在您已經準備好用 Tor 匿名瀏覽網際網路了。</p>
+</div></div></div><div class="field field-name-field-updated field-type-datestamp field-label-inline clearfix container"><div class="field-label">上次查閱：&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single">2017 年 9 月 5 日</span></div></div></div>    </div>
+  </div>
+</div><!-- /.node --></div>
+</div>
+  </div>
+    </section>
+
+      </div>
+  </div><!-- /.container-main --></div>
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div id="eff-footer"><a href="https://www.eff.org/"> <img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</a></div>
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="../about-surveillance-self-defense.html" title="">關於</a></li>
+<li class="leaf"><a href="../credits.html" title="">致謝</a></li>
+<li class="leaf"><a href="https://www.eff.org/policy" title="">隱私權</a></li>
+<li class="last leaf"><a href="https://supporters.eff.org/donate/support-surveillance-self-defense" title="">捐款</a></li>
+</ul>  </div>
+</div>
+  </div><span id="feedback-button" class="feedback-link">提供意見</span> <a href="https://www.eff.org/copyright"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/cc-by-logo.png" alt="Creative Commons" width="60px" /></a></div>
+</footer>
+    <div class="region region-page-bottom">
+    <div id="block-feedback-form">
+  <div class="content"><form class="feedback-form" action="https://ssd.eff.org/en/module/how-use-tor-windows" method="post" id="feedback-form" accept-charset="UTF-8"><div><div class="feedback-help">如果您遇到錯誤，或希望在目前的頁面上看到更多資訊，歡迎留言給我們。</div><div class="form-item form-type-textarea form-item-message">
+  <label for="edit-message">訊息 <span class="form-required" title="必須填寫這一欄。">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="feedback-message form-textarea required" id="edit-message" name="message" cols="20" rows="5"></textarea></div>
+</div>
+<input type="hidden" name="form_build_id" value="form-7Xrl0PiUKd9IcVWyoUAhAHvT1cWZoCvcm6IzJ7tsz_c" />
+<input type="hidden" name="form_id" value="feedback_form" />
+<div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">這一欄空下來</label>
+ <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="clearfix form-actions form-wrapper" id="edit-actions"><input type="submit" id="feedback-submit" name="op" value="Send feedback" class="form-submit" /></div></div></form></div>
+</div><a href="../librejs/jslicense.html" rel="jslicense" style="display: none">JavaScript license information</a><div id="piwik-noscript"></div><noscript><img style="position: absolute" src="https://anon-stats.eff.org/js/?idsite=7&amp;rec=1&amp;url=https%3A//ssd.eff.org/en/module/how-use-tor-windows&amp;action_name=How%20to%3A%20Use%20Tor%20for%20Windows%20%7C%20Surveillance%20Self-Defense" width="0" height="0" alt="" /></noscript>
+  </div>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_JIQIryFrENZZCoahKeAoZfR-PUPwkUrxx23RdaZQIuc.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_lMrfy51aI91p2ZAdgpEs4r3pZi-E809QDyWJpbMpnTw.js"></script>
+</body><!-- Mirrored from ssd.eff.org/en/module/how-use-tor-windows by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:07 GMT --></html>

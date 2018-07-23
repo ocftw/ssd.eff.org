@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!-- Mirrored from ssd.eff.org/en/module/how-use-pgp-mac-os-x by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:02 GMT --> <!-- Added by HTTrack --><meta charset="UTF-8"><!-- /Added by HTTrack --><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<link href="https://ssd.eff.org/tr/module/nasıl-mac-os-x-için-pgp-kullanımı" rel="alternate" hreflang="tr" />
+<link href="https://ssd.eff.org/ru/module/руководство-по-pgp-для-mac" rel="alternate" hreflang="ru" />
+<link href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-pgp-trên-mac-os-x" rel="alternate" hreflang="vi" />
+<link href="https://ssd.eff.org/th/module/วิธีการ-ใช้งาน-pgp-สำหรับ-mac-os-x" rel="alternate" hreflang="th" />
+<link rel="shortcut icon" href="https://ssd.eff.org/sites/all/themes/ssd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://ssd.eff.org/fr/module/pgp-sous-mac-os-x-le-ba-ba" rel="alternate" hreflang="fr" />
+<link href="https://ssd.eff.org/pt-br/module/como-utilizar-pgp-para-mac-os-x" rel="alternate" hreflang="pt-br" />
+<link href="https://ssd.eff.org/ur/module/کس-طرح-کریں-mac-os-x-کے-لیے-pgp-کا-استعمال" rel="alternate" hreflang="ur" />
+<link href="https://ssd.eff.org/es/module/cómo-usar-pgp-para-mac-os-x" rel="alternate" hreflang="es" />
+<link href="how-use-pgp-mac-os-x.html" rel="alternate" hreflang="en" />
+<link href="https://ssd.eff.org/am/module/ለማክ-os-x-የpgp-አጠቃቀም" rel="alternate" hreflang="am" />
+<link href="https://ssd.eff.org/ar/module/كيفية-استخدام-pgp-على-أجهزة-ماك" rel="alternate" hreflang="ar" />
+<meta name="description" content="To use PGP to exchange secure emails you have to bring together three programs: GnuPG, Mozilla Thunderbird and Enigmail. GnuPG is the program that actually encrypts and decrypts the content of your mail, Mozilla Thunderbird is an email client that allows you to read and write emails without using a browser, and Enigmail is an add-on to Mozilla Thunderbird that ties it all together. What this guide teaches is how to use PGP with Mozilla Thunderbird, an email client program that performs a similar function to Outlook. You may have your own favorite email software program (or use a web mail service like Gmail or Outlook.com). This guide won&#039;t tell you how to use PGP with these programs. You can choose either to install Thunderbird and experiment with PGP with a new email client, or you can investigate other solutions to use PGP with your customary software. We have still not found a satisfactory solution for these other programs. Using PGP doesn&#039;t completely encrypt your email so that the sender and receiver information is encrypted. Encrypting the sender and receiver information would break email. What using Mozilla Thunderbird with the Enigmail add-on gives you is an easy way to encrypt the content of your email. You will first download all the software needed, install it, and then end with configuration and how to use the result." />
+<meta name="generator" content="SSD 2.0" />
+<meta name="rights" content="https://www.eff.org/copyright" />
+<link rel="canonical" href="how-use-pgp-mac-os-x.html" />
+<link rel="shortlink" href="../node/60.html" />
+<meta property="og:site_name" content="Surveillance Self-Defense" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="how-use-pgp-mac-os-x.html" />
+<meta property="og:title" content="How to: Use PGP for Mac OS X" />
+<meta property="og:description" content="To use PGP to exchange secure emails you have to bring together three programs: GnuPG, Mozilla Thunderbird and Enigmail. GnuPG is the program that actually encrypts and decrypts the content of your mail, Mozilla Thunderbird is an email client that allows you to read and write emails without using a browser, and Enigmail is an add-on to Mozilla Thunderbird that ties it all together. What this guide teaches is how to use PGP with Mozilla Thunderbird, an email client program that performs a similar function to Outlook. You may have your own favorite email software program (or use a web mail service like Gmail or Outlook.com). This guide won&#039;t tell you how to use PGP with these programs. You can choose either to install Thunderbird and experiment with PGP with a new email client, or you can investigate other solutions to use PGP with your customary software. We have still not found a satisfactory solution for these other programs. Using PGP doesn&#039;t completely encrypt your email so that the sender and receiver information is encrypted. Encrypting the sender and receiver information would break email. What using Mozilla Thunderbird with the Enigmail add-on gives you is an easy way to encrypt the content of your email. You will first download all the software needed, install it, and then end with configuration and how to use the result." />
+<meta property="og:updated_time" content="2017-05-12T20:46:48+00:00" />
+<meta property="og:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:secure_url" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eff" />
+<meta name="twitter:site:id" content="4816" />
+<meta name="twitter:creator" content="@eff" />
+<meta name="twitter:creator:id" content="4816" />
+<meta name="twitter:title" content="How to: Use PGP for Mac OS X" />
+<meta name="twitter:url" content="how-use-pgp-mac-os-x.html" />
+<meta name="twitter:description" content="To use PGP to exchange secure emails you have to bring together three programs: GnuPG, Mozilla Thunderbird and Enigmail. GnuPG is the program that actually encrypts and decrypts the content of your mail, Mozilla Thunderbird is an email client that allows you to read and write emails without using a browser, and Enigmail is an add-on to Mozilla Thunderbird that ties it all together. What this guide teaches is how to use PGP with Mozilla Thunderbird, an email client program that performs a similar function to Outlook. You may have your own favorite email software program (or use a web mail service like Gmail or Outlook.com). This guide won&#039;t tell you how to use PGP with these programs. You can choose either to install Thunderbird and experiment with PGP with a new email client, or you can investigate other solutions to use PGP with your customary software. We have still not found a satisfactory solution for these other programs. Using PGP doesn&#039;t completely encrypt your email so that the sender and receiver information is encrypted. Encrypting the sender and receiver information would break email. What using Mozilla Thunderbird with the Enigmail add-on gives you is an easy way to encrypt the content of your email. You will first download all the software needed, install it, and then end with configuration and how to use the result." />
+<meta property="og:email" content="webmaster@eff.org" />
+<meta name="twitter:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="600" />
+<meta property="article:published_time" content="2014-09-30T00:08:03+00:00" />
+<meta property="article:modified_time" content="2017-05-12T20:46:48+00:00" />
+<meta itemprop="name" content="How to: Use PGP for Mac OS X" />
+<meta itemprop="description" content="To use PGP to exchange secure emails you have to bring together three programs: GnuPG, Mozilla Thunderbird and Enigmail. GnuPG is the program that actually encrypts and decrypts the content of your mail, Mozilla Thunderbird is an email client that allows you to read and write emails without using a browser, and Enigmail is an add-on to Mozilla Thunderbird that ties it all together. What this guide teaches is how to use PGP with Mozilla Thunderbird, an email client program that performs a similar function to Outlook. You may have your own favorite email software program (or use a web mail service like Gmail or Outlook.com). This guide won&#039;t tell you how to use PGP with these programs. You can choose either to install Thunderbird and experiment with PGP with a new email client, or you can investigate other solutions to use PGP with your customary software. We have still not found a satisfactory solution for these other programs. Using PGP doesn&#039;t completely encrypt your email so that the sender and receiver information is encrypted. Encrypting the sender and receiver information would break email. What using Mozilla Thunderbird with the Enigmail add-on gives you is an easy way to encrypt the content of your email. You will first download all the software needed, install it, and then end with configuration and how to use the result." />
+<link rel="author" href="https://www.eff.org/" />
+<link rel="publisher" href="https://www.eff.org/" />
+  <title>如何：在 Mac OS X 上使用 PGP | 監控自我防衛</title>
+  <link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_jBWwBPrUUSUTT1S7JPXLZtvwi6SWCCuAM2rNS_BbhAQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_qNy102qd5puFDZB4pXv-Y4olXgaVtPqDJpgtQ2crDJc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_MbbZcQ11eVzwOVt86Q1weRCAJRNOTv9KxM2ugt9-MMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_rnPwgN250ElmamVJvNixUdfc1f75hY132oo6udFiooA.css" media="print" /><!-- HTML5 element support for IE6-8 --> <!--[if lt IE 9]>
+    <script src="https://ssd.eff.org/sites/all/themes/ssd/js/html5.js"></script>
+  <![endif]--><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @licstart The following is the entire license notice for the JavaScript
+ * code in this page.
+ *
+ * Copyright (C) 2017  Electronic Frontier Foundation.
+ *
+ * The JavaScript code in this page is free software: you can redistribute
+ * it and/or modify it under the terms of the GNU General Public License
+ * (GNU GPL) as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.  The code is
+ * distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU GPL
+ * for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you may
+ * distribute non-source (e.g., minimized or compacted) forms of that code
+ * without the copy of the GNU GPL normally required by section 4, provided
+ * you include this license notice and a URL through which recipients can
+ * access the Corresponding Source.
+ *
+ * @licend The above is the entire license notice for the JavaScript code
+ * in this page.
+ */
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_xJQKh-93t6Ks8GJm9soszpNUAsAaYKkOnU5mMy_QhSQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_hE9uzPFNV1oCLa5WlMpNcyZ6UvNQIeXYHWsdebuffYk.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_0ARywAjY_V1MuwR9GXqUrBBCZ4svbEJdznLS-N_BpqQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_UN1p40dOoc7wyLYAesKTW9NmCzUbZ1d_RKtJHZ57poU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"ssd","theme_token":"ng_9uCK47xv6mdYjVLOIvy5vZjYZTMd4K3swoANrTsE","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/raven\/raven.js":1,"sites\/all\/modules\/contrib\/piwik_noscript\/piwik_noscript.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/raven-js\/dist\/raven.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/mytube\/mytube.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/patched\/feedback\/feedback.js":1,"sites\/all\/themes\/ssd\/js\/bootstrap.min.js":1,"sites\/all\/themes\/ssd\/js\/ssd.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mytube\/mytube.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/patched\/feedback\/feedback.css":1,"sites\/all\/themes\/ssd\/css\/style.css":1,"sites\/all\/themes\/ssd\/css\/mobile.css":1,"sites\/all\/themes\/ssd\/css\/print.css":1}},"piwikNoscript":{"image":"\u003Cimg style=\u0022position: absolute\u0022 src=\u0022https:\/\/anon-stats.eff.org\/js\/?idsite=7\u0026amp;rec=1\u0026amp;url=https%3A\/\/ssd.eff.org\/en\/module\/how-use-pgp-mac-os-x\u0026amp;action_name=\u0026amp;urlref=\u0022 width=\u00220\u0022 height=\u00220\u0022 alt=\u0022\u0022 \/\u003E"},"raven":{"dsn":"https:\/\/0fc3515aa0c54c1ab9a0cbeada04924f@sentry.eff.org\/14","options":{},"user":{"id":0}},"urlIsAjaxTrusted":{"\/en\/searchapi":true,"\/en\/system\/ajax":true,"\/en\/module\/how-use-pgp-mac-os-x":true},"ajax":{"feedback-submit":{"wrapper":"feedback-form","callback":"feedback_form_ajax_callback","progress":{"type":"throbber","message":""},"event":"mousedown","keypress":true,"prevent":"click","url":"\/en\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send feedback"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-60 node-type-article i18n-en" >
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">跳至主要內容</a></div>
+    <div class="page-wrapper">
+<header id="navbar" role="banner" class="navbar">
+  <div class="container"><!-- EFF Header --><div id="top-eff-header"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</div>
+
+    <div class="search-form-header">
+      <form class="search-form" action="https://ssd.eff.org/en/searchapi" method="GET" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">輸入您的關鍵字</label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="" value="Search" class="form-submit" /></div></div></form>    </div>
+    
+        <div id="language-switcher" class="">
+      <button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".language-switcher-collapse">語言</button> 
+        <div class="region region-language-switcher">
+    <div id="block-locale-language" class="block block-locale">
+    <div class="content language-switcher-collapse collapse" >
+    <ul class="language-switcher-locale-url"><li class="en first active"><a href="how-use-pgp-mac-os-x.html" class="language-link active" xml:lang="en" hreflang="en">英語</a></li>
+<li class="am"><a href="https://ssd.eff.org/am/module/ለማክ-os-x-የpgp-አጠቃቀም" class="language-link" xml:lang="am" hreflang="am">阿姆哈拉語</a></li>
+<li class="ar"><a href="https://ssd.eff.org/ar/module/كيفية-استخدام-pgp-على-أجهزة-ماك" class="language-link" xml:lang="ar" hreflang="ar">阿拉伯語</a></li>
+<li class="es"><a href="https://ssd.eff.org/es/module/cómo-usar-pgp-para-mac-os-x" class="language-link" xml:lang="es" hreflang="es">西班牙語</a></li>
+<li class="fr"><a href="https://ssd.eff.org/fr/module/pgp-sous-mac-os-x-le-ba-ba" class="language-link" xml:lang="fr" hreflang="fr">法語</a></li>
+<li class="ru"><a href="https://ssd.eff.org/ru/module/руководство-по-pgp-для-mac" class="language-link" xml:lang="ru" hreflang="ru">俄語</a></li>
+<li class="tr"><a href="https://ssd.eff.org/tr/module/nasıl-mac-os-x-için-pgp-kullanımı" class="language-link" xml:lang="tr" hreflang="tr">土耳其語</a></li>
+<li class="vi"><a href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-pgp-trên-mac-os-x" class="language-link" xml:lang="vi" hreflang="vi">越南語</a></li>
+<li class="pt-br"><a href="https://ssd.eff.org/pt-br/module/como-utilizar-pgp-para-mac-os-x" class="language-link" xml:lang="pt-br" hreflang="pt-br">葡萄牙語</a></li>
+<li class="th"><a href="https://ssd.eff.org/th/module/วิธีการ-ใช้งาน-pgp-สำหรับ-mac-os-x" class="language-link" xml:lang="th" hreflang="th">泰語</a></li>
+<li class="ur last"><a href="https://ssd.eff.org/ur/module/کس-طرح-کریں-mac-os-x-کے-لیے-pgp-کا-استعمال" class="language-link" xml:lang="ur" hreflang="ur">烏爾都語</a></li>
+</ul>  </div>
+</div>
+  </div>
+     </div><!-- .btn-navbar is used as the toggle for collapsed navbar content --><button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".navbar-collapse">功能表</button>
+  </div> 
+</header>
+<header id="nav-expanded">
+  <div class="container">
+    <div class="row">
+              <div class="navbar-collapse collapse">
+          <nav role="navigation">
+                          <ul class="menu nav navbar-nav nav-primary"><li class="first leaf"><a href="../index-2.html">索引</a></li>
+<li class="leaf"><a href="../blog.html">部落格</a></li>
+<li class="leaf"><a href="../about-surveillance-self-defense.html">關於</a></li>
+<li class="leaf"><a href="../contact.html" title="">聯絡我們</a></li>
+<li class="leaf"><a href="../glossary.html" title="">詞彙表</a></li>
+<li class="last leaf"><a href="../credits.html" title="">致謝</a></li>
+</ul>                                              </nav>
+        </div>
+          </div>
+   </div>
+</header>
+<header role="banner" id="page-header" class="container">
+
+      <div id ="top-logo">
+      <div id="top-logo-inner"><a class="logo" href="https://ssd.eff.org/en" title="Home"> <img src="https://ssd.eff.org/sites/all/themes/ssd/logo.png" alt="Home" class="img-responsive" /> </a></div>
+    </div>
+    
+  
+  
+        
+</header><!-- /#page-header --><div class="container-main clearfix">
+  
+  <div class=" ">
+
+    
+    <section class="container-full-width"><a id="main-content"></a><div class="header-graphic">
+            <div class="field field-name-field-module-graphic field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://ssd.eff.org/files/styles/module_icon_page_header/public/tutorials-b_0.png?itok=CVEi0W83" width="145" height="145" alt="" /></div></div></div>          </div>
+                          
+                  <div class="container">
+        
+        <h1 class="page-header">如何：在 Mac OS X 上使用 PGP</h1>
+
+                  </div>
+        
+                                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-60" class="node node-article clearfix">
+
+  
+        
+    
+  
+  <div class="content">
+    <div class="container">
+              <div class="field-summary">
+          <p>要使用 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 交換加密電子郵件，您必須結合三個程式：GnuPG、Mozilla Thunderbird 和 Enigmail。GnuPG 是實際加密和解密郵件內容的程式，Mozilla Thunderbird 是一個電子郵件用戶端，讓您在不使用瀏覽器的情況下讀寫電子郵件，而 Enigmail 是一個 Mozilla Thunderbird 的<a href="../glossary/add.html" class="glossify-link" data-title="add-on" title="一種軟體，可以更改其他應用程式的運作方式或功能。通常附加元件可以為網路瀏覽器或電子郵件軟體提供隱私或安全功能，然而有些附加元件則是惡意程式，所以務必小心，只從聲譽可靠的正式來源取得附加元件。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A piece of software that modifies another software application, changing how it works or what it can do. Often add-ons can add privacy or security features to web browsers or email software. Some add-ons are malware, so be careful to install only those that are reputable and from official sources. ">附加元件<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，將三個程式串連在一起。</p>
+<p>本指引教導的是如何在 Mozilla Thunderbird 中使用 PGP，這是一個與 Outlook 執行類似功能的電子郵件用戶端程式。您可能擁有自己喜歡的電子郵件軟體程式 (或使用 Gmail 或 Outlook.com 等網路郵件服務)。本指引不會教您如何在這些程式使用 PGP。您可以選擇安裝 Thunderbird 並試用 PGP，也可以尋找其他解決方案來在您習慣的軟體上使用 PGP。對於這些程式，我們還沒有找到一個令人滿意的解決方案。</p>
+<p class="warning">使用 PGP 不會完全<a href="../glossary/encrypt.html" class="glossify-link" data-title="encrypt" title="將加密技術應用在任何類型的資訊或通訊上。這麼做會將資訊或通訊以數學方式轉換，讓它看起來不具任何意義，但只要有人或裝置持有正確的祕密金鑰，就能將它回覆到原本的形式。這樣就限制了存取訊息的權限，因為只要沒有正確的祕密金鑰，應該不可能將加密逆轉，回復原本的資訊。加密技術是構成密碼學領域的幾項技術之一。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="To apply encryption technology to any sort of information or communication. This transforms the information or communication mathematically so that it seems meaningless, but can still be restored to its original form by a person or device that possesses the right secret key. This limits who can access the information because without the right secret key, it should be impossible to reverse the encryption and recover the original information. Encryption is one of several technologies that make up the field called cryptography. ">加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>您的電子郵件，將寄件人和收件人資訊加密。將寄件人和收件人資訊加密會毀損電子郵件。使用 Mozilla Thunderbird 和 Enigmail 附加元件可以讓您輕鬆加密電子郵件的內容。</p>
+<p>您首先要下載所有需要的軟體、進行安裝，然後進行配置以及學習如何使用結果。</p>
+        </div>
+      
+              <div class="field-metadata">
+          <div class="field field-name-field-metadata field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>電腦需求</strong>：網際網路連線，運行 Mac OS X 的電腦，電子郵件帳戶</p>
+<p><strong>下載位置</strong>：</p>
+<ul><li><a href="https://www.enigmail.net/home/index.php" rel="noreferrer">Enigmail</a></li>
+<li><a href="https://gnupg.org/" rel="noreferrer">GnuPG</a></li>
+<li><a href="https://www.mozilla.org/en-US/thunderbird/" rel="noreferrer">Mozilla Thunderbird</a></li>
+</ul><p><strong>本指引中使用的版本</strong>：Mac OS X：10.11；Mozilla Thunderbird 45.2.0；Enigmail 1.9；GnuPG 2.1.11</p>
+<p><strong>授權</strong>：自由軟體；各種自由軟體授權</p>
+<p><strong>其他閱讀資訊</strong>：</p>
+<ul><li><a href="introduction-public-key-cryptography-and-pgp.html">公開金鑰加密和 PGP 金鑰驗證簡介</a></li>
+<li><a href="creating-strong-passwords.html">建立強式密碼</a></li>
+<li><a href="animated-overview-how-make-super-secure-password-using-dice.html">動畫概述：如何使用骰子製作一組超安全的密碼</a></li>
+<li><a href="animated-overview-using-password-managers-stay-safe-online.html">動畫概述：使用密碼管理工具，維持線上安全</a></li>
+</ul><p><strong>級別</strong>：初級至中級</p>
+<p><strong>所需時間</strong>：30-60 分鐘</p>
+</div></div></div>        </div>
+          </div>
+    <div class="wrap-module-sections">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>優良保密協定 (<a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP <img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>) 是一種保護您的電子郵件通訊，除了預期的收件人，不會被其他人閱讀的方式。它可以防止公司、政府或犯罪分子監視您的網際網路連線，並能在儲存電子郵件的電腦遭竊或入侵時，保護電子郵件不被讀取。</p>
+<p>它也可以用來證明一封電子郵件來自特定的某人，而非另一個寄件人發送的假訊息 (否則電子郵件很容易假造)。如果您成為監控或誤導的目標，這些都是重要的防禦措施。</p>
+<p>要使用 PGP，您需要安裝一些額外的軟體，這些軟體將與您當前的電子郵件程式共同運作。您還需要建立一個私密<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，將其保持私密。您將用私密金鑰來<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>發送給您的電子郵件，並對您發送的電子郵件進行數位簽章，以證明其確實由您寄出。最後，您將學習如何散布您的公開金鑰，這是一小段資訊，其他人在向您發送加密郵件之前，需要知道這段資訊，並且可以用來驗證您發送的電子郵件。</p>
+</div><div class="field-item odd"><a name="1"></a><h2>取得和安裝 GnuPG <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p>您可以從 <a href="https://gnupg.org/download/index.html#sec-1-2" rel="noreferrer">GnuPG 下載頁面</a>下載小型安裝程式，取得 Mac OS X 版 GnuPG (又稱為 GPG)。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/00.png" width="741" height="609" /></p>
+<p align="left"><em>按一下</em>「GnuPG 現代版簡易安裝程式」(Simple installer for GnuPG modern) 旁邊的 Mac OS X 版 GnuPG (GnuPG for OS X)，將下載 GPG 安裝程式。</p>
+<p align="left"><img alt="" src="https://ssd.eff.org/files/2016/08/16/01a.png" width="822" height="691" /></p>
+<p>您將被轉往 SourceForge 下載網站。</p><a name="1"></a><h2>取得 Mozilla Thunderbird <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p>前往 <a href="https://www.mozilla.org/en-US/thunderbird/" rel="noreferrer">Mozilla Thunderbird 網站</a></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/01.png" width="746" height="615" /></p>
+<p align="left"><em>按一下寫著「免費下載」(Free Download) 的綠色按鈕。</em>Mozilla Thunderbird 網站將偵測您的偏好使用語言。如果您想以其他語言使用 Thunderbird，請按一下「系統和語言」(Systems &amp; Languages) 連結，然後從中進行選擇。</p><a name="1"></a><h2>安裝 GnuPG <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/02.png" width="326" height="291" /></p>
+<p><em>按一下</em> Dock 中的<em>下載 (Download) 圖示</em>，然後<em>按一下 GnuPG-2.11-002.dmg 檔案</em>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/03.png" width="385" height="134" /></p>
+<p>畫面上會出現一個視窗，顯示您的進度。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/04.png" width="777" height="443" /></p>
+<p>畫面上將打開一個視窗，概述說明安裝檔案和其他檔案。<em>按一下「</em><em>Install.pkg</em><em>」</em><em>圖示</em><em>。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/05.png" width="626" height="447" /></p>
+<p>接下來，畫面上將打開一個視窗，開始引導安裝。<em>按</em><em>一下</em><em>「繼續」(Continue)</em> <em>按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/06.png" width="626" height="445" /></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/07.png" width="450" height="241" /></p>
+<p>GnuPG 為系統軟體封裝，安裝時需要您的使用者名稱和<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。<em>輸入您的密碼，然後按一下「安裝軟體」(Install Software)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/08.png" width="628" height="447" /></p>
+<p>您會看到一個視窗，寫著「安裝成功」(The installation was successful)。按<em>一下</em><em>「關閉」(Close)</em> <em>按鈕</em>。</p>
+</div><div class="field-item even"><a name="2"></a><h2>安裝 Mozilla Thunderbird <a class="anchor-link-icon" href="#2">Anchor link</a></h2>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/02.png" width="326" height="291" /></p>
+<p><em>按一下 Dock 中的下載 (Download) 圖示</em>，然後<em>按一下</em> <em>Thunderbird 45.2.0</em><em>.dmg 檔案</em>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/09.png" width="386" height="137" /></p>
+<p>畫面上會出現一個視窗，顯示您的進度。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/10.png" width="422" height="345" /></p>
+<p>畫面上會出現一個有 Thunderbird 圖示和連往您的 Application 檔案夾連結的視窗。將 Thunderbird 拖曳到 Applications 檔案夾中。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/11.png" width="408" height="77" /></p>
+<p>畫面上會出現一個帶有進度條的視窗，完成後視窗會關閉。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/12.png" width="92" height="213" /></p>
+<p>務必退出掛載的 DMG 檔案。</p>
+</div><div class="field-item odd"><a name="3"></a><h2>準備 Enigmail 安裝 <a class="anchor-link-icon" href="#3">Anchor link</a></h2>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/13.png" width="779" height="445" /></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/14.png" width="491" height="170" /></p>
+<p>Mozilla Thunderbird 第一次啟動時，Mac OS X 會詢問您是否確定要開啟它。Mozilla Thunderbird 是從 mozilla.org 下載的，應該是安全的，<em>按一下「開啟」(Open) 按鈕</em> 。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/15.png" width="431" height="167" /></p>
+<p>Mozilla Thunderbird 可以與 Mac OS X address book 整合，我們將此選擇留給您。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/16.png" width="339" height="200" /></p>
+<p>Mozilla Thunderbird 第一次啟動時，您會看到這個小小的確認視窗，詢問一些預設設定。<em>我們建議按一下「設為預設值」(Set as Default) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/17.png" width="651" height="489" /></p>
+<p>Mozilla Thunderbird 第一次次啟動時，系統會詢問您是否需要新增電子郵件位址<em>。按一下「跳過並使用我現有的電子郵件」(Skip this and use my existing email) 按鈕</em>。現在您將設定讓 Mozilla Thunderbird 來接收和發送電子郵件。如果您習慣藉由 gmail.com、outlook.com 或 yahoo.com 閱讀和發送電子郵件，那麼 Mozilla Thunderbird 將是一種全新的體驗，但總體來說差異不大。</p><a name="3"></a><h2>新增郵件帳戶至 Mozilla Thunderbird <a class="anchor-link-icon" href="#3">Anchor link</a></h2>
+<p>畫面上會打開一個新視窗：</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/18.png" width="543" height="393" /></p>
+<p>輸入您的名字、電子郵件位址和電子郵件帳戶的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。Mozilla 無法存取您的密碼或電子郵件帳戶。<em>按一下「繼續」(Continue) 按鈕。</em></p>
+<p>多數情況下，Mozilla Thunderbird 會自動檢測必要的設定。</p>
+<p>某些情況下，Mozilla Thunderbird 沒有完整的資訊，您需要自行輸入。以下是 Google 為 Gmail 提供的說明範例：</p>
+<ul><li>內送郵件 (IMAP) 伺服器 - 需要 SSL<ul><li>imap.gmail.com</li>
+<li>通訊埠：993</li>
+<li>需要 SSL：是</li>
+</ul></li>
+<li>外寄郵件 (SMTP) 伺服器 - 需要 TLS<ul><li>smtp.gmail.com</li>
+<li>通訊埠：465 或 587</li>
+<li>需要 SSL：是</li>
+<li>需要認證：是</li>
+<li>使用與內送郵件伺服器相同的設定</li>
+</ul></li>
+<li>&nbsp;全名或顯示名稱：[您的名字或<a href="../glossary/pseudonym.html" class="glossify-link" data-title="pseudonym" title="一個您選擇在某些情況下 (例如線上論壇) 使用的名字，其他人可能會認出這個名字，但不會連結到您平常生活中其他人用來認識您的名字。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A name that you choose to use in some context (like an online forum) and that others may come to recognize, but that isn’t connected to names that people know you by in your day-to-day life. ">假名<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>]</li>
+<li>帳戶名稱或使用者名稱：您的完整 Gmail 位址 (<a href="mailto:username@gmail.com" rel="noreferrer noreferrer">username@gmail.com</a>)。Google Apps 使用者請輸入 <a href="mailto:username@your_domain.com" rel="noreferrer noreferrer">username@your_domain.com</a></li>
+<li>電子郵件位址：您的完整 Gmail 位址 (<a href="mailto:username@gmail.com" rel="noreferrer noreferrer">username@gmail.com</a>) Google Apps 使用者，請輸入 <a href="mailto:username@your_domain.com" rel="noreferrer noreferrer">username@your_domain.com</a></li>
+<li>密碼：您的 Gmail 密碼</li>
+</ul><p class="warning">如果您在 Google 使用<a href="../glossary/two-factor-authentication.html" class="glossify-link" data-title="two-factor authentication" title="「您知道的東西，和您擁有的東西。」只需要使用者名稱及密碼的登入系統在有人可以獲得 (或猜到) 這些資訊的時候，就暴露在遭到侵入的風險之中。提供雙因素驗證的服務則是要求您進行一個分開的確認手續，以證明您就是您說的那個人。第二個因素可能是單次性的祕密代碼，以在行動裝置上運行的程式產生的數字，或者一項您所攜帶、可以用來確認您身分的裝置。像銀行這樣的公司，以及 Google、Paypal 和 Twitter 等主要的網際網路服務現在都提供了雙因素驗證。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="&quot;Something you know, and something you have.&quot; Login systems that require only a username and password risk being broken when someone else can obtain (or guess) those pieces of information. Services that offer two-factor authentication also require you to provide a separate confirmation that you are who you say you are. The second factor could be a one-off secret code, a number generated by a program running on a mobile device, or a device that you carry and that you can use to confirm who you are. Companies like banks, and major internet services like Google, Paypal and Twitter now offer two-factor authentication. ">雙因素驗證<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> (而且根據您的<a href="../glossary/threat-model.html" class="glossify-link" data-title="threat model" title="一種限制範圍的思考方式，僅考量想要用來保護資料的防護類型。要防範所有類型的詭計或攻擊者是不可能的，所以您應該專注思考哪些人可能想要您的資料，他們想要從中獲得什麼，以及可能使用的方式。研擬一系列可能遭受的攻擊並加以防範，就稱為威脅模型。一旦建立起威脅模型，就可以進行風險分析。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A way of narrowly thinking about the sorts of protection you want for your data. It's impossible to protect against every kind of trick or attacker, so you should concentrate on which people might want your data, what they might want from it, and how they might get it. Coming up with a set of possible attacks you plan to protect against is called threat modeling. Once you have a threat model, you can conduct a risk analysis. ">威脅模型<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，您可能應該使用！)，則您不能在 Thunderbird 上使用標準 Gmail 密碼，而需要為 Thunderbird 建立一個新的應用程式專用密碼，才能存取您的 Gmail 帳戶。請參閱 <a href="https://support.google.com/mail/answer/185833?hl=en&amp;rd=1" rel="noreferrer noreferrer">Google 的指引</a>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/19.png" width="792" height="391" /></p>
+<p>所有資訊正確輸入後，<em>按一下「完成」(Done) 按鈕。</em></p>
+<p>Mozilla Thunderbird 將開始下載您的電子郵件副本到您的電腦。<em>嘗試發送</em><em>測試郵件給您的</em><em>朋友。</em></p>
+</div><div class="field-item even"><a name="4"></a><h2>安裝 Enigmail <a class="anchor-link-icon" href="#4">Anchor link</a></h2>
+<p>Enigmail 的安裝方式與 Mozilla Thunderbird 和 GnuPG 不同。如前所述，Enigmail 是一個 Mozilla Thunderbird 的<a href="../glossary/add.html" class="glossify-link" data-title="Add-on" title="一種軟體，可以更改其他應用程式的運作方式或功能。通常附加元件可以為網路瀏覽器或電子郵件軟體提供隱私或安全功能，然而有些附加元件則是惡意程式，所以務必小心，只從聲譽可靠的正式來源取得附加元件。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A piece of software that modifies another software application, changing how it works or what it can do. Often add-ons can add privacy or security features to web browsers or email software. Some add-ons are malware, so be careful to install only those that are reputable and from official sources. ">附加元件<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。<em>按一下「功能表按鈕」(又叫漢堡按鈕)，然後選擇「附加元件」。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/21.png" width="298" height="252" /></p>
+<p>您會前往一個附加元件管理工具 (Add-ons Manager) 分頁。在「附加元件」(Add-on) 搜尋欄位中輸入「Enigmail」，在 Mozilla 附加元件網站上查找 Enigmail。<img alt="" src="https://ssd.eff.org/files/2016/08/16/23.png" width="1034" height="337" /></p>
+<p>Enigmail 將是第一個選項。<em>按一下「安裝」(Install) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/24.png" width="1029" height="331" /></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/25.png" width="1035" height="357" /></p>
+<p>安裝 Enigmail 附加元件後，Mozilla Thunderbird 將要求重新啟動瀏覽器來啟用 Enigmail。<em>按一下「立即重新啟動」(Restart Now) 按鈕，Mozilla Thunderbird 將重新啟動</em>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/26.png" width="708" height="528" /></p>
+<p>Mozilla Thunderbird 重新啟動時，會打開一個額外的視窗，開始設定 Enigmail 附加元件的流程。<em>保持選擇「立即開始安裝」(Start setup now) 按鈕，然後按一下「繼續」(Continue) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/27.png" width="710" height="531" /></p>
+<p>我們認為 Enigmail 的「標準配置」(standard configuration) 選項是個不錯的選擇。<em>按一下「繼續」(Continue) 按鈕</em>。</p>
+<p>現在，您將開始建立您的<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">私密金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>和公開金鑰。</p>
+</div><div class="field-item odd"><a name="5"></a><h2>建立<a href="../glossary/key.html" class="glossify-link" data-title="Key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">公開金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>和私密金鑰 <a class="anchor-link-icon" href="#5">Anchor link</a></h2>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/28.png" width="708" height="530" /></p>
+<p>除非您已經設定了多個電子郵件帳戶，否則 Enigmail 將選擇您已經設定的電子郵件帳戶。您需要做的第一件事，是為您的私密金鑰提供一個<a href="creating-strong-passwords.html">複雜密碼</a>。</p>
+<p><em>按一下「繼續」(Continue) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/29.png" width="708" height="529" /></p>
+<p class="tip">您的金鑰將在某個時間到期；發生這種情況時，其他人將不再完全使用它來寄送新的電子郵件給您，雖然您可能完全不會收到警告或原因的解釋。所以，您可能要在日曆上註記，並在到期日期前一個月左右注意這個問題。</p>
+<p>可以給現有金鑰一個新的、較晚的到期日期來延長使用壽命，或者可以重新建立一個新金鑰來取代它。這兩種流程可能需要聯繫發送電子郵件給您的人，並確保他們獲得更新的金鑰；目前的軟體對於將這一點自動化的效果不是很好。所以請提醒您自己；如果您不認為自己做得到，那麼可以考慮將金鑰設置為永不過期，儘管在這種情況下，其他人可能會在將來與您聯繫時嘗試使用它，即使您不再擁有私密金鑰或不再使用 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。</p>
+<p>Enigmail 會產生金鑰，完成後會打開一個小視窗，要求您產生一個<a href="../glossary/revocation-certificate.html" class="glossify-link" data-title="revocation certificate" title="如果您遺失了一個祕密金鑰，或者它不再祕密了，會發生什麼事？您可以產生撤銷憑證，宣布您不再信任該金鑰。在您還保有祕密金鑰時，就應該產生這個憑證，以備不時之需。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="What happens if you lose access to a secret key, or it stops being secret? A revocation certificate is a file that you can generate that announces that you no longer trust that key. You generate it when you still have the secret key, and keep it for any future disaster. ">撤銷憑證<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。這個撤銷憑證非常重要，因為它可讓您使私密金鑰和公開金鑰失效。需要注意的是，僅僅刪除私密金鑰不會使公開金鑰失效，並可能導致其他人向您發送的加密郵件無法<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。<em>按一下「產生憑證」(Generate Certificate) 按鈕</em>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/30.png" width="546" height="207" /></p>
+<p>首先您必須提供建立 PGP 金鑰時使用的<a href="../glossary/passphrase.html" class="glossify-link" data-title="passphrase" title="複雜密碼是密碼的一種。我們用「複雜密碼」(passphrase) 來表達密碼 (password) 是一個過短的「單詞」，不足以保護您，而長一點的「詞組」就好得多。網路漫畫 XKCD 有個很好的解釋。http://xkcd.com/936/" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A passphrase is a kind of password. We use &quot;passphrase&quot; to convey the idea that a password which is a single word is far too short to protect you and a longer phrase is much better. The webcomic XKCD has a good explanation. http://xkcd.com/936/ ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/31.png" width="429" height="228" /></p>
+<p>畫面上將打開一個視窗，為您提供一個保存撤銷憑證的地方。雖然可以將檔案儲存到電腦上，我們建議將儲存在您沒有用在其他地方的 USB 隨身碟上，並將隨身碟存放在安全的地方。我們還建議從有金鑰的電腦中刪除撤銷憑證，以避免意外撤銷。更好的辦法是把這個檔案保存在加密磁碟上。選擇您要保存該檔案的位置，然後<em>按一下「儲存」(Save) 按鈕</em>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/32.png" width="705" height="527" /></p>
+<p>現在 Enigmail 會提供更多關於保存撤銷憑證檔案的資訊。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/33.png" width="707" height="529" /></p>
+<p>現在您產生了私密金鑰和公開金鑰。<em>按一下「完成」(Done) 按鈕。</em></p>
+</div><div class="field-item even"><a name="6"></a><h2>選用設定步驟 <a class="anchor-link-icon" href="#6">Anchor link</a></h2>
+<h3>顯示指紋和<a href="../glossary/key.html" class="glossify-link" data-title="Key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>效期</h3>
+<p>接下來的步驟是完全自由選用的，但在使用 OpenPGP 和 Enigmail 時可能會有幫助。簡而言之，金鑰 ID 是<a href="../glossary/fingerprint.html" class="glossify-link" data-title="fingerprint" title="公開金鑰密碼學的金鑰是非常大的數字，有時長度可達 1000 位數以上。指紋則是一個小得多的數字或一組數字和字母，可以當作該金鑰的唯一名稱，而不必列出金鑰所有的位數。所以，例如您與一個朋友想要確保你們擁有的金鑰相同，您可以花很長的時間讀出金鑰上的所有位數，也可以分別計算你們的金鑰指紋，並加以比較。加密編譯軟體提供的指紋通常由大約 40 個字母和數字組成。如果經過您仔細檢查，指紋的值正確，那麼應該就不會使用到冒充的假金鑰。一些軟體工具可能提供更方便的替代方法來幫您驗證朋友的金鑰，但是仍然需要進行某些形式的驗證，以防止通訊服務提供商輕易偷聽您的通訊。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="The keys of public key cryptography are very large numbers, sometimes a thousand or more digits long. A fingerprint is a much smaller number or set of numbers and letters that can be used as a unique name for that key, without having to list all of the key's digits.  So, for instance, if you and a friend wished to make sure you both had the same key, you could either spend a long time reading off all the hundreds of digits in the key, or you could each calculate your key's fingerprint and compare those instead. The fingerprints presented by cryptographic software usually consist of around 40 letters and numbers. If you carefully check that a fingerprint has the right value, you should be safe against impersonation using a fake key. Some software tools may offer more convenient alternative ways to verify a friend's key, but some form of verification needs to happen to prevent communications providers from easily being able to listen in.   ">指紋的<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>一小部分。要驗證公開金鑰是否屬於某個人時，指紋是最好的方法。更改預設顯示可以更容易讀取您所知道的憑證指紋。<em>按一下設置按鈕，然後按一下 Enigmail 選項，再按金鑰管理 (Key Management)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/34.png" width="489" height="270" /></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/35.png" width="707" height="458" /></p>
+<p>畫面上會出現一個顯示兩欄的視窗：名稱和金鑰 ID。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/36.png" width="208" height="180" /><img alt="" src="https://ssd.eff.org/files/2016/08/16/36a.png" width="206" height="177" /></p>
+<p>在最右邊有一個小按鈕。<em>按一下該按鈕來設置各欄。</em><em>取消選擇金鑰 ID (Key ID) 選項，然後按一下指紋 (Fingerprint) 選項和金鑰效期 (Key Validity) 選項。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/37.png" width="706" height="117" /></p>
+<p>現在會有三列：名稱、金鑰效期和指紋。</p>
+</div><div class="field-item odd"><a name="7"></a><h2>尋找其他使用 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 的人 <a class="anchor-link-icon" href="#7">Anchor link</a></h2>
+<h3>以電子郵件取得<a href="../glossary/key.html" class="glossify-link" data-title="Key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">公開金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a></h3>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/38.png" width="826" height="342" /></p>
+<p>您可能會收到以電子郵件附件發送給您的公開金鑰。<em>按一下「匯入金鑰」(Import Key)</em> 按鈕。</p>
+<h3><img alt="" src="https://ssd.eff.org/files/2016/08/16/39.png" width="399" height="135" /></h3>
+<p>一個小視窗會打開，要求您確認匯入 PGP 金鑰。<em>按一下「是」(Yes) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/40.png" width="277" height="241" /></p>
+<p>一個新的視窗將打開，顯示匯入的結果。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/41.png" width="823" height="341" /></p>
+<p>如果您重新載入原始電子郵件，您會看到電子郵件的列已更改。</p>
+<p>如果您再次打開 Enigmail 金鑰管理視窗，可以檢查結果。您的 PGP 金鑰以粗體顯示，因為您同時擁有私密金鑰和公開金鑰。您剛匯入的公開金鑰不是粗體，因為它不包含私密金鑰。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/41a.png" width="707" height="127" /></p>
+<h3>以檔案取得公開金鑰</h3>
+<p>您可能從網站上下載公開金鑰，或藉由聊天軟體收到他人發送的公開金鑰。在這種情況下，我們假設您將檔案下載到 Downloads 檔案夾。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/37.png" width="706" height="117" /></p>
+<p>打開 Enigmail 金鑰管理工具。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/42.png" width="437" height="201" /></p>
+<p><em>按一下「檔案」(File) 功能表。選擇「從檔案匯入金鑰」(Import Keys from File)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/43.png" width="713" height="467" /></p>
+<p>選擇公開金鑰，它可能會有各種的副檔名，例如 .asc、.pgp 或 .gpg。<em>按一下「開啟」(Open) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/39.png" width="399" height="135" /></p>
+<p>一個小視窗會打開，要求您確認匯入 PGP 金鑰。<em>按一下「是」(Yes) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/40.png" width="277" height="241" /></p>
+<p>一個新的視窗將打開，顯示匯入的結果。<em>按一下「確定」(OK) 按鈕。</em></p>
+<h3>以 URL 取得公開金鑰</h3>
+<p>可以直接從 URL 下載公開金鑰</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/48.png" width="444" height="398" /></p>
+<p>打開 Enigmail 金鑰管理工具，<em>然後按一下「編輯」(Edit) 功能表。選擇「從 URL 匯入金鑰」(Import Keys from URL)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/49.png" width="345" height="172" /></p>
+<p>輸入 URL。該 URL 可以有幾種形式。大多數情況下，這可能是一個以檔案為結尾的<a href="../glossary/domain-name.html" class="glossify-link" data-title="domain name" title="網站或網際網路服務的位址，例如：ssd.eff.org" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="The address, in words, of a website or Internet service; for example: ssd.eff.org ">網域名稱<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。</p>
+<p>一旦您的網址正確，<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/39.png" width="399" height="135" /></p>
+<p>一個小視窗會打開，要求您確認匯入 PGP 金鑰。<em>按一下「是」(Yes) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/40.png" width="277" height="241" /></p>
+<p>一個新的視窗將打開，顯示匯入的結果。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p class="tip">如果您看看 <a href="https://www.eff.org/about/staff">https://www.eff.org/about/staff</a>，會發現員工照片下的「PGP Key」連結。例如，Danny O&apos;Brien 的 PGP 金鑰可以在以下網址找到：<a href="https://www.eff.org/files/pubkeydanny.txt">https://www.eff.org/files/pubkeydanny.txt</a>。</p>
+<h3>以金鑰伺服器取得公開金鑰</h3>
+<p>金鑰伺服器可以是取得公開金鑰的實用方式。嘗試尋找一個公開金鑰。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/50.png" width="551" height="141" /></p>
+<p>從金鑰管理介面<em>按一下「金鑰伺服器」(Keyserver)</em> 功能表並<em>選取「搜尋金鑰」(Search for Keys)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/51.png" width="309" height="151" /></p>
+<p>畫面上會打開一個有搜尋欄位的小視窗。您可以使用完整的電子郵件位址、部分電子郵件位址或名稱進行搜尋。在這種情況下，您將搜尋包含「<a href="mailto:samir@samirnassar.com" rel="noreferrer">samir@samirnassar.com</a>」的金鑰。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/52.png" width="649" height="454" /></p>
+<p>畫面上會打開一個有很多選項的較大視窗。如果向下捲動，您會注意到一些金鑰是灰色斜體字。這些是已經被撤銷或過期的金鑰。</p>
+<p>Samir Nassar 有幾個 PGP 金鑰，我們還不知道要選擇哪一個。一個金鑰是灰色斜體字，這表示它已被撤銷。因為我們不知道要使用哪一個，所以把它們全部匯入。<em>按一下左邊的方塊選擇金鑰，然後按下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/53.png" width="754" height="268" /></p>
+<p>畫面上會打開一個小的通知視窗，讓您知道匯入是否成功。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p>Enigmail 金鑰管理工具現在將向您顯示新增的金鑰：</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/54.png" width="708" height="167" /></p>
+<p>請注意，三個匯入的金鑰中有一個已過期，一個已撤銷，另一個目前是有效金鑰。</p>
+</div><div class="field-item even"><a name="8"></a><h2>讓別人知道您正在使用 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> <a class="anchor-link-icon" href="#8">Anchor link</a></h2>
+<p>現在您已經擁有了 PGP，您想讓別人知道您正在使用它，所以他們也可以使用 PGP 給您發送加密的訊息。</p>
+<p>使用 PGP 不會完全<a href="../glossary/encrypt.html" class="glossify-link" data-title="encrypt" title="將加密技術應用在任何類型的資訊或通訊上。這麼做會將資訊或通訊以數學方式轉換，讓它看起來不具任何意義，但只要有人或裝置持有正確的祕密金鑰，就能將它回覆到原本的形式。這樣就限制了存取訊息的權限，因為只要沒有正確的祕密金鑰，應該不可能將加密逆轉，回復原本的資訊。加密技術是構成密碼學領域的幾項技術之一。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="To apply encryption technology to any sort of information or communication. This transforms the information or communication mathematically so that it seems meaningless, but can still be restored to its original form by a person or device that possesses the right secret key. This limits who can access the information because without the right secret key, it should be impossible to reverse the encryption and recover the original information. Encryption is one of several technologies that make up the field called cryptography. ">加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>您的電子郵件，將寄件人和收件人資訊加密。將寄件人和收件人資訊加密會毀損電子郵件。使用 Mozilla Thunderbird 和 Enigmail <a href="../glossary/add.html" class="glossify-link" data-title="add-on" title="一種軟體，可以更改其他應用程式的運作方式或功能。通常附加元件可以為網路瀏覽器或電子郵件軟體提供隱私或安全功能，然而有些附加元件則是惡意程式，所以務必小心，只從聲譽可靠的正式來源取得附加元件。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A piece of software that modifies another software application, changing how it works or what it can do. Often add-ons can add privacy or security features to web browsers or email software. Some add-ons are malware, so be careful to install only those that are reputable and from official sources. ">附加元件<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>可以讓您輕鬆加密和<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>電子郵件的內容。</p>
+<p>讓我們看看告訴別人您在使用 PGP 的三種不同方式。</p>
+<h3>讓別人知道您正在用電子郵件使用 PGP</h3>
+<p>您可以很容易地將您的公開<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>副本以電子郵件附件方式發送給他人。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/55.png" width="384" height="79" /></p>
+<p><em>按一下 Mozilla Thunderbird 中的「Write」(撰寫) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/56.png" width="871" height="720" /></p>
+<p>填寫一個位址和主題，或許是我的「我的公開金鑰」，按一下「附加我的公開金鑰」(Attach My Public Key) 按鈕。如果您已經為要接收 PGP 金鑰的人匯入了 PGP 金鑰，則 Enigmail 欄中的鎖頭圖示將會醒目顯示。此外，您還可以按一下鉛筆圖示對電子郵件進行簽章，為收件人提供一種驗證電子郵件真實性的方法。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/57.png" width="357" height="136" /></p>
+<p>畫面上將打開一個視窗，詢問您是否忘記加入附件。這是 Enigmail 和 Mozilla Thunderbird 之間互動的一個錯誤，但不要擔心，您的公開金鑰會附加進去。<em>按一下「不，立即發送」(No, Send Now) 按鈕。</em></p>
+<h3>讓別人知道您在您的網站上使用 PGP</h3>
+<p>除了電子郵件之外，您還可以在您的網站上公佈您的公開金鑰。最簡單的方法是上傳檔案並將它連結到網站。本指南不會說明如何執行這些操作，但是您應該知道如何將金鑰匯出為檔案供日後使用。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/37.png" width="706" height="117" /></p>
+<p><em>按一下設置按鈕，然後按一下 Enigmail 選項，再按金鑰管理 (Key Management)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/58.png" width="326" height="418" /></p>
+<p><em>選取粗體顯示的金鑰，然後按一下右鍵以顯示功能表，並選擇將金鑰匯出至檔案 (Export Keys To File)。</em></p><a name="8"></a><h2><img alt="" src="https://ssd.eff.org/files/2016/08/16/59.png" width="546" height="98" /> <a class="anchor-link-icon" href="#8">Anchor link</a></h2>
+<p>畫面上會打開一個有三個按鈕的小視窗。<em>按一下「僅匯出公開金鑰」(Export Public Keys Only) 按鈕</em>。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/60.png" width="432" height="231" /></p>
+<p>畫面上將打開一個視窗，讓您可以儲存該檔案。為使以後更容易找到檔案，請儲存到「文件」(Documents) 檔案夾中。現在您可以視需要使用這個檔案。</p>
+<p class="warning">注意不要按「匯出祕密金鑰」(Export Secret Keys) 按鈕，因為如果有人能夠猜出您的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，則匯出祕密金鑰可能會讓其他人可以冒充您。</p>
+<h3>上傳到金鑰伺服器</h3>
+<p>金鑰伺服器讓搜尋和下載他人的公開金鑰變得更容易。大多數的現代金鑰伺服器正在進行同步，這表示上傳到一部伺服器的公開金鑰，最後會到達所有伺服器。</p>
+<p>雖然將公開金鑰上傳到金鑰伺服器可能是告知他人您擁有公開 PGP 憑證的一種便利方式，但您應該知道，由於金鑰伺服器的運作方式，公開金鑰上傳後無法刪除。</p>
+<p class="tip">在將公開金鑰上傳到金鑰伺服器之前，建議您花點時間考慮是否希望讓全世界知道您擁有公開憑證，而無法在日後刪除這些資訊。</p>
+<p>如果您選擇將公開金鑰上傳到金鑰伺服器，您將返回到 Enigmail 金鑰管理視窗。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/58.png" width="326" height="418" /></p>
+<p>用滑鼠右鍵按一下您的 PGP 金鑰，然後選擇「將公開金鑰上傳到金鑰伺服器」(Upload Public Keys to Keyserver) 選項。</p><a name="8"></a><h2>發送 PGP 加密郵件 <a class="anchor-link-icon" href="#8">Anchor link</a></h2>
+<p>現在您將發送您的第一封加密電子郵件給收件人。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/55.png" width="384" height="79" /></p>
+<p>在 Mozilla Thunderbird 主視窗中<em>按一下「Write」(撰寫) 按鈕</em>。畫面上會打開一個新視窗。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/63a.png" width="595" height="382" /></p>
+<p>寫下您的訊息，然後輸入收件人。在此次測試，請選擇您已經擁有其公開金鑰的收件人。Enigmail 會檢測到，並自動加密電子郵件。</p>
+<p class="warning">主旨列不會被加密，所以寫一些無傷大雅的東西，例如「您好」。</p>
+<p>電子郵件的正文會加密和轉換。例如，上面的文字將轉換成如下所示：<img alt="" src="https://ssd.eff.org/files/2014/10/13/290pgpmessage.png" /></p>
+</div><div class="field-item odd"><a name="9"></a><h2>接收 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 加密郵件 <a class="anchor-link-icon" href="#9">Anchor link</a></h2>
+<p>讓我們來看看收到加密郵件時，會發生什麼事。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/63.png" width="1035" height="267" /></p>
+<p>請注意，Mozilla Thunderbird 會告訴您收到新的郵件。<em>按一下訊息。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/64.png" width="546" height="211" /></p>
+<p>一個小視窗會打開，要求您輸入 PGP <a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。記得：不要輸入您的電子郵件密碼。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/65.png" width="826" height="382" /></p>
+<p>現在訊息將解密顯示。</p>
+</div><div class="field-item even"><a name="10"></a><h2>撤銷 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> <a href="../glossary/key.html" class="glossify-link" data-title="Key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> <a class="anchor-link-icon" href="#10">Anchor link</a></h2>
+<h3>從 Enigmail 介面撤銷您的 PGP 金鑰</h3>
+<p>Enigmail 產生的 PGP 金鑰在五年後自動失效。所以，如果您遺失了所有檔案，您會希望一旦金鑰過期，其他人就會知道要向您索取另一組金鑰。</p>
+<p>您可能有個充分的理由，在 PGP 金鑰過期之前停用它。也許您想要產生一個新的、更強大的 PGP 金鑰。在 Enigmail 中撤銷自己的 PGP 金鑰，最簡單的方法是藉由 Enigmail 金鑰管理工具。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/37.png" width="706" height="117" /></p>
+<p>右鍵按一下您的 PGP 金鑰 (以粗體顯示) 然後<em>選擇「撤銷金鑰」(Revoke Key) 選項。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/66.png" width="476" height="244" /></p>
+<p>畫面上將打開一個視窗，讓您知道發生了什麼事，並要求您確認。<em>按一下「撤銷金鑰」(Revoke Key) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/64.png" width="546" height="211" /></p>
+<p><a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>視窗會打開，請輸入您的 PGP 金鑰密碼，然後<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/69.png" width="480" height="148" /></p>
+<p>現在畫面上會打開一個視窗，讓您知道撤銷成功。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/68.png" width="706" height="164" /></p>
+<p>回到 Enigmail 金鑰管理視窗時，您會注意到 PGP 金鑰的變化。它現在變成灰色斜體字。</p>
+<h3>用<a href="../glossary/revocation-certificate.html" class="glossify-link" data-title="Revocation Certificate" title="如果您遺失了一個祕密金鑰，或者它不再祕密了，會發生什麼事？您可以產生撤銷憑證，宣布您不再信任該金鑰。在您還保有祕密金鑰時，就應該產生這個憑證，以備不時之需。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="What happens if you lose access to a secret key, or it stops being secret? A revocation certificate is a file that you can generate that announces that you no longer trust that key. You generate it when you still have the secret key, and keep it for any future disaster. ">撤銷憑證<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>撤銷 PGP 金鑰</h3>
+<p>就像我們之前提到的那樣，您可能有個充分的理由，在 PGP 金鑰過期之前停用它。同樣的，其他人也可能有充分的理由，撤銷現有的金鑰。在上一節中，您可能已經注意到，使用 Enigmail 金鑰管理工具撤銷金鑰時，Enigmail 將在內部產生並匯入撤銷憑證。</p>
+<p>您可能會收到來自朋友的撤銷憑證，說明他們要撤銷其金鑰。既然您已經有一個撤銷憑證，您將使用之前產生的撤銷憑證。</p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/42.png" width="437" height="201" /></p>
+<p>從 Enigmail 金鑰管理工具開始，<em>按一下「檔案」(File) 功能表，並選擇「從檔案匯入金鑰」(Import Keys from File)。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/67.png" width="709" height="465" /></p>
+<p>畫面上將打開一個視窗，讓您可以選取撤銷憑證。<em>按一下檔案，然後按一下「開啟」(Open) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/69.png" width="480" height="148" /></p>
+<p>您會收到通知，告訴您憑證已成功導入，而且金鑰已撤銷。<em>按一下「確定」(OK) 按鈕。</em></p>
+<p><img alt="" src="https://ssd.eff.org/files/2016/08/16/68.png" width="706" height="164" /></p>
+<p>回到 Enigmail 金鑰管理視窗時，您會注意到 PGP 金鑰的變化。它現在變成灰色斜體字。</p>
+<p>現在您已經擁有了所有的適當工具，請嘗試發送您自己的 PGP 加密電子郵件。</p>
+</div></div></div><div class="field field-name-field-updated field-type-datestamp field-label-inline clearfix container"><div class="field-label">上次查閱：&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single">2016 年 8 月 12 日</span></div></div></div>    </div>
+  </div>
+</div><!-- /.node --></div>
+</div>
+  </div>
+    </section>
+
+      </div>
+  </div><!-- /.container-main --></div>
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div id="eff-footer"><a href="https://www.eff.org/"> <img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</a></div>
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="../about-surveillance-self-defense.html" title="">關於</a></li>
+<li class="leaf"><a href="../credits.html" title="">致謝</a></li>
+<li class="leaf"><a href="https://www.eff.org/policy" title="">隱私權</a></li>
+<li class="last leaf"><a href="https://supporters.eff.org/donate/support-surveillance-self-defense" title="">捐款</a></li>
+</ul>  </div>
+</div>
+  </div><span id="feedback-button" class="feedback-link">提供意見</span> <a href="https://www.eff.org/copyright"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/cc-by-logo.png" alt="Creative Commons" width="60px" /></a></div>
+</footer>
+    <div class="region region-page-bottom">
+    <div id="block-feedback-form">
+  <div class="content"><form class="feedback-form" action="https://ssd.eff.org/en/module/how-use-pgp-mac-os-x" method="post" id="feedback-form" accept-charset="UTF-8"><div><div class="feedback-help">如果您遇到錯誤，或希望在目前的頁面上看到更多資訊，歡迎留言給我們。</div><div class="form-item form-type-textarea form-item-message">
+  <label for="edit-message">訊息 <span class="form-required" title="必須填寫這一欄。">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="feedback-message form-textarea required" id="edit-message" name="message" cols="20" rows="5"></textarea></div>
+</div>
+<input type="hidden" name="form_build_id" value="form-s728VWWkzU8_m_9QZrlHO8HS0oDK3AtYGk33Qh7JNd8" />
+<input type="hidden" name="form_id" value="feedback_form" />
+<div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">這一欄空下來</label>
+ <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="clearfix form-actions form-wrapper" id="edit-actions"><input type="submit" id="feedback-submit" name="op" value="Send feedback" class="form-submit" /></div></div></form></div>
+</div><a href="../librejs/jslicense.html" rel="jslicense" style="display: none">JavaScript license information</a><div id="piwik-noscript"></div><noscript><img style="position: absolute" src="https://anon-stats.eff.org/js/?idsite=7&amp;rec=1&amp;url=https%3A//ssd.eff.org/en/module/how-use-pgp-mac-os-x&amp;action_name=How%20to%3A%20Use%20PGP%20for%20Mac%20OS%20X%20%7C%20Surveillance%20Self-Defense" width="0" height="0" alt="" /></noscript>
+  </div>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_JIQIryFrENZZCoahKeAoZfR-PUPwkUrxx23RdaZQIuc.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_lMrfy51aI91p2ZAdgpEs4r3pZi-E809QDyWJpbMpnTw.js"></script>
+</body><!-- Mirrored from ssd.eff.org/en/module/how-use-pgp-mac-os-x by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:03 GMT --></html>

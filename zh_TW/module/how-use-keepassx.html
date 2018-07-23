@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!-- Mirrored from ssd.eff.org/en/module/how-use-keepassx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:03:59 GMT --> <!-- Added by HTTrack --><meta charset="UTF-8"><!-- /Added by HTTrack --><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<link href="https://ssd.eff.org/tr/module/nasıl-keepassxi-kullanmak" rel="alternate" hreflang="tr" />
+<link href="https://ssd.eff.org/ru/module/руководство-по-keepassx" rel="alternate" hreflang="ru" />
+<link href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-keepassx" rel="alternate" hreflang="vi" />
+<link href="https://ssd.eff.org/th/module/วิธีการ-ใช้งาน-keepassx" rel="alternate" hreflang="th" />
+<link rel="shortcut icon" href="https://ssd.eff.org/sites/all/themes/ssd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://ssd.eff.org/fr/module/guide-dutilisation-de-keepassx" rel="alternate" hreflang="fr" />
+<link href="https://ssd.eff.org/pt-br/module/como-utilizar-o-keepassx" rel="alternate" hreflang="pt-br" />
+<link href="https://ssd.eff.org/ur/module/کیسے-کریں-کی-پاس-ایکس-کا-استعمال" rel="alternate" hreflang="ur" />
+<link href="https://ssd.eff.org/es/module/cómo-usar-keepassx" rel="alternate" hreflang="es" />
+<link href="how-use-keepassx.html" rel="alternate" hreflang="en" />
+<link href="https://ssd.eff.org/am/module/የኪፓስኤክስ-አጠቃቀም" rel="alternate" hreflang="am" />
+<link href="https://ssd.eff.org/ar/module/كيفية-استخدام-كي-باس-اكس" rel="alternate" hreflang="ar" />
+<meta name="description" content="KeePassX is a password safe—a program you can use to store all your passwords for various websites and services. A password safe is a great tool because it allows you to use different difficult-to-guess passwords for all your services, without needing to remember them. Instead, you only need to remember one master password that allows you to decrypt a database of all your passwords. Password safes are convenient and allow you to organize all of your passwords in one location. It should be noted that using a password safe creates a single point of failure and establishes an obvious target for bad actors or adversaries. Research has suggested that many commonly used passwords safes have vulnerabilities, so use caution when determining whether or not this is the right tool for you." />
+<meta name="generator" content="SSD 2.0" />
+<meta name="rights" content="https://www.eff.org/copyright" />
+<link rel="canonical" href="how-use-keepassx.html" />
+<link rel="shortlink" href="../node/52.html" />
+<meta property="og:site_name" content="Surveillance Self-Defense" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="how-use-keepassx.html" />
+<meta property="og:title" content="How to: Use KeePassX" />
+<meta property="og:description" content="KeePassX is a password safe—a program you can use to store all your passwords for various websites and services. A password safe is a great tool because it allows you to use different difficult-to-guess passwords for all your services, without needing to remember them. Instead, you only need to remember one master password that allows you to decrypt a database of all your passwords. Password safes are convenient and allow you to organize all of your passwords in one location. It should be noted that using a password safe creates a single point of failure and establishes an obvious target for bad actors or adversaries. Research has suggested that many commonly used passwords safes have vulnerabilities, so use caution when determining whether or not this is the right tool for you." />
+<meta property="og:updated_time" content="2017-02-22T01:45:44+00:00" />
+<meta property="og:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:secure_url" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eff" />
+<meta name="twitter:site:id" content="4816" />
+<meta name="twitter:creator" content="@eff" />
+<meta name="twitter:creator:id" content="4816" />
+<meta name="twitter:title" content="How to: Use KeePassX" />
+<meta name="twitter:url" content="how-use-keepassx.html" />
+<meta name="twitter:description" content="KeePassX is a password safe—a program you can use to store all your passwords for various websites and services. A password safe is a great tool because it allows you to use different difficult-to-guess passwords for all your services, without needing to remember them. Instead, you only need to remember one master password that allows you to decrypt a database of all your passwords. Password safes are convenient and allow you to organize all of your passwords in one location. It should be noted that using a password safe creates a single point of failure and establishes an obvious target for bad actors or adversaries. Research has suggested that many commonly used passwords safes have vulnerabilities, so use caution when determining whether or not this is the right tool for you." />
+<meta property="og:email" content="webmaster@eff.org" />
+<meta name="twitter:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="600" />
+<meta property="article:published_time" content="2014-09-29T23:01:19+00:00" />
+<meta property="article:modified_time" content="2017-02-22T01:45:44+00:00" />
+<meta itemprop="name" content="How to: Use KeePassX" />
+<meta itemprop="description" content="KeePassX is a password safe—a program you can use to store all your passwords for various websites and services. A password safe is a great tool because it allows you to use different difficult-to-guess passwords for all your services, without needing to remember them. Instead, you only need to remember one master password that allows you to decrypt a database of all your passwords. Password safes are convenient and allow you to organize all of your passwords in one location. It should be noted that using a password safe creates a single point of failure and establishes an obvious target for bad actors or adversaries. Research has suggested that many commonly used passwords safes have vulnerabilities, so use caution when determining whether or not this is the right tool for you." />
+<link rel="author" href="https://www.eff.org/" />
+<link rel="publisher" href="https://www.eff.org/" />
+  <title>如何：使用 KeePassX | 監控自我防衛</title>
+  <link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_jBWwBPrUUSUTT1S7JPXLZtvwi6SWCCuAM2rNS_BbhAQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_qNy102qd5puFDZB4pXv-Y4olXgaVtPqDJpgtQ2crDJc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_MbbZcQ11eVzwOVt86Q1weRCAJRNOTv9KxM2ugt9-MMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_rnPwgN250ElmamVJvNixUdfc1f75hY132oo6udFiooA.css" media="print" /><!-- HTML5 element support for IE6-8 --> <!--[if lt IE 9]>
+    <script src="https://ssd.eff.org/sites/all/themes/ssd/js/html5.js"></script>
+  <![endif]--><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @licstart The following is the entire license notice for the JavaScript
+ * code in this page.
+ *
+ * Copyright (C) 2017  Electronic Frontier Foundation.
+ *
+ * The JavaScript code in this page is free software: you can redistribute
+ * it and/or modify it under the terms of the GNU General Public License
+ * (GNU GPL) as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.  The code is
+ * distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU GPL
+ * for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you may
+ * distribute non-source (e.g., minimized or compacted) forms of that code
+ * without the copy of the GNU GPL normally required by section 4, provided
+ * you include this license notice and a URL through which recipients can
+ * access the Corresponding Source.
+ *
+ * @licend The above is the entire license notice for the JavaScript code
+ * in this page.
+ */
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_xJQKh-93t6Ks8GJm9soszpNUAsAaYKkOnU5mMy_QhSQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_hE9uzPFNV1oCLa5WlMpNcyZ6UvNQIeXYHWsdebuffYk.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_0ARywAjY_V1MuwR9GXqUrBBCZ4svbEJdznLS-N_BpqQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_UN1p40dOoc7wyLYAesKTW9NmCzUbZ1d_RKtJHZ57poU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"ssd","theme_token":"xGT1xyV4d1D4nXzvv2nUQSETzde6AqSWfct9fZYYNus","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/raven\/raven.js":1,"sites\/all\/modules\/contrib\/piwik_noscript\/piwik_noscript.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/raven-js\/dist\/raven.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/mytube\/mytube.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/patched\/feedback\/feedback.js":1,"sites\/all\/themes\/ssd\/js\/bootstrap.min.js":1,"sites\/all\/themes\/ssd\/js\/ssd.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mytube\/mytube.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/patched\/feedback\/feedback.css":1,"sites\/all\/themes\/ssd\/css\/style.css":1,"sites\/all\/themes\/ssd\/css\/mobile.css":1,"sites\/all\/themes\/ssd\/css\/print.css":1}},"piwikNoscript":{"image":"\u003Cimg style=\u0022position: absolute\u0022 src=\u0022https:\/\/anon-stats.eff.org\/js\/?idsite=7\u0026amp;rec=1\u0026amp;url=https%3A\/\/ssd.eff.org\/en\/module\/how-use-keepassx\u0026amp;action_name=\u0026amp;urlref=\u0022 width=\u00220\u0022 height=\u00220\u0022 alt=\u0022\u0022 \/\u003E"},"raven":{"dsn":"https:\/\/0fc3515aa0c54c1ab9a0cbeada04924f@sentry.eff.org\/14","options":{},"user":{"id":0}},"urlIsAjaxTrusted":{"\/en\/searchapi":true,"\/en\/system\/ajax":true,"\/en\/module\/how-use-keepassx":true},"ajax":{"feedback-submit":{"wrapper":"feedback-form","callback":"feedback_form_ajax_callback","progress":{"type":"throbber","message":""},"event":"mousedown","keypress":true,"prevent":"click","url":"\/en\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send feedback"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-52 node-type-article i18n-en" >
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">跳至主要內容</a></div>
+    <div class="page-wrapper">
+<header id="navbar" role="banner" class="navbar">
+  <div class="container"><!-- EFF Header --><div id="top-eff-header"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</div>
+
+    <div class="search-form-header">
+      <form class="search-form" action="https://ssd.eff.org/en/searchapi" method="GET" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">輸入您的關鍵字</label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="" value="Search" class="form-submit" /></div></div></form>    </div>
+    
+        <div id="language-switcher" class="">
+      <button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".language-switcher-collapse">語言</button> 
+        <div class="region region-language-switcher">
+    <div id="block-locale-language" class="block block-locale">
+    <div class="content language-switcher-collapse collapse" >
+    <ul class="language-switcher-locale-url"><li class="en first active"><a href="how-use-keepassx.html" class="language-link active" xml:lang="en" hreflang="en">英語</a></li>
+<li class="am"><a href="https://ssd.eff.org/am/module/የኪፓስኤክስ-አጠቃቀም" class="language-link" xml:lang="am" hreflang="am">阿姆哈拉語</a></li>
+<li class="ar"><a href="https://ssd.eff.org/ar/module/كيفية-استخدام-كي-باس-اكس" class="language-link" xml:lang="ar" hreflang="ar">阿拉伯語</a></li>
+<li class="es"><a href="https://ssd.eff.org/es/module/cómo-usar-keepassx" class="language-link" xml:lang="es" hreflang="es">西班牙語</a></li>
+<li class="fr"><a href="https://ssd.eff.org/fr/module/guide-dutilisation-de-keepassx" class="language-link" xml:lang="fr" hreflang="fr">法語</a></li>
+<li class="ru"><a href="https://ssd.eff.org/ru/module/руководство-по-keepassx" class="language-link" xml:lang="ru" hreflang="ru">俄語</a></li>
+<li class="tr"><a href="https://ssd.eff.org/tr/module/nasıl-keepassxi-kullanmak" class="language-link" xml:lang="tr" hreflang="tr">土耳其語</a></li>
+<li class="vi"><a href="https://ssd.eff.org/vi/module/làm-thế-nào-sử-dụng-keepassx" class="language-link" xml:lang="vi" hreflang="vi">越南語</a></li>
+<li class="pt-br"><a href="https://ssd.eff.org/pt-br/module/como-utilizar-o-keepassx" class="language-link" xml:lang="pt-br" hreflang="pt-br">葡萄牙語</a></li>
+<li class="th"><a href="https://ssd.eff.org/th/module/วิธีการ-ใช้งาน-keepassx" class="language-link" xml:lang="th" hreflang="th">泰語</a></li>
+<li class="ur last"><a href="https://ssd.eff.org/ur/module/کیسے-کریں-کی-پاس-ایکس-کا-استعمال" class="language-link" xml:lang="ur" hreflang="ur">烏爾都語</a></li>
+</ul>  </div>
+</div>
+  </div>
+     </div><!-- .btn-navbar is used as the toggle for collapsed navbar content --><button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".navbar-collapse">功能表</button>
+  </div> 
+</header>
+<header id="nav-expanded">
+  <div class="container">
+    <div class="row">
+              <div class="navbar-collapse collapse">
+          <nav role="navigation">
+                          <ul class="menu nav navbar-nav nav-primary"><li class="first leaf"><a href="../index-2.html">索引</a></li>
+<li class="leaf"><a href="../blog.html">部落格</a></li>
+<li class="leaf"><a href="../about-surveillance-self-defense.html">關於</a></li>
+<li class="leaf"><a href="../contact.html" title="">聯絡我們</a></li>
+<li class="leaf"><a href="../glossary.html" title="">詞彙表</a></li>
+<li class="last leaf"><a href="../credits.html" title="">致謝</a></li>
+</ul>                                              </nav>
+        </div>
+          </div>
+   </div>
+</header>
+<header role="banner" id="page-header" class="container">
+
+      <div id ="top-logo">
+      <div id="top-logo-inner"><a class="logo" href="https://ssd.eff.org/en" title="Home"> <img src="https://ssd.eff.org/sites/all/themes/ssd/logo.png" alt="Home" class="img-responsive" /> </a></div>
+    </div>
+    
+  
+  
+        
+</header><!-- /#page-header --><div class="container-main clearfix">
+  
+  <div class=" ">
+
+    
+    <section class="container-full-width"><a id="main-content"></a><div class="header-graphic">
+            <div class="field field-name-field-module-graphic field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://ssd.eff.org/files/styles/module_icon_page_header/public/tutorials-b_0.png?itok=CVEi0W83" width="145" height="145" alt="" /></div></div></div>          </div>
+                          
+                  <div class="container">
+        
+        <h1 class="page-header">如何：使用 KeePassX</h1>
+
+                  </div>
+        
+                                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-52" class="node node-article clearfix">
+
+  
+        
+    
+  
+  <div class="content">
+    <div class="container">
+              <div class="field-summary">
+          <p>KeePassX 是一個<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>保險箱 - 一個程式，您可以使用它來儲存各種網站和服務的所有密碼。密碼保險箱是個很好的工具，因為它可以讓您為所有服務使用不同的難猜密碼，而不需要記住它們。相反的，您只需要記住一個<a href="../glossary/master-password.html" class="glossify-link" data-title="master password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，讓您<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>存放您所有密碼的資料庫。密碼保險箱很方便，讓您可在一個位置管理所有的密碼。</p>
+<p class="warning">值得注意的是，使用密碼保險箱會產生單點脆弱性 (SPOF)，成為不懷好意的人或對手的明顯目標。研究顯示，許多常見的密碼保險箱存在漏洞，所以確定這項工具是否適合您的時候要小心。</p>
+        </div>
+      
+              <div class="field-metadata">
+          <div class="field field-name-field-metadata field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><p><strong>下載位置：&nbsp;</strong></p>
+<ul><li>Windows/Mac：<a href="https://www.keepassx.org/downloads" rel="noreferrer">https://www.keepassx.org/downloads</a></li>
+<li>Linux：藉由您套件版本的正常軟體發布管道 (即 Software Manager 或 Synaptic)</li>
+</ul><p><strong>電腦需求：</strong>Windows 2000 或更高版本，Mac OS X 10.4-10.9，Linux (大多數套件版本)</p>
+<p><strong>本指引中使用的版本：</strong>KeePassX 0.4.3 (KeePassX 是一個只有 Windows 版本的 KeePass 程式的跨平台版本。)</p>
+<p><strong>授權：</strong>FOSS (主要是 GPLv2)</p>
+<p><strong>其他閱讀資訊：</strong><a href="https://www.keepassx.org/forum/" rel="noreferrer">https://www.keepassx.org/forum/</a></p>
+<p><strong>級別：</strong>初學者</p>
+<p><strong>所需時間：</strong>設定 5 分鐘，之後就能持續使用非常強力的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。</p>
+</div></div></div>        </div>
+          </div>
+    <div class="wrap-module-sections">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><a name="0"></a><h2>KeePassX 如何運作 <a class="anchor-link-icon" href="#0">Anchor link</a></h2>
+<p>KeePassX 使用稱為<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>資料庫的檔案，這正是他們聽起來的樣子 - 儲存所有密碼的資料庫檔案。這些資料庫儲存在電腦硬碟上時會加密，所以如果您的電腦關機而有人將它偷走，將無法讀取您的密碼。</p>
+<p>密碼資料庫可以使用三種方法進行加密：使用<a href="../glossary/master-password.html" class="glossify-link" data-title="master password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>、金鑰檔案，或兩者同時使用。讓我們看看每一種的優缺點。</p>
+</div><div class="field-item odd"><a name="1"></a><h2>使用<a href="../glossary/master-password.html" class="glossify-link" data-title="Master Password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p>主密碼就像一把<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">鑰匙<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> - 要打開<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>資料庫，您需要正確的主密碼。如果沒有它，沒有人可以看到密碼資料庫裡面有什麼。使用主密碼保護您的密碼資料庫時，請記住一些事項。</p>
+<ul><li><em>該密碼將<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>所有的密碼，所以它的強度必須要高！</em>這表示它不應該是容易猜到的東西，長度也應該夠長 - 越長越好！而且，長度越長，您就越不用擔心要使用特殊字元、大寫字母或數字。比起由大小寫字母、數字和符號組成的 12 個字元的密碼，只由 6 個隨機單詞組成的密碼 (全部小寫，中間有空格) 比較難以破解。</li>
+<li><em>您必須能夠記住這個密碼！</em>由於這個密碼將可存取所有其他密碼，因此您需要確保您可以記住它，而不用寫下來。這是使用 <a href="http://world.std.com/~reinhold/diceware.html" target="_blank" rel="noreferrer">Diceware</a> 之類程式的另一個原因 - 您可以使用易於記憶的一般單詞，而不用試著記住符號和大寫字母的不自然組合。</li>
+</ul></div><div class="field-item even"><a name="2"></a><h2>使用金鑰檔案 <a class="anchor-link-icon" href="#2">Anchor link</a></h2>
+<p>或者，您可以使用金鑰檔案對您的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>資料庫進行<a href="../glossary/encrypt.html" class="glossify-link" data-title="encrypt" title="將加密技術應用在任何類型的資訊或通訊上。這麼做會將資訊或通訊以數學方式轉換，讓它看起來不具任何意義，但只要有人或裝置持有正確的祕密金鑰，就能將它回覆到原本的形式。這樣就限制了存取訊息的權限，因為只要沒有正確的祕密金鑰，應該不可能將加密逆轉，回復原本的資訊。加密技術是構成密碼學領域的幾項技術之一。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="To apply encryption technology to any sort of information or communication. This transforms the information or communication mathematically so that it seems meaningless, but can still be restored to its original form by a person or device that possesses the right secret key. This limits who can access the information because without the right secret key, it should be impossible to reverse the encryption and recover the original information. Encryption is one of several technologies that make up the field called cryptography. ">加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。金鑰檔案的作用方式與密碼相同，每次您要<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>時，需要將金鑰檔案提供給 KeePassX。金鑰檔案應儲存在 USB 隨身碟或其他攜帶式媒體上，並且只有在要打開密碼資料庫時才插入電腦。這樣做的好處是，即使有人存取您電腦的硬碟 (也就是您的密碼資料庫)，如果沒有儲存在外部媒體中的金鑰檔案，仍然無法對其進行解密。(此外，對於<a href="../glossary/adversary.html" class="glossify-link" data-title="adversary" title="您的對手是指試圖破壞您的安全目標之人或組織。對手可能根據情況而有所不同。例如，您可能擔心在咖啡店監視網路的犯罪分子，或是您學校的同學。對手往往是假定的對象。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Your adversary is the person or organization attempting to undermine your security goals. Adversaries can be different, depending on the situation. For instance, you may worry about criminals spying on the network at a cafe, or your classmates at a school. Often the adversary is hypothetical. ">對手<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>而言，金鑰檔案可能比正常的密碼更難猜到。)缺點是只要您想存取您的密碼資料庫，您需要有存放金鑰檔案的外部媒體在手邊 (如果您失去或損壞了它，那麼您將無法打開您的密碼資料庫)。</p>
+<p>使用金鑰檔案而非密碼是最接近以實體<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓您加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">鑰匙<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>打開您密碼資料庫的方式 - 您所需要做的事，不過是插入您的 USB 隨身碟，選擇金鑰檔案，就行了！如果您選擇使用金鑰檔案而非<a href="../glossary/master-password.html" class="glossify-link" data-title="master password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，仍請確保您的 USB 隨身碟儲存在安全的地方 - <em>任何發現它的人將能夠打開您的密碼資料庫。</em></p>
+</div><div class="field-item odd"><a name="3"></a><h2>同時使用兩種 <a class="anchor-link-icon" href="#3">Anchor link</a></h2>
+<p>加密<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>資料庫的最安全方法，是同時使用<a href="../glossary/master-password.html" class="glossify-link" data-title="master password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>和金鑰檔案。如此一來，您<a href="../glossary/decrypt.html" class="glossify-link" data-title="decrypt" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Make a secret message or data intelligible. The idea behind encryption is to make messages that can only be decrypted by the person or people who are meant to receive them. ">解密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>密碼資料庫的能力就取決於<em>您所知道</em> (您的主密碼) 以及<em>您擁有的</em> (您的金鑰檔案)，而任何想要取得您密碼的惡意實體都需要這兩者。(有了這個說法，請記得您的<a href="../glossary/threat-model.html" class="glossify-link" data-title="threat model" title="一種限制範圍的思考方式，僅考量想要用來保護資料的防護類型。要防範所有類型的詭計或攻擊者是不可能的，所以您應該專注思考哪些人可能想要您的資料，他們想要從中獲得什麼，以及可能使用的方式。研擬一系列可能遭受的攻擊並加以防範，就稱為威脅模型。一旦建立起威脅模型，就可以進行風險分析。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A way of narrowly thinking about the sorts of protection you want for your data. It's impossible to protect against every kind of trick or attacker, so you should concentrate on which people might want your data, what they might want from it, and how they might get it. Coming up with a set of possible attacks you plan to protect against is called threat modeling. Once you have a threat model, you can conduct a risk analysis. ">威脅模型<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>：對於大多數只想儲存密碼的家庭使用者來說，強大的主密碼就足夠了。但是如果您擔心有龐大運算資源的國家級攻擊者，那麼安全性越高越好)。</p>
+<p>現在您已經瞭解了 KeePassX 的工作原理，讓我們開始使用它！</p>
+</div><div class="field-item even"><a name="4"></a><h2>KeePassX 入門 <a class="anchor-link-icon" href="#4">Anchor link</a></h2>
+<p>一旦您安裝了 KeePassX，將它啟動。啟動後，從檔案 (File) 功能表中選擇「新建資料庫」(New Database)。畫面上會出現一個對話方塊，要求您輸入<a href="../glossary/master-password.html" class="glossify-link" data-title="master password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>及/或使用金鑰檔案。選擇適當的核取方塊。請注意，如果您想看到您正在輸入的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> (而不是顯示為黑點)，可以按一下右邊的「眼睛」按鈕。另外，您可以使用任何現有檔案做為金鑰檔案 - 例如，您的貓的照片。您只需要確保您選擇的檔案永遠不會被修改，因為如果它的內容遭到改變，那麼它將能再解密您的密碼資料庫。另外請注意，有時在另一個程式中打開檔案，可能就會修改它；最好的做法是不要打開檔案，除非用來解鎖 KeePassX。(雖然移動或重新命名金鑰檔案是安全的。)</p>
+<p>成功初始化密碼資料庫後，應從檔案 (File) 功能表中選擇「保存資料庫」(Save Database) 進行儲存。(注意，如果您願意的話，稍後可以將密碼資料庫檔案移動到硬碟上的任何位置，或者移動到其他電腦上 - 您仍然可以使用 KeePassX 和您之前指定的密碼/金鑰檔案開啟它。)</p>
+</div><div class="field-item odd"><a name="5"></a><h2>管理密碼 <a class="anchor-link-icon" href="#5">Anchor link</a></h2>
+<p>KeePassX 允許您將密碼分為「群組」(Group)，基本上只是檔案夾。您可以藉由功能表列中的「群組」(Group) 功能表或右鍵按一下 KeePassX 視窗左側窗格中的群組 (Group) 來建立、刪除或編輯群組或子群組 (Subgroup)。將密碼分組不會影響 KeePassX 的任何功能 - 它只是一個方便的管理工具。</p>
+</div><div class="field-item even"><a name="6"></a><h2>儲存/產生/編輯密碼 <a class="anchor-link-icon" href="#6">Anchor link</a></h2>
+<p>建立一個新的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>或儲存您已有的密碼，右鍵按一下要儲存密碼的群組，然後選擇「新增條目」(Add New Entry) (您也可以從功能表列中選擇「條目」(Entries) &gt;「新增條目」(Add New Entry))。基本密碼操作，請執行以下操作：</p>
+<ul><li>輸入一個描述性標題，您可以在「標題」(Title) 欄位中識別該密碼條目。</li>
+<li>在「使用者名稱」欄位中輸入與此密碼條目相關聯的使用者名稱。(如果沒有使用者名稱，可以留白。)</li>
+<li>在「密碼」(Password) 欄位中輸入您的密碼。如果您正在建立一個新的密碼 (例如，如果您正在註冊一個新的網站，而您想建立一個新的獨特隨機密碼)，按一下右邊的「Gen」按鈕。畫面上會出現一個密碼產生器對話方塊，您可以使用它產生一個隨機密碼。在這個對話方塊中有幾個選項，包括密碼要含有什麼類型的字元以及長度。<ul><li>請注意，如果您產生一個隨機密碼，那麼您不必記住 (甚至不知道) 密碼是什麼！KeePassX 會為您儲存，您隨時都可以將其複製/貼上到適當的程式中。這就是密碼保險箱的重點 - 您可以為<em>每個</em>網站/服務使用不同的長隨機密碼，甚至不需要知道密碼是什麼！</li>
+<li>因此，只要服務允許，您的密碼應該盡可能長，並使用各種字元。</li>
+<li>等您覺得滿意，請按一下右下方的「產生」(Generate) 以產生密碼，然後按一下「確定」(OK)。產生的隨機密碼將自動輸入到「密碼」(Password) 和「再次輸入」(Repeat) 欄位中。(如果您不是產生隨機密碼，則需要在「再次輸入」(Repeat) 欄位中再次輸入您選擇的密碼。)</li>
+</ul></li>
+</ul><ul><li>最後，按一下確定 (OK)。您的密碼現在儲存在您的密碼資料庫中。要確保更改已保存，請務必藉由前往「檔案 (File) &gt; 保存資料庫 (Save Database)」來儲存已編輯的密碼資料庫。(或者，如果您犯了錯誤，可以關閉然後重新打開資料庫檔案，所有更改都將去除。)</li>
+</ul><p>如果您需要更改/編輯儲存的密碼，可以選擇它所在的群組，然後在右側窗格中點兩下其標題，再次彈出「新建條目」(New Entry) 對話方塊。</p>
+</div><div class="field-item odd"><a name="7"></a><h2>一般使用 <a class="anchor-link-icon" href="#7">Anchor link</a></h2>
+<p>要使用<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>資料庫中的條目，只需右鍵按一下條目並選擇「將使用者名稱複製到剪貼簿」(Copy Username to Clipboard) 或「將密碼複製到剪貼簿」(Copy Password to Clipboard)，然後前往要輸入使用者名稱/密碼的視窗/網站，並將其貼上對應的欄位。(除了右鍵按一下條目，也可以點兩下所需條目的使用者名稱或密碼，使用者名稱或密碼將自動複製到剪貼簿。)</p>
+</div><div class="field-item even"><a name="8"></a><h2>進階使用 <a class="anchor-link-icon" href="#8">Anchor link</a></h2>
+<p>KeePassX 最有用的功能之一，是當您按下鍵盤上特殊的按鍵組合時，它可以自動為您輸入使用者名稱和密碼。請注意，雖然此功能只可在 Linux 下使用，其他像 KeePass (KeePassX 的基礎) 這樣的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>保險箱在其他作業系統上支援這項功能，而且運作原理類似。</p>
+<p>要啟用此功能，請執行以下操作。</p>
+<p><em>1.選擇您的全域熱鍵。</em>從「其他」(Extras) 功能表中選擇「設置」(Settings)，然後在左側窗格中選擇「進階」(Advanced)。在「全域自動鍵入捷徑」(Global Auto-Type Shortcut) 欄位中按一下，然後按下您想使用的按鍵組合。(例如按住 Ctrl、Alt 和 Shift 鍵，然後按一下「p」。您可以使用任何您喜歡的組合鍵，但是必須確保它與其他應用程式使用的熱鍵不衝突，所以盡量不要使用 Ctrl + X 或 Alt + F4 等。)對設定滿意後，按一下「確定」(OK)。</p>
+<p><em>2.為特定密碼設定自動鍵入。</em>確認您將視窗打開到您想輸入密碼的地方。然後前往 KeePassX，找到要啟用自動鍵入的條目，然後點兩下該條目的標題以打開「新建條目」(New Entry) 對話方塊。</p>
+<p>3.按一下左下角的「工具」(Tools) 按鈕，然後選擇「自動鍵入：選擇目標視窗」(Auto-Type: Select target window)。在出現的對話方塊中，展開下拉方塊並選擇要輸入使用者名稱和密碼的視窗標題。按一下確定 (OK)，然後再按一下確定 (OK)。</p>
+<p><em>測試一下！</em>現在為了對您的使用者名稱和密碼進行驗證，請到您要 KeePassX 為您自動鍵入使用者名稱/密碼的視窗/網站。確保您的滑鼠游標位於您的使用者名稱文字方塊中，然後按一下前面為全域熱鍵選擇的按鍵組合。只要 KeePassX 有開啟 (即使是最小化或非作用中)，您的使用者名稱和密碼應該會自動輸入。</p>
+<p>請注意，根據網站/視窗的設置方式，此功能可能無法正確運行。(例如，它可能會輸入使用者名稱，不會輸入密碼。)您可以進行疑難排解並自訂此功能 - 更多資訊，我們建議您在<a href="http://keepass.info/help/base/autotype.html" target="_blank" rel="noreferrer">此處</a>查看 KeePass 文件。(雖然 KeePass 和 KeePassX 有一些區別，但是這個頁面應該足以指引您正確的方向。)</p>
+<p>建議您使用不易誤按的按鍵組合。您不會想不小心將您的銀行帳戶密碼貼到 Facebook 貼文裡！</p>
+</div><div class="field-item odd"><a name="9"></a><h2>其他功能 <a class="anchor-link-icon" href="#9">Anchor link</a></h2>
+<p>您可以藉由在搜尋方塊 (KeePassX 主視窗的工具列中的文字方塊) 中輸入內容來搜尋資料庫，然後按 Enter 鍵。</p>
+<p>也可以按一下主視窗中的欄標題來排序條目。</p>
+<p>您也可以藉由選擇「檔案 (File) &gt; 鎖定工作區 (Lock Workspace)」來「鎖定」KeePassX，這樣您就可以開著 KeePassX，但要求輸入<a href="../glossary/master-password.html" class="glossify-link" data-title="master password" title="一個用來解鎖其他密碼，或其他解鎖程式或訊息所需方式的密碼。您應該讓主密碼盡可能難以破解。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A password used to unlock a store of other passwords or other ways to unlock programs or messages. You should make a master password as strong as you can. ">主密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> (及/或金鑰檔案) 後才能存取您的<a href="../glossary/password.html" class="glossify-link" data-title="password" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A secret meant to be memorized, and meant to limit access to something so that only someone who knows the password can gain access. It might limit access to an online account, a device, or something else. A long password based on multiple words may also be called a &quot;passphrase&quot; to remind us that it's not just one &quot;word.&quot; A main password to unlock other passwords in a password manager or password safe application is often called a &quot;master password.” ">密碼<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>資料庫。您也可以讓 KeePassX 在靜置一段時間後自動鎖定。這可以防止有人在您離開電腦時存取您的密碼。要啟用此功能，請從功能表中選擇「其他 (Extras) &gt; 設置 (Settings)」，然後按一下安全選項。然後核取「靜置 {數字} 秒鐘後鎖定資料庫」(Lock database after inactivity of {number} seconds) 的方塊。</p>
+<p>KeePassX 可以儲存的，不只有使用者名稱和密碼。例如，您可以建立條目來儲存帳號、產品金鑰或序號等其他重要內容。您在「密碼」(Password) 欄位中輸入的資料不一定要是密碼。它可以是任何資訊 - 只要輸入儲存在「密碼」欄位而非真正是密碼的資料 (如果沒有使用者名稱，將「使用者名稱」欄位留白)，KeePassX 就能安全保密地記住它。</p>
+<p>KeePassX 是易於使用、功能強大的軟體，我們建議您進行探索，以瞭解它能辦到的所有實用功能。</p>
+</div></div></div><div class="field field-name-field-updated field-type-datestamp field-label-inline clearfix container"><div class="field-label">上次查閱：&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single">2015 年 11 月 23 日</span></div></div></div>    </div>
+  </div>
+</div><!-- /.node --></div>
+</div>
+  </div>
+    </section>
+
+      </div>
+  </div><!-- /.container-main --></div>
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div id="eff-footer"><a href="https://www.eff.org/"> <img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</a></div>
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="../about-surveillance-self-defense.html" title="">關於</a></li>
+<li class="leaf"><a href="../credits.html" title="">致謝</a></li>
+<li class="leaf"><a href="https://www.eff.org/policy" title="">隱私權</a></li>
+<li class="last leaf"><a href="https://supporters.eff.org/donate/support-surveillance-self-defense" title="">捐款</a></li>
+</ul>  </div>
+</div>
+  </div><span id="feedback-button" class="feedback-link">提供意見</span> <a href="https://www.eff.org/copyright"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/cc-by-logo.png" alt="Creative Commons" width="60px" /></a></div>
+</footer>
+    <div class="region region-page-bottom">
+    <div id="block-feedback-form">
+  <div class="content"><form class="feedback-form" action="https://ssd.eff.org/en/module/how-use-keepassx" method="post" id="feedback-form" accept-charset="UTF-8"><div><div class="feedback-help">如果您遇到錯誤，或希望在目前的頁面上看到更多資訊，歡迎留言給我們。</div><div class="form-item form-type-textarea form-item-message">
+  <label for="edit-message">訊息 <span class="form-required" title="必須填寫這一欄。">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="feedback-message form-textarea required" id="edit-message" name="message" cols="20" rows="5"></textarea></div>
+</div>
+<input type="hidden" name="form_build_id" value="form-KbRP36Q6Fp4oCZpny7j_tsgEewBI25gNv2-B2iPDPOc" />
+<input type="hidden" name="form_id" value="feedback_form" />
+<div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">這一欄空下來</label>
+ <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="clearfix form-actions form-wrapper" id="edit-actions"><input type="submit" id="feedback-submit" name="op" value="Send feedback" class="form-submit" /></div></div></form></div>
+</div><a href="../librejs/jslicense.html" rel="jslicense" style="display: none">JavaScript license information</a><div id="piwik-noscript"></div><noscript><img style="position: absolute" src="https://anon-stats.eff.org/js/?idsite=7&amp;rec=1&amp;url=https%3A//ssd.eff.org/en/module/how-use-keepassx&amp;action_name=How%20to%3A%20Use%20KeePassX%20%7C%20Surveillance%20Self-Defense" width="0" height="0" alt="" /></noscript>
+  </div>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_JIQIryFrENZZCoahKeAoZfR-PUPwkUrxx23RdaZQIuc.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_lMrfy51aI91p2ZAdgpEs4r3pZi-E809QDyWJpbMpnTw.js"></script>
+</body><!-- Mirrored from ssd.eff.org/en/module/how-use-keepassx by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:03:59 GMT --></html>

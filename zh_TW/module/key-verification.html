@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!-- Mirrored from ssd.eff.org/en/module/key-verification by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:19 GMT --> <!-- Added by HTTrack --><meta charset="UTF-8"><!-- /Added by HTTrack --><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<link href="https://ssd.eff.org/tr/module/anahtar-doğrulaması" rel="alternate" hreflang="tr" />
+<link href="https://ssd.eff.org/ru/module/верификация-ключей" rel="alternate" hreflang="ru" />
+<link href="https://ssd.eff.org/vi/module/kiểm-chứng-chìa-khóa" rel="alternate" hreflang="vi" />
+<link href="https://ssd.eff.org/th/module/การยืนยันความถูกต้องของคีย์" rel="alternate" hreflang="th" />
+<link rel="shortcut icon" href="https://ssd.eff.org/sites/all/themes/ssd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://ssd.eff.org/fr/module/vérification-des-codes" rel="alternate" hreflang="fr" />
+<link href="https://ssd.eff.org/pt-br/module/verificação-de-chaves" rel="alternate" hreflang="pt-br" />
+<link href="https://ssd.eff.org/ur/module/کلیدی-تصدیق" rel="alternate" hreflang="ur" />
+<link href="https://ssd.eff.org/es/module/verificando-las-llaves" rel="alternate" hreflang="es" />
+<link href="key-verification.html" rel="alternate" hreflang="en" />
+<link href="https://ssd.eff.org/am/module/የቁልፍ-ማረጋገጫ-ብልሃት" rel="alternate" hreflang="am" />
+<link href="https://ssd.eff.org/ar/module/التحقق-من-المفاتيح" rel="alternate" hreflang="ar" />
+<meta name="description" content="When encryption is used properly, your communications or information should only be readable by you and the person or people you’re communicating with. End-to-end encryption protects your data from surveillance by third parties, but if you’re unsure about the identity of the person you’re talking to, its usefulness is limited. That’s where key verification comes in." />
+<meta name="generator" content="SSD 2.0" />
+<meta name="rights" content="https://www.eff.org/copyright" />
+<link rel="canonical" href="key-verification.html" />
+<link rel="shortlink" href="../node/37.html" />
+<meta property="og:site_name" content="Surveillance Self-Defense" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="key-verification.html" />
+<meta property="og:title" content="Key Verification" />
+<meta property="og:description" content="When encryption is used properly, your communications or information should only be readable by you and the person or people you’re communicating with. End-to-end encryption protects your data from surveillance by third parties, but if you’re unsure about the identity of the person you’re talking to, its usefulness is limited. That’s where key verification comes in." />
+<meta property="og:updated_time" content="2017-02-22T01:45:32+00:00" />
+<meta property="og:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:secure_url" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eff" />
+<meta name="twitter:site:id" content="4816" />
+<meta name="twitter:creator" content="@eff" />
+<meta name="twitter:creator:id" content="4816" />
+<meta name="twitter:title" content="Key Verification" />
+<meta name="twitter:url" content="key-verification.html" />
+<meta name="twitter:description" content="When encryption is used properly, your communications or information should only be readable by you and the person or people you’re communicating with. End-to-end encryption protects your data from surveillance by third parties, but if you’re unsure about the identity of the person you’re talking to, its usefulness is limited. That’s where key verification comes in." />
+<meta property="og:email" content="webmaster@eff.org" />
+<meta name="twitter:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="600" />
+<meta property="article:published_time" content="2014-08-01T21:08:21+00:00" />
+<meta property="article:modified_time" content="2017-02-22T01:45:32+00:00" />
+<meta itemprop="name" content="Key Verification" />
+<meta itemprop="description" content="When encryption is used properly, your communications or information should only be readable by you and the person or people you’re communicating with. End-to-end encryption protects your data from surveillance by third parties, but if you’re unsure about the identity of the person you’re talking to, its usefulness is limited. That’s where key verification comes in." />
+<link rel="author" href="https://www.eff.org/" />
+<link rel="publisher" href="https://www.eff.org/" />
+  <title>金鑰驗證 | 監控自我防衛</title>
+  <link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_jBWwBPrUUSUTT1S7JPXLZtvwi6SWCCuAM2rNS_BbhAQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_qNy102qd5puFDZB4pXv-Y4olXgaVtPqDJpgtQ2crDJc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_MbbZcQ11eVzwOVt86Q1weRCAJRNOTv9KxM2ugt9-MMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_rnPwgN250ElmamVJvNixUdfc1f75hY132oo6udFiooA.css" media="print" /><!-- HTML5 element support for IE6-8 --> <!--[if lt IE 9]>
+    <script src="https://ssd.eff.org/sites/all/themes/ssd/js/html5.js"></script>
+  <![endif]--><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @licstart The following is the entire license notice for the JavaScript
+ * code in this page.
+ *
+ * Copyright (C) 2017  Electronic Frontier Foundation.
+ *
+ * The JavaScript code in this page is free software: you can redistribute
+ * it and/or modify it under the terms of the GNU General Public License
+ * (GNU GPL) as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.  The code is
+ * distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU GPL
+ * for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you may
+ * distribute non-source (e.g., minimized or compacted) forms of that code
+ * without the copy of the GNU GPL normally required by section 4, provided
+ * you include this license notice and a URL through which recipients can
+ * access the Corresponding Source.
+ *
+ * @licend The above is the entire license notice for the JavaScript code
+ * in this page.
+ */
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_xJQKh-93t6Ks8GJm9soszpNUAsAaYKkOnU5mMy_QhSQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_hE9uzPFNV1oCLa5WlMpNcyZ6UvNQIeXYHWsdebuffYk.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_0ARywAjY_V1MuwR9GXqUrBBCZ4svbEJdznLS-N_BpqQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_UN1p40dOoc7wyLYAesKTW9NmCzUbZ1d_RKtJHZ57poU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"ssd","theme_token":"pExolcm17l9xO_Wg6TRRwqB7IYb_D03YPiG745X08pQ","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/raven\/raven.js":1,"sites\/all\/modules\/contrib\/piwik_noscript\/piwik_noscript.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/raven-js\/dist\/raven.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/mytube\/mytube.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/patched\/feedback\/feedback.js":1,"sites\/all\/themes\/ssd\/js\/bootstrap.min.js":1,"sites\/all\/themes\/ssd\/js\/ssd.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mytube\/mytube.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/patched\/feedback\/feedback.css":1,"sites\/all\/themes\/ssd\/css\/style.css":1,"sites\/all\/themes\/ssd\/css\/mobile.css":1,"sites\/all\/themes\/ssd\/css\/print.css":1}},"piwikNoscript":{"image":"\u003Cimg style=\u0022position: absolute\u0022 src=\u0022https:\/\/anon-stats.eff.org\/js\/?idsite=7\u0026amp;rec=1\u0026amp;url=https%3A\/\/ssd.eff.org\/en\/module\/key-verification\u0026amp;action_name=\u0026amp;urlref=\u0022 width=\u00220\u0022 height=\u00220\u0022 alt=\u0022\u0022 \/\u003E"},"raven":{"dsn":"https:\/\/0fc3515aa0c54c1ab9a0cbeada04924f@sentry.eff.org\/14","options":{},"user":{"id":0}},"urlIsAjaxTrusted":{"\/en\/searchapi":true,"\/en\/system\/ajax":true,"\/en\/module\/key-verification":true},"ajax":{"feedback-submit":{"wrapper":"feedback-form","callback":"feedback_form_ajax_callback","progress":{"type":"throbber","message":""},"event":"mousedown","keypress":true,"prevent":"click","url":"\/en\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send feedback"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-37 node-type-article i18n-en" >
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">跳至主要內容</a></div>
+    <div class="page-wrapper">
+<header id="navbar" role="banner" class="navbar">
+  <div class="container"><!-- EFF Header --><div id="top-eff-header"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</div>
+
+    <div class="search-form-header">
+      <form class="search-form" action="https://ssd.eff.org/en/searchapi" method="GET" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">輸入您的關鍵字</label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="" value="Search" class="form-submit" /></div></div></form>    </div>
+    
+        <div id="language-switcher" class="">
+      <button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".language-switcher-collapse">語言</button> 
+        <div class="region region-language-switcher">
+    <div id="block-locale-language" class="block block-locale">
+    <div class="content language-switcher-collapse collapse" >
+    <ul class="language-switcher-locale-url"><li class="en first active"><a href="key-verification.html" class="language-link active" xml:lang="en" hreflang="en">英語</a></li>
+<li class="am"><a href="https://ssd.eff.org/am/module/የቁልፍ-ማረጋገጫ-ብልሃት" class="language-link" xml:lang="am" hreflang="am">阿姆哈拉語</a></li>
+<li class="ar"><a href="https://ssd.eff.org/ar/module/التحقق-من-المفاتيح" class="language-link" xml:lang="ar" hreflang="ar">阿拉伯語</a></li>
+<li class="es"><a href="https://ssd.eff.org/es/module/verificando-las-llaves" class="language-link" xml:lang="es" hreflang="es">西班牙語</a></li>
+<li class="fr"><a href="https://ssd.eff.org/fr/module/vérification-des-codes" class="language-link" xml:lang="fr" hreflang="fr">法語</a></li>
+<li class="ru"><a href="https://ssd.eff.org/ru/module/верификация-ключей" class="language-link" xml:lang="ru" hreflang="ru">俄語</a></li>
+<li class="tr"><a href="https://ssd.eff.org/tr/module/anahtar-doğrulaması" class="language-link" xml:lang="tr" hreflang="tr">土耳其語</a></li>
+<li class="vi"><a href="https://ssd.eff.org/vi/module/kiểm-chứng-chìa-khóa" class="language-link" xml:lang="vi" hreflang="vi">越南語</a></li>
+<li class="pt-br"><a href="https://ssd.eff.org/pt-br/module/verificação-de-chaves" class="language-link" xml:lang="pt-br" hreflang="pt-br">葡萄牙語</a></li>
+<li class="th"><a href="https://ssd.eff.org/th/module/การยืนยันความถูกต้องของคีย์" class="language-link" xml:lang="th" hreflang="th">泰語</a></li>
+<li class="ur last"><a href="https://ssd.eff.org/ur/module/کلیدی-تصدیق" class="language-link" xml:lang="ur" hreflang="ur">烏爾都語</a></li>
+</ul>  </div>
+</div>
+  </div>
+     </div><!-- .btn-navbar is used as the toggle for collapsed navbar content --><button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".navbar-collapse">功能表</button>
+  </div> 
+</header>
+<header id="nav-expanded">
+  <div class="container">
+    <div class="row">
+              <div class="navbar-collapse collapse">
+          <nav role="navigation">
+                          <ul class="menu nav navbar-nav nav-primary"><li class="first leaf"><a href="../index-2.html">索引</a></li>
+<li class="leaf"><a href="../blog.html">部落格</a></li>
+<li class="leaf"><a href="../about-surveillance-self-defense.html">關於</a></li>
+<li class="leaf"><a href="../contact.html" title="">聯絡我們</a></li>
+<li class="leaf"><a href="../glossary.html" title="">詞彙表</a></li>
+<li class="last leaf"><a href="../credits.html" title="">致謝</a></li>
+</ul>                                              </nav>
+        </div>
+          </div>
+   </div>
+</header>
+<header role="banner" id="page-header" class="container">
+
+      <div id ="top-logo">
+      <div id="top-logo-inner"><a class="logo" href="https://ssd.eff.org/en" title="Home"> <img src="https://ssd.eff.org/sites/all/themes/ssd/logo.png" alt="Home" class="img-responsive" /> </a></div>
+    </div>
+    
+  
+  
+        
+</header><!-- /#page-header --><div class="container-main clearfix">
+  
+  <div class=" ">
+
+    
+    <section class="container-full-width"><a id="main-content"></a><div class="header-graphic">
+            <div class="field field-name-field-module-graphic field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img src="https://ssd.eff.org/files/styles/module_icon_page_header/public/briefings-b_0.png?itok=F_yCFSc_" width="145" height="145" alt="" /></div></div></div>          </div>
+                          
+                  <div class="container">
+        
+        <h1 class="page-header">金鑰驗證</h1>
+
+                  </div>
+        
+                                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-37" class="node node-article clearfix">
+
+  
+        
+    
+  
+  <div class="content">
+    <div class="container">
+      
+          </div>
+    <div class="wrap-module-sections">
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>只要正確使用<a href="../glossary/encryption.html" class="glossify-link" data-title="encryption" title="一種流程，將訊息轉換成無法讀取的形式，只有知道如何「解密」的人才知道如何將訊息轉為可讀取的形式。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A process that takes a message and makes it unreadable except to a person who knows how to &quot;decrypt&quot; it back into a readable form. ">加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>，您的通訊或資訊應該只能由您以及與您通訊的人讀取。<a href="../glossary/end-end-encryption.html" class="glossify-link" data-title="End-to-end encryption" title="端對端加密確保訊息是由其原始發送者轉為祕密訊息，並僅能由其最終接收者解讀。其他形式的加密可能必須仰賴第三方來執行。這表示這些第三方提供的原文必須可信。一般認為端對端加密更為安全，因為它減少了可能干擾或破解加密的各方數量。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="End-to-end encryption ensures that a message is turned into a secret message by its original sender,  and decoded only by its final recipient. Other forms of encryption may depend on encryption performed by third-parties. That means that those parties have to be trusted with the original text. End-to-end encryption is generally regarded as safer, because it reduces the number of parties who might be able to interfere or break the encryption. ">端對端加密<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>可保護您的資料，不受第三方的監視，但是如果您不確定正在與您通話的人之身分，則其用處有限。這就是該進行<a href="../glossary/key-verification.html" class="glossify-link" data-title="key verification" title="在公開金鑰密碼學裡，每個人都有一套金鑰。要將訊息加密發送給特定對象，請使用他們的公開金鑰進行加密。攻擊者可能會誘騙您使用他們的金鑰，這表示他們 (而不是原本的收件者) 將能夠閱讀您的訊息。也就是說，您必須驗證金鑰是由特定對象所使用的。金鑰驗證就是任何讓您將金鑰與某人匹配的方式。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In public key cryptography, each person has a set of keys. To send a message securely to a particular person, you encrypt your message using their public key. An attacker may be able to trick you into using their key, which means that they will be able to read your message, instead of the intended recipient. That means that you have to verify that a key is being used by a particular person. Key verification is any way that lets you match a key to a person. ">金鑰驗證<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>的地方。藉由驗證公開金鑰，您與通訊對象透過確認彼此的身分，為您的通訊添加了另一層保護，讓您能更確定跟正確的對象通訊。</p>
+<p>金鑰驗證是一種使用端對端加密的協定 (例如<a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 和 OTR) 常見的功能。在 Signal，它們稱為「安全號碼 (safety numbers)」。要在排除干擾風險的環境下驗證金鑰，建議使用與要加密的金鑰不同的另一種方法進行通訊；這稱為<a href="../glossary/out-band-verification.html" class="glossify-link" data-title="out-of-band verification" title="「頻外」是指在當前方法之外的任何通訊方式。以不安全的通訊系統驗證您通話對象的身分，通常需要以頻外的另一種方式進行通訊，這種方式較不容易遭受同一種攻擊。因此，例如您可能會親自與某人交談，以確認您是否使用某人的正確公開金鑰，然後再使用它來加密電子郵件。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="&quot;Out-of-band&quot; means any way of communicating outside of the current method. Verifying the identity of the person you're talking to over an insecure communication system often requires communicating out-of-band via another method that is less vulnerable to the same kind of attack. So, for instance, you might check that you are using someone's correct public key by talking to them in person, before using it to encrypt your email. ">頻外驗證<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>。例如，假如您正在驗證您的 OTR 指紋，則可以將指紋以電子郵件發送給另一個人。在這個例子中，電子郵件就是輔助的通訊管道。</p>
+</div><div class="field-item odd"><a name="1"></a><h2>頻外金鑰驗證 <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
+<p>有幾種方法可以做到這一點。如果可以安全、方便地安排，那麼面對面驗證金鑰是最理想的。這通常會在交換<a href="../glossary/key.html" class="glossify-link" data-title="key" title="在密碼學中，指可以讓你加密或解密訊息的一項資料。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="In cryptography, a piece of data which gives you the capability to encrypt or decrypt a message. ">金鑰<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>聚會或同事之間達成。</p>
+<p>如果無法面對面，您可以用其他方式 (您正用來驗證金鑰的通訊方式除外) 與您的通訊對象聯繫。例如，假如您正試圖與某人驗證 <a href="../glossary/pgp.html" class="glossify-link" data-title="PGP" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="PGP or Pretty Good Privacy was one of the first popular implementations of public key cryptography. Phil Zimmermann, its creator, wrote the program in 1991 to help activists and others protect their communications. He was formally investigated by the US government when the program spread outside the United States. At the time, exporting tools that included strong public key encryption was a violation of US law. PGP continues to exist as a commercial software product. A free implementation of the same underlying standard that PGP uses called GnuPG (or GPG) is also available. Because both use the same interchangeable approach, people will refer to using a “PGP key” or sending a “PGP message”, even if they are using GnuPG. ">PGP<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 金鑰，則可以再使用電話或 OTR 交談。</p>
+<p>無論您使用的是哪個程式，總是能夠找到您與您通訊對象的金鑰。</p>
+<p>雖然查找金鑰的方法各程式不同，但驗證金鑰的方法大致維持不變。您可以將您的金鑰<a href="../glossary/fingerprint.html" class="glossify-link" data-title="fingerprint" title="公開金鑰密碼學的金鑰是非常大的數字，有時長度可達 1000 位數以上。指紋則是一個小得多的數字或一組數字和字母，可以當作該金鑰的唯一名稱，而不必列出金鑰所有的位數。所以，例如你與一個朋友想要確保你們擁有的金鑰相同，您可以花很長的時間讀出金鑰上的所有位數，也可以分別計算你們的金鑰指紋，並加以比較。加密編譯軟體提供的指紋通常由大約 40 個字母和數字組成。如果經過您仔細檢查，指紋的值正確，那麼應該就不會使用到冒充的假金鑰。一些軟體工具可能提供更方便的替代方法來幫您驗證朋友的金鑰，但是仍然需要進行某些形式的驗證，以防止通訊服務提供商輕易偷聽您的通訊。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="The keys of public key cryptography are very large numbers, sometimes a thousand or more digits long. A fingerprint is a much smaller number or set of numbers and letters that can be used as a unique name for that key, without having to list all of the key's digits.  So, for instance, if you and a friend wished to make sure you both had the same key, you could either spend a long time reading off all the hundreds of digits in the key, or you could each calculate your key's fingerprint and compare those instead. The fingerprints presented by cryptographic software usually consist of around 40 letters and numbers. If you carefully check that a fingerprint has the right value, you should be safe against impersonation using a fake key. Some software tools may offer more convenient alternative ways to verify a friend's key, but some form of verification needs to happen to prevent communications providers from easily being able to listen in.   ">指紋<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a> 大聲讀出來 (如果您是面對面或使用電話)，或是複製貼上到通訊程式中，但無論您選擇哪種方式，<em>都務必要檢查每位字母和數字</em>。</p>
+<p class="tip">提示：嘗試與您的朋友驗證金鑰。要了解如何驗證特定程式中的金鑰，請瀏覽該程式的操作指引。</p>
+</div></div></div><div class="field field-name-field-updated field-type-datestamp field-label-inline clearfix container"><div class="field-label">上次查閱：&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single">2017 年 1 月 13 日</span></div></div></div>    </div>
+  </div>
+</div><!-- /.node --></div>
+</div>
+  </div>
+    </section>
+
+      </div>
+  </div><!-- /.container-main --></div>
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div id="eff-footer"><a href="https://www.eff.org/"> <img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</a></div>
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="../about-surveillance-self-defense.html" title="">關於</a></li>
+<li class="leaf"><a href="../credits.html" title="">致謝</a></li>
+<li class="leaf"><a href="https://www.eff.org/policy" title="">隱私權</a></li>
+<li class="last leaf"><a href="https://supporters.eff.org/donate/support-surveillance-self-defense" title="">捐款</a></li>
+</ul>  </div>
+</div>
+  </div><span id="feedback-button" class="feedback-link">提供意見</span> <a href="https://www.eff.org/copyright"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/cc-by-logo.png" alt="Creative Commons" width="60px" /></a></div>
+</footer>
+    <div class="region region-page-bottom">
+    <div id="block-feedback-form">
+  <div class="content"><form class="feedback-form" action="https://ssd.eff.org/en/module/key-verification" method="post" id="feedback-form" accept-charset="UTF-8"><div><div class="feedback-help">如果您遇到錯誤，或希望在目前的頁面上看到更多資訊，歡迎留言給我們。</div><div class="form-item form-type-textarea form-item-message">
+  <label for="edit-message">訊息 <span class="form-required" title="必須填寫這一欄。">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="feedback-message form-textarea required" id="edit-message" name="message" cols="20" rows="5"></textarea></div>
+</div>
+<input type="hidden" name="form_build_id" value="form-9hEy7_l-DdRxxGYvdplAfQ1pdheMjEawdSVFS8JmMfc" />
+<input type="hidden" name="form_id" value="feedback_form" />
+<div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">這一欄空下來</label>
+ <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="clearfix form-actions form-wrapper" id="edit-actions"><input type="submit" id="feedback-submit" name="op" value="Send feedback" class="form-submit" /></div></div></form></div>
+</div><a href="../librejs/jslicense.html" rel="jslicense" style="display: none">JavaScript license information</a><div id="piwik-noscript"></div><noscript><img style="position: absolute" src="https://anon-stats.eff.org/js/?idsite=7&amp;rec=1&amp;url=https%3A//ssd.eff.org/en/module/key-verification&amp;action_name=Key%20Verification%20%7C%20Surveillance%20Self-Defense" width="0" height="0" alt="" /></noscript>
+  </div>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_JIQIryFrENZZCoahKeAoZfR-PUPwkUrxx23RdaZQIuc.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_lMrfy51aI91p2ZAdgpEs4r3pZi-E809QDyWJpbMpnTw.js"></script>
+</body><!-- Mirrored from ssd.eff.org/en/module/key-verification by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:04:20 GMT --></html>

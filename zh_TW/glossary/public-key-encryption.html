@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"><!-- Mirrored from ssd.eff.org/en/glossary/public-key-encryption by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:06:36 GMT --> <!-- Added by HTTrack --><meta charset="UTF-8"><!-- /Added by HTTrack --><head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<link href="https://ssd.eff.org/tr/glossary/açık-anahtar-şifrelemesi" rel="alternate" hreflang="tr" />
+<link href="https://ssd.eff.org/ru/glossary/шифрование-с-открытым-ключом" rel="alternate" hreflang="ru" />
+<link href="https://ssd.eff.org/vi/glossary/mã-hóa-khóa-công-khai" rel="alternate" hreflang="vi" />
+<link href="https://ssd.eff.org/pt-br/glossary/criptografia-de-chave-pública" rel="alternate" hreflang="pt-br" />
+<link rel="shortcut icon" href="https://ssd.eff.org/sites/all/themes/ssd/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://ssd.eff.org/ur/glossary/عوامی-کلید-کی-خفیہ-کاری" rel="alternate" hreflang="ur" />
+<link href="https://ssd.eff.org/th/glossary/public-key-encryption-การเข้ารหัสคีย์สาธารณะ" rel="alternate" hreflang="th" />
+<link href="https://ssd.eff.org/fr/glossary/chiffrement-à-clé-publique" rel="alternate" hreflang="fr" />
+<link href="https://ssd.eff.org/es/glossary/cifrado-de-llave-pública" rel="alternate" hreflang="es" />
+<link rel="alternate" type="application/rss+xml" title="RSS - 公開金鑰加密" href="../taxonomy/term/317/feed" />
+<link href="https://ssd.eff.org/am/glossary/የአደባባይ-ቁልፍ-ምስጠራ" rel="alternate" hreflang="am" />
+<link href="public-key-encryption.html" rel="alternate" hreflang="en" />
+<link href="https://ssd.eff.org/ar/glossary/شيفرة-المفتاح-العمومي" rel="alternate" hreflang="ar" />
+<meta name="description" content="Traditional encryption systems use the same secret, or key, to encrypt and decrypt a message. So if I encrypted a file with the password &quot;bluetonicmonster&quot;, you would need both the file and the secret &quot;bluetonicmonster&quot; to decode it. Public key encryption uses two keys: one to encrypt, and another to decrypt. This has all kinds of useful consequences. For one, it means that you can hand out the key to encrypt messages to you, and as long as you keep the other key secret, anyone with that key can talk to you securely. The key you hand out widely is known as the &quot;public key&quot;: hence the name of the technique. Public key encryption is used to encrypt email and files by Pretty Good Privacy (PGP), OTR for instant messaging, and SSL/TLS for web browsing." />
+<meta name="generator" content="SSD 2.0" />
+<meta name="rights" content="https://www.eff.org/copyright" />
+<link rel="canonical" href="public-key-encryption.html" />
+<link rel="shortlink" href="../taxonomy/term/317.html" />
+<meta property="og:site_name" content="Surveillance Self-Defense" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="public-key-encryption.html" />
+<meta property="og:title" content="Public key encryption" />
+<meta property="og:description" content="Traditional encryption systems use the same secret, or key, to encrypt and decrypt a message. So if I encrypted a file with the password &quot;bluetonicmonster&quot;, you would need both the file and the secret &quot;bluetonicmonster&quot; to decode it. Public key encryption uses two keys: one to encrypt, and another to decrypt. This has all kinds of useful consequences. For one, it means that you can hand out the key to encrypt messages to you, and as long as you keep the other key secret, anyone with that key can talk to you securely. The key you hand out widely is known as the &quot;public key&quot;: hence the name of the technique. Public key encryption is used to encrypt email and files by Pretty Good Privacy (PGP), OTR for instant messaging, and SSL/TLS for web browsing." />
+<meta property="og:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:secure_url" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@eff" />
+<meta name="twitter:site:id" content="4816" />
+<meta name="twitter:creator" content="@eff" />
+<meta name="twitter:creator:id" content="4816" />
+<meta name="twitter:title" content="Public key encryption" />
+<meta name="twitter:url" content="public-key-encryption.html" />
+<meta name="twitter:description" content="Traditional encryption systems use the same secret, or key, to encrypt and decrypt a message. So if I encrypted a file with the password &quot;bluetonicmonster&quot;, you would need both the file and the secret &quot;bluetonicmonster&quot; to decode it. Public key encryption uses two keys: one to encrypt, and another to decrypt. This has all kinds of useful consequences. For one, it means that you can hand out the key to encrypt messages to you, and as long as you keep the other key secret, anyone with that key can talk to you securely. The key you hand out widely is known as the &quot;public key&quot;: hence the name of the technique. Public key encryption is used to encrypt email and files by Pretty Good Privacy (PGP), OTR for instant messaging, and SSL/TLS for web browsing." />
+<meta property="og:email" content="webmaster@eff.org" />
+<meta name="twitter:image" content="https://ssd.eff.org/sites/all/themes/ssd/img/og-ssd-logo.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="600" />
+<meta itemprop="name" content="Public key encryption" />
+<meta itemprop="description" content="Traditional encryption systems use the same secret, or key, to encrypt and decrypt a message. So if I encrypted a file with the password &quot;bluetonicmonster&quot;, you would need both the file and the secret &quot;bluetonicmonster&quot; to decode it. Public key encryption uses two keys: one to encrypt, and another to decrypt. This has all kinds of useful consequences. For one, it means that you can hand out the key to encrypt messages to you, and as long as you keep the other key secret, anyone with that key can talk to you securely. The key you hand out widely is known as the &quot;public key&quot;: hence the name of the technique. Public key encryption is used to encrypt email and files by Pretty Good Privacy (PGP), OTR for instant messaging, and SSL/TLS for web browsing." />
+<link rel="author" href="https://www.eff.org/" />
+<link rel="publisher" href="https://www.eff.org/" />
+  <title>公開金鑰加密 | 監控自我防衛</title>
+  <link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_jBWwBPrUUSUTT1S7JPXLZtvwi6SWCCuAM2rNS_BbhAQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_pTVe_sF5YInonRoRFuJEM2dgLs5eWq_aC2SEPpSNV3s.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_MbbZcQ11eVzwOVt86Q1weRCAJRNOTv9KxM2ugt9-MMg.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://ssd.eff.org/files/css/css_rnPwgN250ElmamVJvNixUdfc1f75hY132oo6udFiooA.css" media="print" /><!-- HTML5 element support for IE6-8 --> <!--[if lt IE 9]>
+    <script src="https://ssd.eff.org/sites/all/themes/ssd/js/html5.js"></script>
+  <![endif]--><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/**
+ * @licstart The following is the entire license notice for the JavaScript
+ * code in this page.
+ *
+ * Copyright (C) 2017  Electronic Frontier Foundation.
+ *
+ * The JavaScript code in this page is free software: you can redistribute
+ * it and/or modify it under the terms of the GNU General Public License
+ * (GNU GPL) as published by the Free Software Foundation, either version 3
+ * of the License, or (at your option) any later version.  The code is
+ * distributed WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU GPL
+ * for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you may
+ * distribute non-source (e.g., minimized or compacted) forms of that code
+ * without the copy of the GNU GPL normally required by section 4, provided
+ * you include this license notice and a URL through which recipients can
+ * access the Corresponding Source.
+ *
+ * @licend The above is the entire license notice for the JavaScript code
+ * in this page.
+ */
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_xJQKh-93t6Ks8GJm9soszpNUAsAaYKkOnU5mMy_QhSQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_BLxotNs2yt7YGlf9QRI9L9AMfdnkQfnN-_ADBTW3SiE.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_hE9uzPFNV1oCLa5WlMpNcyZ6UvNQIeXYHWsdebuffYk.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_0ARywAjY_V1MuwR9GXqUrBBCZ4svbEJdznLS-N_BpqQ.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_UN1p40dOoc7wyLYAesKTW9NmCzUbZ1d_RKtJHZ57poU.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"ssd","theme_token":"8sgslcSuHmY-mc3Zmgl3wcBAV4rAvwoSFaVxf9323BY","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/raven\/raven.js":1,"sites\/all\/modules\/contrib\/piwik_noscript\/piwik_noscript.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/raven-js\/dist\/raven.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/mytube\/mytube.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/patched\/feedback\/feedback.js":1,"sites\/all\/themes\/ssd\/js\/bootstrap.min.js":1,"sites\/all\/themes\/ssd\/js\/ssd.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib\/mytube\/mytube.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"modules\/locale\/locale.css":1,"modules\/taxonomy\/taxonomy.css":1,"files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.field_ui.css":1,"sites\/all\/modules\/patched\/feedback\/feedback.css":1,"sites\/all\/themes\/ssd\/css\/style.css":1,"sites\/all\/themes\/ssd\/css\/mobile.css":1,"sites\/all\/themes\/ssd\/css\/print.css":1}},"piwikNoscript":{"image":"\u003Cimg style=\u0022position: absolute\u0022 src=\u0022https:\/\/anon-stats.eff.org\/js\/?idsite=7\u0026amp;rec=1\u0026amp;url=https%3A\/\/ssd.eff.org\/en\/glossary\/public-key-encryption\u0026amp;action_name=\u0026amp;urlref=\u0022 width=\u00220\u0022 height=\u00220\u0022 alt=\u0022\u0022 \/\u003E"},"raven":{"dsn":"https:\/\/0fc3515aa0c54c1ab9a0cbeada04924f@sentry.eff.org\/14","options":{},"user":{"id":0}},"urlIsAjaxTrusted":{"\/en\/searchapi":true,"\/en\/system\/ajax":true,"\/en\/glossary\/public-key-encryption":true},"ajax":{"feedback-submit":{"wrapper":"feedback-form","callback":"feedback_form_ajax_callback","progress":{"type":"throbber","message":""},"event":"mousedown","keypress":true,"prevent":"click","url":"\/en\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send feedback"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-taxonomy page-taxonomy-term page-taxonomy-term- page-taxonomy-term-317 i18n-en" >
+  <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">跳至主要內容</a></div>
+    <div class="page-wrapper">
+<header id="navbar" role="banner" class="navbar">
+  <div class="container"><!-- EFF Header --><div id="top-eff-header"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</div>
+
+    <div class="search-form-header">
+      <form class="search-form" action="https://ssd.eff.org/en/searchapi" method="GET" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">輸入您的關鍵字</label>
+ <input type="text" id="edit-keys" name="keys" value="" size="40" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="" value="Search" class="form-submit" /></div></div></form>    </div>
+    
+        <div id="language-switcher" class="">
+      <button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".language-switcher-collapse">語言</button> 
+        <div class="region region-language-switcher">
+    <div id="block-locale-language" class="block block-locale">
+    <div class="content language-switcher-collapse collapse" >
+    <ul class="language-switcher-locale-url"><li class="en first active"><a href="public-key-encryption.html" class="language-link active" xml:lang="en" hreflang="en">英語</a></li>
+<li class="am"><a href="https://ssd.eff.org/am/glossary/የአደባባይ-ቁልፍ-ምስጠራ" class="language-link" xml:lang="am" hreflang="am">阿姆哈拉語</a></li>
+<li class="ar"><a href="https://ssd.eff.org/ar/glossary/شيفرة-المفتاح-العمومي" class="language-link" xml:lang="ar" hreflang="ar">阿拉伯語</a></li>
+<li class="es"><a href="https://ssd.eff.org/es/glossary/cifrado-de-llave-pública" class="language-link" xml:lang="es" hreflang="es">西班牙語</a></li>
+<li class="fr"><a href="https://ssd.eff.org/fr/glossary/chiffrement-à-clé-publique" class="language-link" xml:lang="fr" hreflang="fr">法語</a></li>
+<li class="ru"><a href="https://ssd.eff.org/ru/glossary/шифрование-с-открытым-ключом" class="language-link" xml:lang="ru" hreflang="ru">俄語</a></li>
+<li class="tr"><a href="https://ssd.eff.org/tr/glossary/açık-anahtar-şifrelemesi" class="language-link" xml:lang="tr" hreflang="tr">土耳其語</a></li>
+<li class="vi"><a href="https://ssd.eff.org/vi/glossary/mã-hóa-khóa-công-khai" class="language-link" xml:lang="vi" hreflang="vi">越南語</a></li>
+<li class="pt-br"><a href="https://ssd.eff.org/pt-br/glossary/criptografia-de-chave-pública" class="language-link" xml:lang="pt-br" hreflang="pt-br">葡萄牙語</a></li>
+<li class="th"><a href="https://ssd.eff.org/th/glossary/public-key-encryption-การเข้ารหัสคีย์สาธารณะ" class="language-link" xml:lang="th" hreflang="th">泰語</a></li>
+<li class="ur last"><a href="https://ssd.eff.org/ur/glossary/عوامی-کلید-کی-خفیہ-کاری" class="language-link" xml:lang="ur" hreflang="ur">烏爾都語</a></li>
+</ul>  </div>
+</div>
+  </div>
+     </div><!-- .btn-navbar is used as the toggle for collapsed navbar content --><button type="button" class="menu-hamburger" data-toggle="collapse" data-target=".navbar-collapse">功能表</button>
+  </div> 
+</header>
+<header id="nav-expanded">
+  <div class="container">
+    <div class="row">
+              <div class="navbar-collapse collapse">
+          <nav role="navigation">
+                          <ul class="menu nav navbar-nav nav-primary"><li class="first leaf"><a href="../index-2.html">索引</a></li>
+<li class="leaf"><a href="../blog.html">部落格</a></li>
+<li class="leaf"><a href="../about-surveillance-self-defense.html">關於</a></li>
+<li class="leaf"><a href="../contact.html" title="">聯絡我們</a></li>
+<li class="leaf"><a href="../glossary.html" title="">詞彙表</a></li>
+<li class="last leaf"><a href="../credits.html" title="">致謝</a></li>
+</ul>                                              </nav>
+        </div>
+          </div>
+   </div>
+</header>
+<header role="banner" id="page-header" class="container">
+
+      <div id ="top-logo">
+      <div id="top-logo-inner"><a class="logo" href="https://ssd.eff.org/en" title="Home"> <img src="https://ssd.eff.org/sites/all/themes/ssd/logo.png" alt="Home" class="img-responsive" /> </a></div>
+    </div>
+    
+  
+  
+        
+</header><!-- /#page-header --><div class=" container ">
+
+    
+    <section class="container-full-width"><a id="main-content"></a><h1 class="page-header">公開金鑰加密</h1>
+
+        
+                                      <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div class="term-listing-heading"><div id="taxonomy-term-317" class="taxonomy-term vocabulary-terms">
+
+  
+  <div class="content">
+    <div class="field field-name-description-field field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>傳統的<a href="encryption.html" class="glossify-link" title="一種流程，將訊息轉換成無法讀取的形式，只有知道如何「解密」的人才知道如何將訊息轉為可讀取的形式。">加密<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>系統使用同一個祕密或<a href="key.html" class="glossify-link" title="在密碼學中，指可以讓你加密或解密訊息的一項資料。">金鑰<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>來為訊息<a href="encrypt.html" class="glossify-link" title="將加密技術應用在任何類型的資訊或通訊上。這麼做會將資訊或通訊以數學方式轉換，讓它看起來不具任何意義，但只要有人或裝置持有正確的祕密金鑰，就能將它回覆到原本的形式。這樣就限制了存取訊息的權限，因為只要沒有正確的祕密金鑰，應該不可能將加密逆轉，回復原本的資訊。加密技術是構成密碼學領域的幾項技術之一。">加密<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>及<a href="decrypt.html" class="glossify-link" title="把祕密訊息或資料轉為可讀取的形式。加密的概念是讓訊息只能由應當收到它們的人解密。">解密<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>。所以，如果我用<a href="password.html" class="glossify-link" title="一個必須背下來的祕密，用來限制某樣東西的取用權限，只有知道密碼的人可以獲取。它可能會限制存取線上帳戶、裝置等。以多個單詞組成的長密碼也可以稱為「複雜密碼」(passphrase)，提醒我們密碼不只是一個「單詞」(word)。在密碼管理工具或密碼安全應用程式中用來解鎖其他密碼的主要密碼通常稱為「主密碼」。">密碼<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>「bluetonicmonster」來加密檔案，您就需要檔案和秘密「bluetonicmonster」來解讀它。<a href="public-key-encryption.html" class="glossify-link" title="傳統的加密系統使用同一個祕密或金鑰來為訊息加密及解密。所以，如果我用密碼「bluetonicmonster」來加密檔案，您就需要檔案和秘密「bluetonicmonster」來解讀它。公開金鑰加密則使用兩組金鑰：一組用來加密，另一組用來解密。這麼做有各種好處。首先，這表示您可以把用來加密傳送給你的訊息的金鑰交給別人，而只要您把另一把金鑰保密，任何持有那把金鑰的人都可以安全地跟您交談。您可以廣泛散布的金鑰稱為「公開金鑰」，因此也就成為這項技術的名稱。優良保密協定 (PGP) 將公開金鑰加密用於加密電子郵件及檔案，OTR 用來即時通訊，SSL/TLS 則用於網路瀏覽。">公開金鑰加密<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>則使用兩組金鑰：一組用來加密，另一組用來解密。這麼做有各種好處。首先，這表示您可以把用來加密傳送給你的訊息的金鑰交給別人，而只要您把另一把金鑰保密，任何持有那把金鑰的人都可以安全地跟您交談。您可以廣泛散布的金鑰稱為「公開金鑰」，因此也就成為這項技術的名稱。優良保密協定 (<a href="pgp.html" class="glossify-link" title="PGP 或優良保密協定是最早流行的公開金鑰密碼學之一。其創建者菲爾‧齊默爾曼 (Phil Zimmermann) 在 1991 年撰寫了這個程式，以幫助社運人士和其他人保護他們的通訊。當這個程式散布到美國以外時，他被美國政府正式調查。當時，出口強力的公開金鑰加密等工具是違反美國法律的。PGP 以商業軟體產品的形式繼續存在著。也可以免費使用與 PGP 基礎標準相同的 GnuPG (或 GPG)。由於兩者使用同一種可互換的方式，所以有人即使是用 GnuPG，也會說用「PGP 金鑰」或發送「PGP 訊息」。">PGP<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>) 將公開金鑰加密用於加密電子郵件及檔案，OTR 用來即時通訊，SSL/TLS 則用於網路瀏覽。</p>
+</div></div></div><div class="field field-name-field-synonym field-type-text field-label-inline clearfix"><div class="field-label">同義詞：&nbsp;</div><div class="field-items"><div class="field-item even">非對稱式加密</div><div class="field-item odd">公開金鑰密碼學</div></div></div>  </div>
+
+</div>
+</div>  </div>
+</div>
+  </div>
+    </section>
+
+      </div>
+
+</div>
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div id="eff-footer"><a href="https://www.eff.org/"> <img src="https://ssd.eff.org/sites/all/themes/ssd/img/eff-logo.png" alt="EFF" />來自電子前線基金會的計畫</a></div>
+      <div class="region region-footer">
+    <div id="block-menu-menu-footer-links" class="block block-menu">
+
+    
+  <div class="content">
+    <ul class="menu nav"><li class="first leaf"><a href="../about-surveillance-self-defense.html" title="">關於</a></li>
+<li class="leaf"><a href="../credits.html" title="">致謝</a></li>
+<li class="leaf"><a href="https://www.eff.org/policy" title="">隱私權</a></li>
+<li class="last leaf"><a href="https://supporters.eff.org/donate/support-surveillance-self-defense" title="">捐款</a></li>
+</ul>  </div>
+</div>
+  </div><a href="https://www.eff.org/copyright"><img src="https://ssd.eff.org/sites/all/themes/ssd/img/cc-by-logo.png" alt="Creative Commons" width="60px" /></a></div>
+</footer>
+    <div class="region region-page-bottom">
+    <div id="block-feedback-form">
+  <div class="content"><form class="feedback-form" action="https://ssd.eff.org/en/glossary/public-key-encryption" method="post" id="feedback-form" accept-charset="UTF-8"><div><div class="feedback-help">如果您遇到錯誤，或希望在目前的頁面上看到更多資訊，歡迎留言給我們。</div><div class="form-item form-type-textarea form-item-message">
+  <label for="edit-message">訊息 <span class="form-required" title="必須填寫這一欄。">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="feedback-message form-textarea required" id="edit-message" name="message" cols="20" rows="5"></textarea></div>
+</div>
+<input type="hidden" name="form_build_id" value="form-tSw9rTkcRTMHX_wHizRvX-eayX-bRqRlX_GXy6kWYFM" />
+<input type="hidden" name="form_id" value="feedback_form" />
+<div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">這一欄空下來</label>
+ <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="clearfix form-actions form-wrapper" id="edit-actions"><input type="submit" id="feedback-submit" name="op" value="Send feedback" class="form-submit" /></div></div></form></div>
+</div><a href="../librejs/jslicense.html" rel="jslicense" style="display: none">JavaScript license information</a><div id="piwik-noscript"></div><noscript><img style="position: absolute" src="https://anon-stats.eff.org/js/?idsite=7&amp;rec=1&amp;url=https%3A//ssd.eff.org/en/glossary/public-key-encryption&amp;action_name=Public%20key%20encryption%20%7C%20Surveillance%20Self-Defense" width="0" height="0" alt="" /></noscript>
+  </div>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_JIQIryFrENZZCoahKeAoZfR-PUPwkUrxx23RdaZQIuc.js"></script>
+<script type="text/javascript" src="https://ssd.eff.org/files/js/js_lMrfy51aI91p2ZAdgpEs4r3pZi-E809QDyWJpbMpnTw.js"></script>
+</body><!-- Mirrored from ssd.eff.org/en/glossary/public-key-encryption by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Nov 2017 09:06:38 GMT --></html>
