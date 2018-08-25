@@ -194,13 +194,13 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageSta
       <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>在數位通訊的領域，<a href="../glossary/metadata.html" class="glossify-link" data-title="metadata" title="中繼資料 (或「有關資料的資料」) 包含關於資訊的一切，除了資訊本身。因此，訊息的內容不是中繼資料；中繼資料是誰發送的、發送時間、發送地點和接收者等。法律體系對訊息內容的保護通常比中繼資料要多得多：例如在美國，執法機構需要申請通訊監察書 (監聽票) 才能監聽某人的電話，但申請通話對象紀錄則簡單多了。然而，中繼資料往往可以揭示出很多資訊，而且通常需要像其描述的資料一樣妥善保護。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="Metadata (or &quot;data about data&quot;) is everything about a piece of information, apart from the information itself. So the content of a message is not metadata, but who sent it, when, where from, and to whom, are all examples of metadata. Legal systems often protect content more than metadata: for instance, in the United States, law enforcement needs a warrant to listen to a person's telephone calls, but claims the right to obtain the list of who you have called far more easily. However, metadata can often reveal a great deal, and will often need to be protected as carefully as the data it describes. ">中繼資料<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>就像是數位版的信封：它是您所有通訊收發的相關資訊。電子郵件的標題、對話的長度以及通訊時的位置 (以及與誰通訊) 皆屬於中繼資料。中繼資料時常被稱為<em>除了</em>通訊內容<em>之外</em>的所有內容。</p>
 <p>一直以來，在一些國家（包括美國），中繼資料所受到法律的隱私保護比通訊內容還要少。例如，在許多國家，比起監聽您實際上說了什麼，警察可更輕易地取得您上個月的通聯紀錄。</p>
 <p>那些蒐集或要求存取中繼資料的人，例如政府或電信公司，主張中繼資料的揭露 (和蒐集) 沒有什麼大不了的。然而，<a href="http://www.nybooks.com/blogs/nyrblog/2014/may/10/we-kill-people-based-metadata/" rel="noreferrer">這些說法是完全錯誤的</a>。即使是一個很小的中繼資料樣本，也可用來近距離窺探某人的生活。讓我們來看看揭露中繼資料會對蒐集的政府及公司產生什麼影響：</p>
-<ul><li>他們知道您在凌晨 2 點 24 分打了電話，講了 18 分鐘，但是不知道您說了什麼。</li>
-<li>他們知道您從舊金山金門大橋上打了自殺防制熱線，但仍然不知道通話主題是什麼。</li>
-<li>他們知道您收到了愛滋病檢測服務的電子郵件，然後打了電話給您的醫生，並在同一小時內瀏覽了愛滋病患關懷組織的網站。但他們不會知道電子郵件或是通話的內容。</li>
-<li>他們知道您收到了一個數位維權組織的電子郵件，主題為「還剩 52 小時可以阻止 SOPA」，然後立即打電話給您那區當選的民意代表。但這些通訊的內容尚未被政府取得。</li>
-<li>他們知道您打電話給婦科醫生，說了半個小時，然後當天晚上在網上搜尋了當地墮胎診所的電話，但是沒有人知道您說了什麼。</li>
-</ul><p>保護中繼資料不被外部收集，在技術上是一個難題，因為第三方通常需要存取中繼資料，才能成功連接通訊。就像信封外面需要郵政工作人員能夠辨識，數位通訊通常需要標記來源和目的地。電信公司需要大致知道您手機的位置，才能將通話接過來。</p>
-<p>像 Tor 這樣的服務和 <a href="https://github.com/ricochet-im/ricochet" rel="noreferrer">Ricochet</a> 等實驗計畫，希望能夠限制由一般線上通訊產生的中繼資料量。在法規修訂得能更妥善處理中繼資料，以及使其盡量減少的工具變得更加普遍前，最好的方法是了解當您進行通訊時會傳輸哪些中繼資料、誰可以存取這些資訊，以及會被如何利用。</p>
+<ul><li>他們知道您在凌晨 2:24 打了一通性交易電話，講了 18 分鐘，但不知道您在電話中說了什麼。</li>
+<li>他們知道您從舊金山金門大橋上打了自殺防制熱線，但通話主題不得而知。</li>
+<li>他們知道您在收到愛滋病檢測服務的電子郵件後，打了電話給您的醫生，並在同一小時內瀏覽了愛滋病患關懷組織的網站。但他們不知道電子郵件或是通話的內容。</li>
+<li>他們知道您收到了一個數位維權組織的電子郵件，信件標題為「還剩 52 小時可以阻止 SOPA」，之後立即打電話給您那區當選的民意代表。但這些通訊的內容尚未被政府取得。</li>
+<li>他們知道您打電話給婦產科醫師，講了半個小時，後來上網搜尋當地墮胎診所的電話，但不知道您在電話中說了什麼。</li>
+</ul><p>保護中繼資料不被外部收集，在技術上是一個難題，因為第三方通常需要存取中繼資料，才能成功連接通訊。就像信封外面的資料需要郵政人員能夠辨識，數位通訊通常也需要標記來源和目的地。電信公司需要大致知道您手機的位置，才能將通話接過來。</p>
+<p>像 Tor 這樣的服務和 <a href="https://github.com/ricochet-im/ricochet" rel="noreferrer">Ricochet</a> 等實驗計畫，希望能夠限制由一般線上通訊產生的中繼資料量。在法規修訂得能更妥善處理中繼資料，以及能盡量減少中繼資料的工具變得更加普遍前，最好的方法是當您進行通訊時，請留意過程中會傳輸哪些中繼資料、誰可以存取這些資訊，以及會被如何利用。</p>
 </div></div></div><div class="field field-name-field-updated field-type-datestamp field-label-inline clearfix container"><div class="field-label">上次查閱：&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single">2015 年 8 月 10 日</span></div></div></div>    </div>
   </div>
 </div><!-- /.node --></div>
