@@ -235,12 +235,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageSta
 <p>這時您可以驗證聯絡人的身分。這個過程稱為<a href="../glossary/key-verification.html" class="glossify-link" title="在公開金鑰密碼學裡，每個人都有一套金鑰。要將訊息加密發送給特定對象，請使用他們的公開金鑰進行加密。攻擊者可能會誘騙您使用他們的金鑰，這表示他們 (而不是原本的收件者) 將能夠閱讀您的訊息。也就是說，您必須驗證金鑰是由特定對象所使用的。金鑰驗證就是任何讓您將金鑰與某人匹配的方式。">金鑰驗證<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>。您可以藉此確保他們的<a href="../glossary/encryption-key.html" class="glossify-link" title="加密金鑰是一段資訊，用於將訊息轉換為無法讀取的形式。在某些情況下，您需要使用相同的加密金鑰來解讀訊息。而其他情況下，加密金鑰和解密金鑰是不同的。">加密金鑰<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>沒有被竄改，或在您的應用程式下載<a href="../glossary/key.html" class="glossify-link" title="在密碼學中，指可以讓你加密或解密訊息的一項資料。">金鑰<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>時被換成別人的。這個過程很重要，因為它可確保您的通訊對象確實是您所想聯絡的那個人。</p>
 <p>在聊天視窗中，點擊鎖定圖示，然後點擊「驗證聯絡人身分」(Verify your contact&rsquo;s identity)。</p>
 <p><img alt="" src="https://ssd.eff.org/files/2017/09/08/tormsngr9.png" width="517" height="259" /></p>
-<p>您會看到各種驗證方法的列表。大多數用戶端支援「手動<a href="../glossary/fingerprint.html" class="glossify-link" title="公開金鑰密碼學的金鑰是非常大的數字，有時長度可達 1000 位數以上。指紋則是一個小得多的數字或一組數字和字母，可以當作該金鑰的唯一名稱，而不必列出金鑰所有的位數。所以，例如你與一個朋友想要確保你們擁有的金鑰相同，您可以花很長的時間讀出金鑰上的所有位數，也可以分別計算你們的金鑰指紋，並加以比較。加密編譯軟體提供的指紋通常由大約 40 個字母和數字組成。如果經過您仔細檢查，指紋的值正確，那麼應該就不會使用到冒充的假金鑰。一些軟體工具可能提供更方便的替代方法來幫您驗證朋友的金鑰，但是仍然需要進行某些形式的驗證，以防止通訊服務提供商輕易偷聽您的通訊。">指紋<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>驗證」，所以這是一個很好的選擇。</p>
+<p>您會看到各種驗證方法的列表。大多數用戶端支援「手動<a href="../glossary/fingerprint.html" class="glossify-link" title="公開金鑰密碼學的金鑰是非常大的數字，有時長度可達 1000 位數以上。指紋則是一個小得多的數字或一組數字和字母，可以當作該金鑰的唯一名稱，而不必列出金鑰所有的位數。所以，例如你與一個朋友想要確保你們擁有的金鑰相同，您可以花很長的時間讀出金鑰上的所有位數，也可以分別計算你們的金鑰指紋，並加以比較。加密編譯軟體提供的指紋通常由大約 40 個字母和數字組成。如果經過您仔細檢查，指紋的值正確，那麼應該就不會使用到冒充的假金鑰。一些軟體工具可能提供更方便的替代方法來幫您驗證朋友的金鑰，但是仍然需要進行某些形式的驗證，以防止通訊服務提供商輕易偷聽您的通訊。">指紋<img src="https://ssd.eff.org/sites/all/modules/patched/glossify/info.png" /></a>驗證」，它會是一個不錯的選擇。</p>
 <p><img alt="" src="https://ssd.eff.org/files/2017/09/08/tormsngr10.png" width="549" height="519" /></p>
 <p>要進行手動指紋驗證，請向您的聯絡人大聲讀出帳戶的指紋 (「您的指紋」[Fingerprint for you] 後面的一長串數字)。請您的聯絡人也做同樣的事情，並確保它與「聲稱的指紋...」(Purported fingerprint for...) 之後的長串數字相符。最好是面對面或透過電話進行此步驟。無論如何，除了您要驗證的帳戶之外，請務必透過其他管道交換指紋。</p>
 <p>一旦您確認每個帳戶都有相同的指紋，請將「我已驗證這個指紋確實正確」(I have verified that this is in fact the correct fingerprint) 的方塊更改為「是」(Yes)，然後點擊「驗證」(Verify)。</p>
 <p><img alt="" src="https://ssd.eff.org/files/2017/09/08/tormsngr11.png" width="620" height="542" /></p>
-<p>聊天視窗右上角的鎖頭現在應該會從橘色變為綠色。這表示您的聯絡人已經驗證。如果您的聯絡人重新安裝他們的聊天用戶端，您將必須再次驗證指紋以確認他們的身分。</p>
+<p>聊天視窗右上角的鎖頭現在應該會從橘色變為綠色。這表示您的聯絡人已經驗證完成。如果您的聯絡人重新安裝他們的聊天用戶端，您必須再次驗證指紋以確認他們的身分。</p>
 <p><img alt="" src="https://ssd.eff.org/files/2017/09/08/tormsngr12.png" width="277" height="240" /></p>
 <p>現在您已經知道如何使用 Tor Messenger，請嘗試使用此即時通訊用戶端與您的朋友進行加密聊天。</p>
 <p> </p>
