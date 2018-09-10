@@ -199,13 +199,12 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageSta
 </div></div></div>        </div>
           </div>
     <div class="wrap-module-sections">
-      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>我們大多認為，一旦把檔案放進垃圾桶並清空，電腦上的檔案就會被刪除；其實，刪除檔案並不會完全將其抹除。這麼做的時候，電腦只是讓使用者看不到檔案，並將檔案存放在磁碟上的部分表示為「可用」- 表示您的<a href="../glossary/operating-system.html" class="glossify-link" data-title="operating system" title="在電腦上運行所有其他應用程式的應用程式。Windows、Android 和 Apple 的 OS X 與 iOS 都是作業系統。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A program that runs all the other programs on a computer. Windows, Android and Apple's OS X and iOS are all examples of operating systems. ">作業系統<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>現在可以用新資料覆寫檔案。因此，可能需要幾週、幾個月甚至幾年，才會被新的檔案覆寫。在這種情況發生前，該「已刪除」檔案仍在您的磁碟上，只是對一般操作是不可見的。藉由一點工夫和正確的工具 (如「反刪除」軟體或鑑識方法)，您甚至可以取回「已刪除」的檔案。重點在於電腦通常不「刪除」檔案，只是允許這些檔案佔用的空間將來會被別的東西覆寫。</p>
-<p>那麼永遠刪除一個檔案的最好辦法，就是確保它被立即覆寫，這樣就很難取回原本寫在那裡的東西。您的作業系統可能已經有能這麼做的軟體 - 可以用廢資料將磁碟上所有「空」空間覆寫的軟體，保護已刪除資料的機密性。</p>
-<p>請注意，安全刪除固態硬碟 (SSD)、USB 隨身碟和 SD 卡中的資料非常困難！下面的說明<em>僅</em>適用於傳統的磁碟，而<em>不</em>適用於在現代筆記型電腦成為標準配備的 SSD、USB key/USB 隨身碟或 SD 卡/記憶卡。</p>
-<p>這是因為這些類型或磁碟機使用稱為<a href="https://en.wikipedia.org/wiki/Wear_leveling" target="_blank" rel="noreferrer">耗損平均技術</a>的技術。(您可以在<a href="http://arstechnica.com/security/2011/03/ask-ars-how-can-i-safely-erase-the-data-from-my-ssd-drive/" target="_blank" rel="noreferrer">這裡</a>了解更多關於為什麼這會導致安全刪除的問題。)</p>
-<p>如果您使用 SSD 或 USB 隨身碟，則可以<a href="#Anchor 1">跳到下面的部分</a>。</p>
+      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>大多數人以為，只要將檔案放進垃圾桶並清空，電腦上的檔案就會被刪除。但事實上，刪除檔案並不會完全將其抹除——電腦只是讓使用者看不到檔案，並將檔案存放在磁碟上的部分標示為「可用」，表示您的<a href="../glossary/operating-system.html" class="glossify-link" data-title="operating system" title="在電腦上運行所有其他應用程式的應用程式。Windows、Android 和 Apple 的 OS X 與 iOS 都是作業系統。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A program that runs all the other programs on a computer. Windows, Android and Apple's OS X and iOS are all examples of operating systems. ">作業系統<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>現在可用新資料覆寫檔案。因此，檔案可能需要幾週、幾個月甚至幾年，才會被新資料覆寫完成。在那之前，該「已刪除」檔案仍會在您的磁碟上，只是從一般操作是看不見的。您甚至可以花一點點力氣，和使用正確的工具 (例如「反刪除」軟體或鑑識方法)，來取回「已刪除」的檔案。重點在於：電腦通常不會「刪除」檔案，而是讓這些檔案所佔用的空間之後能被其他資料覆寫上去。</p>
+<p>永久刪除檔案的最好辦法，就是確保它被立即覆寫，這樣就很難取回原本寫在那裡的資料。您的作業系統可能已經有這樣的軟體：在磁碟上所有「空」的儲存空間覆寫無用資料的軟體，以保護已刪除資料的機密性。</p>
+<p>請注意，從固態硬碟 (SSD)、USB 隨身碟和 SD 卡中安全刪除資料是非常困難的！下面的說明僅適用於傳統硬碟，而不適用已為現代筆記型電腦標準配備的 SSD、USB key/USB 隨身碟或 SD 卡/記憶卡。這是因為這類型的硬碟使用一種稱為<a href="https://en.wikipedia.org/wiki/Wear_leveling" target="_blank" rel="noreferrer">耗損平均技術</a>的技術。(您可以在<a href="http://arstechnica.com/security/2011/03/ask-ars-how-can-i-safely-erase-the-data-from-my-ssd-drive/" target="_blank" rel="noreferrer">這裡</a>了解更多為何這種技術會有安全刪除的問題。)</p>
+<p>如果您有使用 SSD 或 USB 隨身碟，請<a href="#Anchor 1">跳到下面的部分</a>。</p>
 <p>在 Linux 上，我們目前建議使用 BleachBit。BleachBit 是一個用於 Windows 和 Linux 的開源安全刪除工具，比內建的「shred」複雜得多。</p>
-<p>可以使用 BleachBit 快速輕鬆找出單一檔案進行安全刪除，或者實施定期的安全刪除原則。也可以自行編寫檔案刪除指令。請查看此<a href="http://bleachbit.sourceforge.net/documentation" rel="noreferrer">文件</a>以獲得更多資訊。</p>
+<p>BleachBit 可輕鬆快速地找出單一檔案進行安全刪除，或實施定期的安全刪除計畫。BleachBit 也可編寫自訂的檔案刪除指令。請查看此<a href="http://bleachbit.sourceforge.net/documentation" rel="noreferrer">文件</a>以獲得更多資訊。</p>
 </div><div class="field-item odd"><a name="1"></a><h2><a id="installing" name="installing"></a>安裝 BleachBit <a class="anchor-link-icon" href="#1">Anchor link</a></h2>
 <h3>使用 Ubuntu Software Center 進行安裝</h3>
 <p>您可以使用 Ubuntu Software Center 取得 Ubuntu Linux 版 BleachBit。按一下左上角功能表中的應用程式 (Application) 按鈕，然後使用搜尋欄位。</p>
@@ -232,7 +231,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageSta
 <p><img alt="" src="https://ssd.eff.org/files/2015/03/02/secure_deletion_on_linux_09.png" width="749" height="513" /></p>
 </div><div class="field-item odd"><a name="3"></a><h2><a id="adding_bleachbit" name="adding_bleachbit"></a>將 BleachBit 加到側欄 <a class="anchor-link-icon" href="#3">Anchor link</a></h2>
 <p class="TextBody">按一下左上角功能表中的應用程式 (Application) 按鈕，然後使用搜尋欄位。</p>
-<p class="TextBody">在搜尋欄位中輸入「bleach」，將出現兩個選項：BleachBit 和 BleachBit (使用 root 身分)。如果您使用 BleachBit 來刪除<a href="../glossary/operating-system.html" class="glossify-link" data-title="operating system" title="在電腦上運行所有其他應用程式的應用程式。Windows、Android 和 Apple 的 OS X 與 iOS 都是作業系統。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A program that runs all the other programs on a computer. Windows, Android and Apple's OS X and iOS are all examples of operating systems. ">作業系統<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>所需的檔案，只有當您知道自己在做什麼，並且可能造成不可彌補的傷害時，才能使用 BleachBit (使用 root 身分) 選項。</p>
+<p class="TextBody">在搜尋欄位中輸入「bleach」，會出現兩個選項：BleachBit 和 BleachBit (使用 root 身分)。如果您不確定自己在執行什麼操作，請不要使用BleachBit (使用 root 身分) 選項，因為如果您不小心刪掉<a href="../glossary/operating-system.html" class="glossify-link" data-title="operating system" title="在電腦上運行所有其他應用程式的應用程式。Windows、Android 和 Apple 的 OS X 與 iOS 都是作業系統。" data-placement="top" data-trigger="hover" data-html="true" data-toggle="popover" data-container="body" data-content="A program that runs all the other programs on a computer. Windows, Android and Apple's OS X and iOS are all examples of operating systems. ">作業系統<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></a>所需的檔案，可能會造成無法修復的傷害。</p>
 <p class="TextBody"><img alt="" src="https://ssd.eff.org/files/2015/03/02/secure_deletion_on_linux_10.png" width="877" height="258" /></p>
 <p>右鍵按一下 BleachBit，並選取「新增至收藏」(Add to Favorites)。</p>
 <p><img alt="" src="https://ssd.eff.org/files/2015/03/02/secure_deletion_on_linux_11.png" width="877" height="258" /></p>
@@ -246,7 +245,7 @@ jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageSta
 <p><img alt="" src="https://ssd.eff.org/files/2015/03/02/secure_deletion_on_linux_14.png" width="814" height="652" /></p>
 <p class="TextBody">BleachBit 將檢測幾個已安裝的常用程式，並顯示每個程式的特殊選項。BleachBit 有四個預設設定。</p>
 <h3>使用預設值</h3>
-<p class="TextBody">某些軟體會留下使用時間以及使用方式的記錄。兩個用來稍稍說明這個常見問題的重要例子，是最近使用的文件 (Recent Documents) 和<u>網頁瀏覽器<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></u>歷程。追蹤最近編輯過檔案的軟體會留下您正在處理的檔案名稱的記錄，即使這些檔案本身已被刪除。網頁瀏覽器通常會保留最近造訪過網站的詳細記錄，甚至保留這些網站的頁面和圖像的快取副本，以便在下次造訪時加快讀取速度。</p>
+<p class="TextBody">某些軟體會留下使用時間以及使用方式的記錄。兩個重要的例子：「最近使用的文件 (Recent Documents) 」和<u>「網頁瀏覽器<img src="https://ssd.eff.org/sites/all/themes/ssd/img/info.png" /></u>歷程」，可藉以說明這個常見的現象。有些軟體會追蹤最近編輯過的檔案，即使這些檔案本身已被刪除，它們還是會留下檔案名稱的紀錄。網頁瀏覽器則會保留最近造訪過網站的詳細記錄，甚至保留這些網站的頁面和圖像的快取副本，以便在下次造訪時加快讀取速度。</p>
 <p class="TextBody">根據 Bleachbit 作者對電腦上記錄位置的研究，這些記錄可能會揭露您之前的活動；Bleachbit 提供了可以刪除其中一些記錄的「預設值」。我們將使用這些預設值中的兩個來說明，以便您了解它們的運作原理。</p>
 <p class="TextBody">核取「系統」(System) 旁邊的方塊。請注意，這將標示「系統」(System) 類別下的所有核取方塊。取消核取「系統」(System) 方塊並選取下列方塊：最近使用的文件清單 (Recent Documents list) 和垃圾桶 (Trash)。按一下清理 (Clean) 按鈕。</p>
 <p class="TextBody"><img alt="" src="https://ssd.eff.org/files/2015/03/02/secure_deletion_on_linux_17.png" width="815" height="653" /></p>
